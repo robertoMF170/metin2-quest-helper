@@ -1,4 +1,4 @@
-MT2GUIDE - QUEST HELPER (estilo RestedXP) para Metin2 TR
+MT2GUIDE - QUEST HELPER (estilo RestedXP) para Metin2 Gameforge (qualquer regiao oficial)
 =========================================================
 Versao NOVA e LIMPA: so' guia de missoes. Sem bots, sem cheats, sem
 auto-ataque, sem auto-resposta. Tu jogas; o guia aponta.
@@ -155,11 +155,10 @@ ESTADO REAL DA CONTA/PERSONAGEM (GuideQuestSync)
 
 INSTALACAO
   MODO RECOMENDADO (cliente separado e limpo):
-    Usa a pasta D:\metin2\tr-TR - e' o jogo original completo, SEM
-    nenhum bot/cheat, ja' com o MT2Guide + init.py puro instalados.
-    (Criada com criar-cliente-guia.bat a partir do tr-TR-Bots,
-    excluindo MT2Robs/OpenBot/.freebuff/logs/telemetria. O cliente
-    com os bots ficou em D:\metin2\tr-TR-Bots.)
+    Cria uma COPIA limpa do teu cliente Gameforge (so' jogo + guia,
+    sem bots/cheats) numa pasta propria e instala la' o MT2Guide.
+    Assim o cliente que usas com bots fica intacto, e o guia corre
+    num cliente so' com init.py puro.
 
   MODO MANUAL (meter o guia noutro cliente):
     1. COPIAR a pasta MT2Guide para a RAIZ desse cliente

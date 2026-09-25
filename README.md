@@ -1,8 +1,8 @@
-# MT2Guide — Metin2 Quest Helper (tr-TR)
+# MT2Guide — Metin2 Quest Helper
 
 > Fase final — correção de bugs (beta fechado)
 
-Quest helper **100% client-side** (estilo RestedXP) para o cliente Gameforge Metin2, a correr via **eXLib.mix**: guia de missões passo-a-passo com avanço automático, seta 3D, mira vermelha nos mobs e sincronização com o estado real das quests. Tu jogas; o guia aponta.
+Quest helper **100% client-side** (estilo RestedXP) para o cliente Gameforge Metin2 — **qualquer região oficial** (TR, EU, ...), a correr via **eXLib.mix**: guia de missões passo-a-passo com avanço automático, seta 3D, mira vermelha nos mobs e sincronização com o estado real das quests. Tu jogas; o guia aponta.
 
 ## O que faz
 
@@ -17,7 +17,7 @@ Quest helper **100% client-side** (estilo RestedXP) para o cliente Gameforge Met
 
 ## Requisitos
 
-- Cliente Gameforge Metin2 (testado no servidor TR) com `eXLib.mix` compatível
+- Cliente Gameforge Metin2 — qualquer região oficial (TR, EU, ...) — com `eXLib.mix` compatível
 - Windows
 
 ## Instalação
@@ -25,7 +25,7 @@ Quest helper **100% client-side** (estilo RestedXP) para o cliente Gameforge Met
 ```bat
 git clone https://github.com/robertoMF170/metin2-quest-helper-tr-tr.git
 cd metin2-quest-helper-tr-tr
-instalar-guia.bat        :: pergunta a pasta do jogo (ex: D:\metin2\tr-TR)
+instalar-guia.bat        :: pergunta a pasta do jogo (onde esta o metin2client.exe)
 ```
 
 O instalador copia `MT2Guide\` para a pasta do jogo, guarda o `init.py` atual como `init_bots.py` e instala o `init_guide.py`. Depois: `Jogar-Guia.bat` (ou abre o `metin2client.exe`) — o guia abre sozinho no mundo.
