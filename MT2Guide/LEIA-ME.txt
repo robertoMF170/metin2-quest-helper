@@ -1,0 +1,290 @@
+MT2GUIDE - QUEST HELPER (estilo RestedXP) para Metin2 TR
+=========================================================
+Versao NOVA e LIMPA: so' guia de missoes. Sem bots, sem cheats, sem
+auto-ataque, sem auto-resposta. Tu jogas; o guia aponta.
+
+O QUE FAZ
+  - Janela com a lista de missoes e PASSO-A-PASSO (feito/atual/futuro)
+  - AVANCO AUTOMATICO dos passos (sem clicar na seta):
+    * kill: conta as mortes sozinho (detecta o mob do vnum a morrer)
+    * talk/turnin: avanca quando respondes o dialogo do NPC
+    * goto: avanca ao chegar ao destino
+    (collect e passos de texto usam o botao +1 / >)
+  - SETA no ecra (roda para o destino) + distancia em metros
+  - MOBS: passos kill/collect mostram a ZONA DE SPAWN dos mobs
+    (centroide dos spawns oficiais por reino nos mapas 1/2, comum nos
+    outros) e, quando o mob esta' a vista, o guia TRAVA O ALVO nele
+    (aparece a seta vermelha do jogo por cima do mob) + apontador 3D.
+  - MIRA VERMELHA (botao Mira:ON/OFF): por cima de CADA mob que a
+    missao atual manda matar aparece uma mira (anel + cruz) desenhada
+    pelo proprio cliente (a posicao no ecra vem do cliente, nao de
+    contas) e no mob mais proximo o nome + o contador REAL do passo
+    ("Cachorro 3/10"). Assim vês logo QUAL e' o mob que conta.
+    Se o teu cliente nao souber projetar instancias, o guia escreve
+    isso no syserr_guide.txt e continua a funcionar sem miras (nunca
+    tapando os cliques do mundo: a camada usa a flag not_pick).
+    Ajuste fino (se a mira aparecer desviada do mob): MIRA_DY/MIRA_DX
+    no GuideMark.py.
+  - MISSOES DE CACA (AVLANMA GOREVI = "escolhe 1 de 2 e mata X"):
+    * a base de dados traz as 118 missoes de caca da wiki oficial
+      (Data\quests_caca.txt, Lv2 a Lv119). Ate' Lv70 o NPC da-te DUAS
+      opcoes de mob; de Lv71 a Lv119 a missao tem so' um mob.
+    * o passo diz SEMPRE o mob e a quantidade de CADA opcao, por
+      exemplo: "Caca Lv2: escolhe 1 de 2 - mata 10x Cao Selvagem Feroz
+      OU 5x Lobo Feroz". Podes PESQUISAR pelo nome do mob ("cao
+      selvagem feroz", "lobo feroz", "ogre furioso"...) que a missao
+      aparece (por nivel certo). Filtro de tipo "Caca" mostra-as todas.
+    * QUEM ESCOLHE E' O JOGO - e o guia descobre sozinho qual foi:
+        1) pelo mob que TRAVAS como alvo (atacas -> o guia sabe logo);
+        2) pela 1a morte de um dos dois mobs;
+        3) se nao conseguir, ESCOLHES TU: botoes  Op.1  e  Op.2
+           (cada um diz a quantidade:  "Op.1 (10)" / "Op.2 (5)");
+           o botao "Escolher" fixa o mob que tens 'a frente/alvo.
+      A opcao escolhida fica GRAVADA por personagem (sobrevive a sair
+      do jogo) e a partir dai SO' esse mob conta e leva a mira; as
+      mortes do outro mob sao ignoradas (e escritas no log).
+    * a mira encontra os mobs pelo NOME que o cliente da' a cada
+      instancia. Quando o cliente nao tiver nome, o guia APRENDE o
+      vnum do mob em jogo e guarda-o em Data\mobs_vnum.txt (podes
+      editar/limpar esse ficheiro a mao; formato: vnum|nome).
+    * botao "Mobs" escreve no log as opcoes (nome, quantidade, vnum,
+      qual esta' escolhida) + quantos mobs estao 'a vista e a que
+      distancia - diagnostico
+    * o contador e' o da OPCAO escolhida (5 ou 10 no exemplo do Lv2) e
+      sobrevive a sair do jogo, como todos os outros
+  - CONTADORES QUE NAO SE PERDEM (o mais importante):
+    as mortes/itens de CADA passo ficam gravadas por personagem
+    (Data/Saves\<char>.txt, linhas "kill=missao|passo|contador").
+    Se matares 5 de 10 e saires do jogo, quando voltares com essa char
+    o guia continua de 5/10 (e o contador do JOGO, quando existe e e'
+    maior, tambem e' aproveitado). Passar o passo 'a frente ou para
+    tras na lista NAO apaga nada: cada passo tem a sua propria conta.
+    Bosses que so' existem quando a quest os invoca (ex.: Mi-Jung) nao
+    tem zona: a seta aparece quando ele nascer a vista.
+  - RASTO no chao (botao Rasto): linha de pontos luminosos ate' ao
+    alvo que ASSENTAM NO TERRENO (sobem montanhas com o chao) e, nos
+    passos de kill, um ANEL com a area de spawn dos mobs (raio 18m).
+    Nota: e' uma linha reta sobre o relevo, nao contorna montanhas
+    (o cliente nao tem mapa de colisao para calcular rotas).
+  - APONTADOR 3D na cena (o compasso do jogo) para onde ir
+  - Segue o NPC/mob VIVO quando esta a vista; senao usa as coordenadas
+  - PESQUISA (nome, subtitulo, objetivo, NPC, qualquer palavra dos passos):
+    clica na linha "Pesquisar:" da janela do guia (ou no botao
+    "Pesquisar", ou abre a quest line com N) e ESCREVE. Ao clicar, a
+    linha passa a "Pesquisar(*):" = MODO ESCRITA armado: a partir dai as
+    teclas alimentam a pesquisa em vez de irem para o jogo (sem o modo
+    armado, escrever abre os atalhos do jogo - de proposito, para
+    poderes andar/jogar). ENTER abre a 1a missao da lista filtrada,
+    ESC sai do modo. A quest line abre-se sozinha ao escreveres.
+    Alternativa que funciona SEMPRE (sem depender das teclas):
+      .qp <texto>   no chat do jogo   (exemplo:  .qp biologo)
+  - DICA DE DIALOGO: quando falas com o NPC mostra
+    "DIALOGO: escolhe o quadrado [2] Kabul Et"
+  - QUEST LINE (tecla N): janela flutuante POR CIMA de tudo com TODAS
+    as missoes (379 + as que o GRAVADOR aprender) e 3 LINHAS DE FILTROS:
+      * NIVEL: Todas / 1-40 / 41-75 / 76-105 / 106+ / Prem
+      * TIPO (os filtros do jogo): Todos / Princ (missao principal) /
+        Secun (secundaria) / Caca (missoes com objetivos de matar ou
+        apanhar) / Bio (investigacao do biologo) / Cavalo (At
+        Gorevleri) / Yohara (Lv120+)
+      * ESTADO REAL: Todas / A fazer / Em curso / Feitas
+        (o guia sabe isto a partir do sistema de quests do CLIENTE:
+         ve a seccao "ESTADO REAL DA CONTA/PERSONAGEM")
+    A PESQUISA aceita o NOME (PT ou EN), o SUBTITULO/objetivo, o nome
+    do NPC que da' a missao e o texto dos passos - sem acentos e sem
+    maiusculas. Varias palavras: basta que aparecam todas.
+    Na lista, cada missao mostra: [x] feita | [>] a meio | [ ] por
+    fazer, [Tipo], LvX, titulo e (quando o jogo o envia) o subtitulo.
+    A janela de missoes ORIGINAL do jogo fica suprimida (N nao a abre).
+  - ESTADO REAL + AUTO-SEGUIR ("Segue:ON"): quando o jogo diz que
+    estas' a meio de uma missao, o guia SALTA sozinho para ela, acerta
+    no passo pelo CONTADOR REAL (4/9 caes no jogo = 4/9 no guia) e
+    marca [x] as que o jogo fecha. Botoes: Segue:ON/OFF (auto),
+    Ir (saltar agora), Concluir (marcar feita), Estado (escrever o
+    estado real no log + Data\quest_state.txt).
+  - +1 para contar mortes/itens dos passos kill/collect (tambem grava)
+  - Guarda o progresso POR PERSONAGEM (MT2Guide\Saves). Mudar de
+    personagem (login/logout no mesmo cliente) recarrega automaticamente
+    o progresso/mortes/missoes feitas DESSA char.
+  - GRAVADOR: aprende quests enquanto jogas (como as rotas do Energy):
+    cliques em NPC + respostas de dialogo + KILLS DE TODOS OS MOBS
+    (conta automaticamente tudo o que morre perto de ti e escreve os
+    passos kill agregados com vnum/posicao) ->
+    MT2Guide\Data\quests_gravadas.txt no MESMO formato da base de dados
+    (os kills aparecem no fim, ao parar a gravacao)
+
+TECLAS E COMANDOS
+  INSERT ou F7 (ou .g no chat) -> abre/fecha o menu do guia
+  N ou F8 (ou .q no chat)      -> abre/fecha a QUEST LINE (seletor de
+                             missoes; suprime a janela de missoes do jogo)
+  Botao "Alvo:ON/OFF"      -> liga/desliga o SIMBOLO (seta vermelha do
+                             jogo) por cima do mob da missao + compasso
+                             a piscar nele. Nao ataca: so' aponta.
+  .qp [texto]         -> arma a pesquisa (ou pesquisa logo um texto, ex:
+                          ".qp biologo") - escrito no chat: funciona mesmo
+                          que as teclas nao cheguem ao guia
+  .qpos               -> grava a tua posicao atual em Data\posicoes.txt
+                          (para descobrires coordenadas certas dos passos)
+  .qstate             -> escreve o estado REAL das quests (feitas / a meio
+                          / contadores) no syserr_guide.txt e em
+                          Data\quest_state.txt
+  .qdump              -> dump das APIs do cliente (quest/event/eXLib) para
+                          Data\api_dump.txt + o modulo de quests do cliente
+                          para Data\api_dump_quest.txt (para evoluir o helper)
+
+ESTADO REAL DA CONTA/PERSONAGEM (GuideQuestSync)
+  O cliente (metin2client.exe) tem um modulo python de QUESTS que guarda o
+  que o servidor enviou para a conta/personagem ligada. O guia liga-se a
+  esse modulo (sem enviar pacotes, so' a ler) e usa-o para:
+    - saber que missoes estao ATIVAS (a meio) e quais JA' FORAM FEITAS
+      -> [>] e [x] na quest line, filtros "Em curso" / "Feitas" / "A fazer"
+    - saltar automaticamente para a missao em curso (botao Segue:ON)
+    - sincronizar os CONTADORES reais (mortes/itens) com o passo atual
+    - apanhar o SUBTITULO real da missao (o texto do jogo, em turco)
+  O que fica gravado (sobrevive a reinicios):
+    MT2Guide\Saves\<personagem>_quests.txt   (ativas + feitas + contadores)
+    MT2Guide\Saves\<personagem>_feitas.txt   (missoes feitas - filtro "A fazer")
+    MT2Guide\Data\quest_state.txt            (ultimo retrato, diagnostico)
+    MT2Guide\Data\api_dump_quest.txt         (API do modulo de quests)
+  IMPORTANTE: a API deste modulo muda de cliente para cliente. Na 1a
+  utilizacao o guia faz um DUMP em Data\api_dump_quest.txt: se alguma coisa
+  nao ligar (ex.: o filtro "Em curso" fica vazio), manda esse ficheiro +
+  syserr_guide.txt e o helper passa a usar os nomes EXATOS do teu cliente.
+  Tambem e' possivel marcar a mao: botao "Concluir" (marca a missao atual
+  como feita) - funciona sempre, mesmo sem o modulo do cliente.
+
+INSTALACAO
+  MODO RECOMENDADO (cliente separado e limpo):
+    Usa a pasta D:\metin2\tr-TR - e' o jogo original completo, SEM
+    nenhum bot/cheat, ja' com o MT2Guide + init.py puro instalados.
+    (Criada com criar-cliente-guia.bat a partir do tr-TR-Bots,
+    excluindo MT2Robs/OpenBot/.freebuff/logs/telemetria. O cliente
+    com os bots ficou em D:\metin2\tr-TR-Bots.)
+
+  MODO MANUAL (meter o guia noutro cliente):
+    1. COPIAR a pasta MT2Guide para a RAIZ desse cliente
+    2. Se o cliente tem um init.py de bots: renomeia para init_bots.py
+       e poe este init_guide.py como init.py
+    3. Abrir o jogo -> o guia abre sozinho quando entras no mundo
+
+BASE DE DADOS DE QUESTS (MT2Guide\Data\quests_*.txt)
+  Cada ficheiro quests_*.txt e' carregado. Formato (ver quests_exemplo.txt):
+
+    [QUEST]
+    name = Nome da missao
+    name_pt = Nome em portugues       (opcional, usado na lista/pesquisa)
+    map  = metin2_map_a1        (vazio = qualquer mapa)
+    level = 5
+    type = principal            (opcional: principal/secundaria/caca/
+                                 biologo/cavalo/yohara/evento/premium;
+                                 se nao disseres nada o guia DEDUZ do
+                                 comentario "# giver: X (main|side)",
+                                 do nome do ficheiro e dos passos)
+    steps:
+      talk    | Guarda | 9010 |    | 62000,63000 | Fala com o Guarda | 1:Devam
+      kill    | Cao selvagem | 171 | 9 | 58000,64000 | Mata 9 caes |
+      kill    | Cao Selvagem Feroz / Lobo Feroz | | 10 | | Escolhe 1 de 2 | | cat=caca;op1=10:Cao Selvagem Feroz;op2=5:Lobo Feroz
+      collect | Presa | 30027 | 5  |    | Apanha 5 presas | cat=caca
+      goto    | | | | 56000,61000 | Vai ate a ponte |
+      turnin  | Guarda | 9010 |    | 62000,63000 | Entrega | 1:Kabul Et
+
+    Coluna 8 (opcional, tokens separados por ;):
+      cat=caca            -> este PASSO conta no filtro "Caca"
+      sub=fala com o X    -> subtitulo/dica do passo (aparece no guia e
+                             entra na pesquisa)
+      op1=10:Nome do mob  -> MISSAO DE CACA "escolhe 1 de 2": a opcao 1
+      op2=5:Outro mob        pede 10 desse mob e a opcao 2 pede 5 do
+                             outro. Aceita tambem o vnum no fim, quando
+                             o souberes:  op1=10:Cao Selvagem Feroz:171
+                             (a mira procura os mobs pelo NOME; se o
+                              cliente nao der nomes, o guia aprende o
+                              vnum em jogo em Data\mobs_vnum.txt)
+
+    MISSOES DE CACA tambem aceitam o formato ANTIGO (2 vnums no mesmo
+    passo, sem nomes): kill | Cao OU Lobo | 171,181 | 9 | ... | Mata 9
+    -> qualquer um dos dois conta e a mira segue o mob que escolheres.
+
+  FICHEIROS DA BASE DE DADOS:
+    quests_wiki.txt     228 quests LIVRES (F2P) da wiki oficial EN,
+                        corrigidas com a wiki TR (2026-09). Lv1-120.
+                        >>> COM DADOS OFICIAIS DO SERVIDOR (ficheiros
+                        publicos share/locale npc.txt + mob_names TR):
+                        - vnum REAL de cada NPC/mob (encontra-o ao vivo)
+                        - nome do passo em TURCO (igual ao cliente)
+                        - posicao de spawn POR REINO nas vilas (s/c/j)
+                          e COMUM nos outros mapas (torre, deserto...)
+                        (conteudo 2016+ tipo Theowahdan/Guardians da
+                        floresta/Yohara ainda nao tem vnum/pos)
+    quests_caca.txt     118 MISSOES DE CACA (Lv2-119) da wiki PT
+                        ("Missoes de Caca"). Lv2-70 = escolhe 1 de 2
+                        (op1/op2 com o mob e a quantidade); Lv71-119 =
+                        um so' mob. Pesquisa pelo nome do mob.
+    quests_yohara.txt   21 quests de YOHARA/Dongan Ovasi (wiki TR) que
+                        faltavam na wiki EN. Nomes em TR (como no cliente).
+    quests_extra.txt    At Gorevleri (quests de cavalo, Lv25/35/50/Champ).
+    quests_premium.txt  [P] premium: DIAMOND DIA Nite (Alan Kontrolu,
+                        Server First, Lonca Gorevleri), RUBY Lucifer,
+                        Gorev Kitabi, Metin+.
+    quests_exemplo.txt  exemplos/tutorial (podes apagar).
+  (prefixo [P] no name = aparece no filtro "Prem" da quest line)
+
+  - posicoes: unidades de pixel do cliente (ingame*100). Descobre-as com
+    .qpos ou com o gravador ligado.
+  - REINOS: nas cidades 1/2 a posicao dos NPCs e' POR REINO
+    (a1/a2=Shinsoo/vermelho, b1/b2=Chunjo/amarelo, c1/c2=Jinno/azul):
+      talk | Guarda | 9010 | | s:62000,63000;c:64000,65000;j:66000,67000 | ...
+    Fora das cidades 1/2 (vale, torre, deserto, Sohan...) e' COMUM:
+    usa so' "x,y". O guia deteta o teu reino pelo mapa e escolhe a
+    posicao certa; o GRAVADOR carimba o reino automaticamente.
+  - dialog: "N:Etiqueta" -> N = o quadrado a escolher no dialogo.
+    No cliente TR os botoes costumam ser: Devam, Kabul Et, Reddet,
+    Kapat, Tamam. O NUMERO (N) e' o que importa para a dica.
+  - name_pt: titulo em PORTUGUES da missao (opcional). A pesquisa da
+    quest line aceita escrever em PT ou em EN; o titulo mostrado e' o
+    PT quando existe.
+  - type / cat: os FILTROS DO JOGO. O guia ja' deduz o tipo de quase
+    tudo (os comentarios "# giver: X (main)" da wiki dao' as principais)
+    e marca como CACA as missoes em que SO' se mata/apanha (com passos
+    de caminho pelo meio). Podes forcar: type = caca na missao, ou
+    cat=caca num passo.
+
+COMO CRIAR QUESTS RAPIDAMENTE (o "aprender = gravar")
+  1. Abre o guia, escolhe uma quest qualquer, carrega "Gravar:ON"
+  2. Joga normalmente: clica nos NPCs, escolhe os dialogos certos,
+     mata os mobs pedidos
+  3. Tudo fica anotado em Data\quests_gravadas.txt com os vnums e as
+     posicoes REAIS
+  4. Edita o ficheiro: apaga o lixo, ajusta os textos, acrescenta
+     "N:Kabul Et" nos passos talk/turnin, muda o name= e move o bloco
+     para um quests_minhas.txt
+  5. No guia: botao "Recarregar" -> as quests novas aparecem no combo
+
+FICHEIROS
+  MT2Guide\Modules\GuideLib.py      biblioteca (seta, relogio, instancias,
+                                    texto: pesquisa sem acentos)
+  MT2Guide\Modules\GuideData.py     base de dados + tipos + progresso +
+                                    missoes feitas + gravador
+  MT2Guide\Modules\GuideQuestSync.py  ponte com o sistema de quests do
+                                    CLIENTE (estado real da conta/char)
+  MT2Guide\Modules\GuideDialog.py   dica de dialogo (observa, nao responde)
+  MT2Guide\Modules\GuideNav.py      HUD seta+distancia+apontador 3D
+  MT2Guide\Modules\GuideMark.py     MIRA VERMELHA por cima dos mobs que a
+                                    missao manda matar (+ nome e contador)
+  MT2Guide\Modules\GuideUI.py       janela principal + quest line
+  init_guide.py                     init so' com o guia (renomear p/ init.py)
+  MT2Guide\Saves\*.txt              progresso + missoes feitas (por char)
+  MT2Guide\Data\mobs_vnum.txt       vnum de cada mob, APRENDIDO em jogo
+                                    (vnum|nome; pode ser apagado - o guia
+                                    volta a aprender sozinho)
+  MT2Guide\Data\arrow_up.tga        gerado sozinho na 1a vez (seta)
+  MT2Guide\Data\mira_mob.tga        gerado sozinho na 1a vez (mira)
+  MT2Guide\Data\api_dump_quest.txt  API de quests do cliente (diagnostico)
+  MT2Guide\Data\quest_state.txt     estado das quests do jogo (diagnostico)
+  syserr_guide.txt                  log do guia (erros/estados)
+
+NOTAS
+  - Os hooks de dialogo sao PASS-THROUGH: o guia so' OBSERVA o que
+    escolhes para avanxar o passo. Nunca responde por ti.
+  - Se o cliente nao expor a rotacao da camera, a seta do ecra assume
+    norte para cima (como o atlas). O apontador 3D e' sempre exato.
+  - Quests com niveis: mostra "LvX" no combo; escolhe manualmente.

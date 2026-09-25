@@ -1,0 +1,59 @@
+# MT2Guide - AT GOREVLERI (quests de cavalo) que faltavam nas listas da wiki
+# Fonte: tr-wiki.metin2.gameforge.com "Binicilik / At Gorevleri"
+# Requisitos: At Madalyonu (medalha de cavalo) no inventario + nivel min.
+# NAO desmontes nem teleportes durante a quest (falha e recomeca a espera).
+# NOTA: aceita a quest na vila 1 (nao na vila 2!).
+
+[QUEST]
+name = At Resmi Gorevi (At Lv1-10)
+name_pt = Insignia do cavalo (At Lv1-10)
+map =
+level = 25
+# giver: Seyis - precisa de At Madalyonu; recompensa: At Resmi (cavalo normal)
+steps:
+  talk | Seyis | | | | Fala com o Seyis com um At Madalyonu no inventario |
+  goto | | | | | At Lv2-6: vai aos pontos marcados na vila (1-2 pontos, montado) |
+  goto | | | | | At Lv7-8: teleporta pela aba Missoes do Jogo e vai a 3-5 pontos (Seungryong Vadisi ou Yongbi Colu) |
+  goto | | | | | At Lv9-10: 4-5 pontos (Sohan Dagi ou Doyyumhwan) |
+  turnin | Seyis | | | | Recebe o At Resmi (espera antes de poder voltar a subir de nivel) |
+
+[QUEST]
+name = Zirhli At Kitabi Gorevi (At Lv11-20)
+name_pt = Livro do cavalo blindado (At Lv11-20)
+map =
+level = 35
+# giver: Seyis - combate MONTADO; recompensa: Zirhli At Kitabi
+steps:
+  talk | Seyis | | | | Fala com o Seyis (At Madalyonu no inventario) |
+  kill | Bo | | 5 | | Montado: mata 5x Bo |
+  kill | Chuong | | 5 | | Montado: mata 5x Chuong |
+  kill | Elit Ork Generali | | 10 | | Montado: mata 10x Elit Ork Generali |
+  kill | Siyah Ork | | 10 | | Montado: mata 10x Siyah Ork |
+  kill | Karanlik Iskenceci | | 10 | | Montado: mata 10x Karanlik Iskenceci |
+  kill | Zehirli Pence Orumcek | | 10 | | Montado: mata 10x Zehirli Pence Orumcek |
+  kill | Col Haydutu | | 20 | | Montado: mata 20x Col Haydutu |
+  kill | Buz Golemi | | 10 | | Montado: mata 10x Buz Golemi |
+  kill | Savas Kaplani | | 20 | | Montado: mata 20x Savas Kaplani |
+  turnin | Seyis | | | | Recebe o Zirhli At Kitabi (cavalo blindado, Lv11-20) |
+
+[QUEST]
+name = Asker At Kitabi Gorevi (At Lv21)
+name_pt = Livro do cavalo militar (At Lv21)
+map =
+level = 50
+# giver: Seyis - desbloqueia as competencias de equitacao
+steps:
+  talk | Seyis | | | | Fala com o Seyis (At Madalyonu no inventario) |
+  goto | | | | | Completa a prova de equitacao (nao desmontes!) |
+  turnin | Seyis | | | | Recebe o Asker At Kitabi + 1 slot de competencia de cavalo |
+
+[QUEST]
+name = Altin At Kitabi Gorevi (At Lv31)
+name_pt = Livro do cavalo dourado (At Lv31)
+map =
+level = 120
+# giver: Seyis - requer nivel CHAMPION
+steps:
+  talk | Seyis | | | | Fala com o Seyis (nivel champion) |
+  goto | | | | | Progressao At Lv21-40: 50x At Yemi + Yang por nivel (via quest At Yemi Kazandin) |
+  turnin | Seyis | | | | Recebe o Altin At Kitabi (cavalo dourado, 2 slots de competencia) |

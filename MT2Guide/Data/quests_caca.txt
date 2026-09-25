@@ -1,0 +1,976 @@
+# MT2Guide - MISSOES DE CACA (avlanma gorevi / missao de caça)
+# Fonte: pt-wiki.metin2.gameforge.com  ->  "Missões de Caça" (Lv 2 a 119)
+# ============================================================================
+# COMO FUNCIONAM (no jogo):
+#   - falas com o NPC das missoes de caca e ele da-te DUAS OPCOES;
+#   - escolhes UMA (ex: "10x Cao Selvagem Feroz" ou "5x Lobo Feroz");
+#   - o jogo passa a contar SO' o mob da opcao que escolheste;
+#   - se saires/teleportares antes de escolher, o jogo escolhe uma por ti;
+#   - recompensa: EXP + Yang + item aleatorio.
+#
+# O QUE O GUIA FAZ COM ESTAS MISSOES:
+#   - o passo mostra O MOB E A QUANTIDADE DE CADA OPCAO
+#     ("ESCOLHE 1 DE 2: [1] mata 10x Cao Selvagem Feroz  ou  [2] mata 5x Lobo Feroz");
+#   - o guia DESCOBRE sozinho qual escolheste (pelo mob que travaste/mataste)
+#     e, se nao conseguir, tu dizes: botoes  Op.1  /  Op.2;
+#   - a MIRA VERMELHA fica em cima do mob que conta e o contador (3/10)
+#     sobrevive a sair do jogo (MT2Guide\Saves\<personagem>.txt).
+#
+# FORMATO DOS PASSOS DE CACA (coluna 8 = extra):
+#   cat=caca
+#   op1=<quantidade>:<nome do mob da opcao 1>   [:<vnum> se o souberes]
+#   op2=<quantidade>:<nome do mob da opcao 2>   [:<vnum> se o souberes]
+#   sub=<dica>
+#   Os vnums dos mobs "Feroz"/"Mau"/"Elite" nao existem em nenhum ficheiro
+#   que o guia consiga ler -> o guia APRENDE-OS em jogo e guarda-os em
+#   MT2Guide\Data\mobs_vnum.txt (podes editar esse ficheiro a mao).
+#   Escreve sempre o NOME COMPLETO do mob: e' por ele que a mira o encontra.
+# ============================================================================
+
+[QUEST]
+name = Missao de Caca Lv2
+name_pt = Caca Lv2: Cao Selvagem Feroz (10x) ou Lobo Feroz (5x)
+level = 2
+type = caca
+steps:
+  kill | Cao Selvagem Feroz / Lobo Feroz | | 10 | | Caca Lv2: escolhe 1 de 2 - mata 10x Cao Selvagem Feroz OU 5x Lobo Feroz | | cat=caca;op1=10:Cao Selvagem Feroz;op2=5:Lobo Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv3
+name_pt = Caca Lv3: Cao Selvagem Feroz (20x) ou Lobo Feroz (10x)
+level = 3
+type = caca
+steps:
+  kill | Cao Selvagem Feroz / Lobo Feroz | | 20 | | Caca Lv3: escolhe 1 de 2 - mata 20x Cao Selvagem Feroz OU 10x Lobo Feroz | | cat=caca;op1=20:Cao Selvagem Feroz;op2=10:Lobo Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv4
+name_pt = Caca Lv4: Lobo Feroz (15x) ou Lobo Alfa Feroz (5x)
+level = 4
+type = caca
+steps:
+  kill | Lobo Feroz / Lobo Alfa Feroz | | 15 | | Caca Lv4: escolhe 1 de 2 - mata 15x Lobo Feroz OU 5x Lobo Alfa Feroz | | cat=caca;op1=15:Lobo Feroz;op2=5:Lobo Alfa Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv5
+name_pt = Caca Lv5: Lobo Alfa Feroz (10x) ou Lobo Azul Feroz (10x)
+level = 5
+type = caca
+steps:
+  kill | Lobo Alfa Feroz / Lobo Azul Feroz | | 10 | | Caca Lv5: escolhe 1 de 2 - mata 10x Lobo Alfa Feroz OU 10x Lobo Azul Feroz | | cat=caca;op1=10:Lobo Alfa Feroz;op2=10:Lobo Azul Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv6
+name_pt = Caca Lv6: Lobo Azul Feroz (20x) ou Javali Selvagem Feroz (10x)
+level = 6
+type = caca
+steps:
+  kill | Lobo Azul Feroz / Javali Selvagem Feroz | | 20 | | Caca Lv6: escolhe 1 de 2 - mata 20x Lobo Azul Feroz OU 10x Javali Selvagem Feroz | | cat=caca;op1=20:Lobo Azul Feroz;op2=10:Javali Selvagem Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv7
+name_pt = Caca Lv7: Javali Selvagem Feroz (10x) ou Lobo Alfa Azul Feroz (5x)
+level = 7
+type = caca
+steps:
+  kill | Javali Selvagem Feroz / Lobo Alfa Azul Feroz | | 10 | | Caca Lv7: escolhe 1 de 2 - mata 10x Javali Selvagem Feroz OU 5x Lobo Alfa Azul Feroz | | cat=caca;op1=10:Javali Selvagem Feroz;op2=5:Lobo Alfa Azul Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv8
+name_pt = Caca Lv8: Javali Selvagem Feroz (20x) ou Lobo Alfa Azul Feroz (10x)
+level = 8
+type = caca
+steps:
+  kill | Javali Selvagem Feroz / Lobo Alfa Azul Feroz | | 20 | | Caca Lv8: escolhe 1 de 2 - mata 20x Javali Selvagem Feroz OU 10x Lobo Alfa Azul Feroz | | cat=caca;op1=20:Javali Selvagem Feroz;op2=10:Lobo Alfa Azul Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv9
+name_pt = Caca Lv9: Lobo Alfa Azul Feroz (15x) ou Javali Vermelho Feroz (5x)
+level = 9
+type = caca
+steps:
+  kill | Lobo Alfa Azul Feroz / Javali Vermelho Feroz | | 15 | | Caca Lv9: escolhe 1 de 2 - mata 15x Lobo Alfa Azul Feroz OU 5x Javali Vermelho Feroz | | cat=caca;op1=15:Lobo Alfa Azul Feroz;op2=5:Javali Vermelho Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv10
+name_pt = Caca Lv10: Lobo Alfa Azul Feroz (20x) ou Javali Vermelho Feroz (10x)
+level = 10
+type = caca
+steps:
+  kill | Lobo Alfa Azul Feroz / Javali Vermelho Feroz | | 20 | | Caca Lv10: escolhe 1 de 2 - mata 20x Lobo Alfa Azul Feroz OU 10x Javali Vermelho Feroz | | cat=caca;op1=20:Lobo Alfa Azul Feroz;op2=10:Javali Vermelho Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv11
+name_pt = Caca Lv11: Javali Vermelho Feroz (10x) ou Urso Feroz (5x)
+level = 11
+type = caca
+steps:
+  kill | Javali Vermelho Feroz / Urso Feroz | | 10 | | Caca Lv11: escolhe 1 de 2 - mata 10x Javali Vermelho Feroz OU 5x Urso Feroz | | cat=caca;op1=10:Javali Vermelho Feroz;op2=5:Urso Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv12
+name_pt = Caca Lv12: Urso Feroz (15x) ou Lobo Cinza Feroz (10x)
+level = 12
+type = caca
+steps:
+  kill | Urso Feroz / Lobo Cinza Feroz | | 15 | | Caca Lv12: escolhe 1 de 2 - mata 15x Urso Feroz OU 10x Lobo Cinza Feroz | | cat=caca;op1=15:Urso Feroz;op2=10:Lobo Cinza Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv13
+name_pt = Caca Lv13: Lobo Cinza Feroz (20x) ou Urso Cinza Feroz (5x)
+level = 13
+type = caca
+steps:
+  kill | Lobo Cinza Feroz / Urso Cinza Feroz | | 20 | | Caca Lv13: escolhe 1 de 2 - mata 20x Lobo Cinza Feroz OU 5x Urso Cinza Feroz | | cat=caca;op1=20:Lobo Cinza Feroz;op2=5:Urso Cinza Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv14
+name_pt = Caca Lv14: Urso Cinza Feroz (15x) ou Lobo Alfa Cinza Feroz (5x)
+level = 14
+type = caca
+steps:
+  kill | Urso Cinza Feroz / Lobo Alfa Cinza Feroz | | 15 | | Caca Lv14: escolhe 1 de 2 - mata 15x Urso Cinza Feroz OU 5x Lobo Alfa Cinza Feroz | | cat=caca;op1=15:Urso Cinza Feroz;op2=5:Lobo Alfa Cinza Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv15
+name_pt = Caca Lv15: Urso Cinza Feroz (20x) ou Lobo Alfa Cinza Feroz (10x)
+level = 15
+type = caca
+steps:
+  kill | Urso Cinza Feroz / Lobo Alfa Cinza Feroz | | 20 | | Caca Lv15: escolhe 1 de 2 - mata 20x Urso Cinza Feroz OU 10x Lobo Alfa Cinza Feroz | | cat=caca;op1=20:Urso Cinza Feroz;op2=10:Lobo Alfa Cinza Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv16
+name_pt = Caca Lv16: Lobo Alfa Cinza Feroz (15x) ou Tigre Feroz (5x)
+level = 16
+type = caca
+steps:
+  kill | Lobo Alfa Cinza Feroz / Tigre Feroz | | 15 | | Caca Lv16: escolhe 1 de 2 - mata 15x Lobo Alfa Cinza Feroz OU 5x Tigre Feroz | | cat=caca;op1=15:Lobo Alfa Cinza Feroz;op2=5:Tigre Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv17
+name_pt = Caca Lv17: Lobo Alfa Cinza Feroz (20x) ou Tigre Feroz (10x)
+level = 17
+type = caca
+steps:
+  kill | Lobo Alfa Cinza Feroz / Tigre Feroz | | 20 | | Caca Lv17: escolhe 1 de 2 - mata 20x Lobo Alfa Cinza Feroz OU 10x Tigre Feroz | | cat=caca;op1=20:Lobo Alfa Cinza Feroz;op2=10:Tigre Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv18
+name_pt = Caca Lv18: Tigre Feroz (10x) ou Urso Negro Feroz (10x)
+level = 18
+type = caca
+steps:
+  kill | Tigre Feroz / Urso Negro Feroz | | 10 | | Caca Lv18: escolhe 1 de 2 - mata 10x Tigre Feroz OU 10x Urso Negro Feroz | | cat=caca;op1=10:Tigre Feroz;op2=10:Urso Negro Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv19
+name_pt = Caca Lv19: Urso Negro Feroz (20x) ou Urso Castanho Feroz (10x)
+level = 19
+type = caca
+steps:
+  kill | Urso Negro Feroz / Urso Castanho Feroz | | 20 | | Caca Lv19: escolhe 1 de 2 - mata 20x Urso Negro Feroz OU 10x Urso Castanho Feroz | | cat=caca;op1=20:Urso Negro Feroz;op2=10:Urso Castanho Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv20
+name_pt = Caca Lv20: Urso Castanho Feroz (20x) ou Arqueira Jura de Rubi (15x)
+level = 20
+type = caca
+steps:
+  kill | Urso Castanho Feroz / Arqueira Jura de Rubi | | 20 | | Caca Lv20: escolhe 1 de 2 - mata 20x Urso Castanho Feroz OU 15x Arqueira Jura de Rubi | | cat=caca;op1=20:Urso Castanho Feroz;op2=15:Arqueira Jura de Rubi;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv21
+name_pt = Caca Lv21: Arqueira Jura de Rubi (20x) ou Tigre Branco Feroz (10x)
+level = 21
+type = caca
+steps:
+  kill | Arqueira Jura de Rubi / Tigre Branco Feroz | | 20 | | Caca Lv21: escolhe 1 de 2 - mata 20x Arqueira Jura de Rubi OU 10x Tigre Branco Feroz | | cat=caca;op1=20:Arqueira Jura de Rubi;op2=10:Tigre Branco Feroz;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv22
+name_pt = Caca Lv22: Tigre Branco Feroz (15x) ou Capita Jura de Rubi (10x)
+level = 22
+type = caca
+steps:
+  kill | Tigre Branco Feroz / Capita Jura de Rubi | | 15 | | Caca Lv22: escolhe 1 de 2 - mata 15x Tigre Branco Feroz OU 10x Capita Jura de Rubi | | cat=caca;op1=15:Tigre Branco Feroz;op2=10:Capita Jura de Rubi;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv23
+name_pt = Caca Lv23: Capita Jura de Rubi (20x) ou Soldado Trovao Mau (40x)
+level = 23
+type = caca
+steps:
+  kill | Capita Jura de Rubi / Soldado Trovao Mau | | 20 | | Caca Lv23: escolhe 1 de 2 - mata 20x Capita Jura de Rubi OU 40x Soldado Trovao Mau | | cat=caca;op1=20:Capita Jura de Rubi;op2=40:Soldado Trovao Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv24
+name_pt = Caca Lv24: Soldado Trovao Mau (60x) ou Maniaco Vento Negro (80x)
+level = 24
+type = caca
+steps:
+  kill | Soldado Trovao Mau / Maniaco Vento Negro | | 60 | | Caca Lv24: escolhe 1 de 2 - mata 60x Soldado Trovao Mau OU 80x Maniaco Vento Negro | | cat=caca;op1=60:Soldado Trovao Mau;op2=80:Maniaco Vento Negro;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv25
+name_pt = Caca Lv25: Infantaria Selvagem Mau (80x) ou Joh-Hwan Trovao Mau (20x)
+level = 25
+type = caca
+steps:
+  kill | Infantaria Selvagem Mau / Joh-Hwan Trovao Mau | | 80 | | Caca Lv25: escolhe 1 de 2 - mata 80x Infantaria Selvagem Mau OU 20x Joh-Hwan Trovao Mau | | cat=caca;op1=80:Infantaria Selvagem Mau;op2=20:Joh-Hwan Trovao Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv26
+name_pt = Caca Lv26: Sarrafeiro Selvagem Mau (80x) ou Pho-Hwan Trovao Mau (20x)
+level = 26
+type = caca
+steps:
+  kill | Sarrafeiro Selvagem Mau / Pho-Hwan Trovao Mau | | 80 | | Caca Lv26: escolhe 1 de 2 - mata 80x Sarrafeiro Selvagem Mau OU 20x Pho-Hwan Trovao Mau | | cat=caca;op1=80:Sarrafeiro Selvagem Mau;op2=20:Pho-Hwan Trovao Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv27
+name_pt = Caca Lv27: Pho-Hwan Trovao Mau (30x) ou General Selvagem Mau (20x)
+level = 27
+type = caca
+steps:
+  kill | Pho-Hwan Trovao Mau / General Selvagem Mau | | 30 | | Caca Lv27: escolhe 1 de 2 - mata 30x Pho-Hwan Trovao Mau OU 20x General Selvagem Mau | | cat=caca;op1=30:Pho-Hwan Trovao Mau;op2=20:General Selvagem Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv28
+name_pt = Caca Lv28: Orc Mau Corajoso (35x) ou General Selvagem Mau (30x)
+level = 28
+type = caca
+steps:
+  kill | Orc Mau Corajoso / General Selvagem Mau | | 35 | | Caca Lv28: escolhe 1 de 2 - mata 35x Orc Mau Corajoso OU 30x General Selvagem Mau | | cat=caca;op1=35:Orc Mau Corajoso;op2=30:General Selvagem Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv29
+name_pt = Caca Lv29: Orc Mau Corajoso (30x) ou Soldado Macaco Fraco (30x)
+level = 29
+type = caca
+steps:
+  kill | Orc Mau Corajoso / Soldado Macaco Fraco | | 30 | | Caca Lv29: escolhe 1 de 2 - mata 30x Orc Mau Corajoso OU 30x Soldado Macaco Fraco | | cat=caca;op1=30:Orc Mau Corajoso;op2=30:Soldado Macaco Fraco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv30
+name_pt = Caca Lv30: Orc Explorador Corajoso (40x) ou Olho Voador do Deserto (30x)
+level = 30
+type = caca
+steps:
+  kill | Orc Explorador Corajoso / Olho Voador do Deserto | | 40 | | Caca Lv30: escolhe 1 de 2 - mata 40x Orc Explorador Corajoso OU 30x Olho Voador do Deserto | | cat=caca;op1=40:Orc Explorador Corajoso;op2=30:Olho Voador do Deserto;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv31
+name_pt = Caca Lv31: Orc Lutador Mau Corajoso (50x) ou Lutador Macaco Fraco (45x)
+level = 31
+type = caca
+steps:
+  kill | Orc Lutador Mau Corajoso / Lutador Macaco Fraco | | 50 | | Caca Lv31: escolhe 1 de 2 - mata 50x Orc Lutador Mau Corajoso OU 45x Lutador Macaco Fraco | | cat=caca;op1=50:Orc Lutador Mau Corajoso;op2=45:Lutador Macaco Fraco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv32
+name_pt = Caca Lv32: Rei Escorpiao (45x) ou General Macaco Fraco (40x)
+level = 32
+type = caca
+steps:
+  kill | Rei Escorpiao / General Macaco Fraco | | 45 | | Caca Lv32: escolhe 1 de 2 - mata 45x Rei Escorpiao OU 40x General Macaco Fraco | | cat=caca;op1=45:Rei Escorpiao;op2=40:General Macaco Fraco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv33
+name_pt = Caca Lv33: Orc Mau Corajoso (35x) ou Olho Voador do Deserto (30x)
+level = 33
+type = caca
+steps:
+  kill | Orc Mau Corajoso / Olho Voador do Deserto | | 35 | | Caca Lv33: escolhe 1 de 2 - mata 35x Orc Mau Corajoso OU 30x Olho Voador do Deserto | | cat=caca;op1=35:Orc Mau Corajoso;op2=30:Olho Voador do Deserto;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv34
+name_pt = Caca Lv34: Orc Explorador Elite (40x) ou Rei Escorpiao (40x)
+level = 34
+type = caca
+steps:
+  kill | Orc Explorador Elite / Rei Escorpiao | | 40 | | Caca Lv34: escolhe 1 de 2 - mata 40x Orc Explorador Elite OU 40x Rei Escorpiao | | cat=caca;op1=40:Orc Explorador Elite;op2=40:Rei Escorpiao;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv35
+name_pt = Caca Lv35: Orc Lutador Mau Corajoso (40x) ou Bebe Aranha (20x)
+level = 35
+type = caca
+steps:
+  kill | Orc Lutador Mau Corajoso / Bebe Aranha | | 40 | | Caca Lv35: escolhe 1 de 2 - mata 40x Orc Lutador Mau Corajoso OU 20x Bebe Aranha | | cat=caca;op1=40:Orc Lutador Mau Corajoso;op2=20:Bebe Aranha;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv36
+name_pt = Caca Lv36: Orc Mago Mau Corajoso (30x) ou Homem Escorpiao Jovem (20x)
+level = 36
+type = caca
+steps:
+  kill | Orc Mago Mau Corajoso / Homem Escorpiao Jovem | | 30 | | Caca Lv36: escolhe 1 de 2 - mata 30x Orc Mago Mau Corajoso OU 20x Homem Escorpiao Jovem | | cat=caca;op1=30:Orc Mago Mau Corajoso;op2=20:Homem Escorpiao Jovem;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv37
+name_pt = Caca Lv37: Orc General Elite (30x) ou Homem Escorpiao Jovem (20x)
+level = 37
+type = caca
+steps:
+  kill | Orc General Elite / Homem Escorpiao Jovem | | 30 | | Caca Lv37: escolhe 1 de 2 - mata 30x Orc General Elite OU 20x Homem Escorpiao Jovem | | cat=caca;op1=30:Orc General Elite;op2=20:Homem Escorpiao Jovem;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv38
+name_pt = Caca Lv38: Grande Fanatico (30x) ou Aranha Mortal Ma (25x)
+level = 38
+type = caca
+steps:
+  kill | Grande Fanatico / Aranha Mortal Ma | | 30 | | Caca Lv38: escolhe 1 de 2 - mata 30x Grande Fanatico OU 25x Aranha Mortal Ma | | cat=caca;op1=30:Grande Fanatico;op2=25:Aranha Mortal Ma;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv39
+name_pt = Caca Lv39: Grande Arahan (30x) ou Aranha Mortal Ma (30x)
+level = 39
+type = caca
+steps:
+  kill | Grande Arahan / Aranha Mortal Ma | | 30 | | Caca Lv39: escolhe 1 de 2 - mata 30x Grande Arahan OU 30x Aranha Mortal Ma | | cat=caca;op1=30:Grande Arahan;op2=30:Aranha Mortal Ma;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv40
+name_pt = Caca Lv40: Grande Arahan Elite (30x) ou Arqueiro Escorpiao (35x)
+level = 40
+type = caca
+steps:
+  kill | Grande Arahan Elite / Arqueiro Escorpiao | | 30 | | Caca Lv40: escolhe 1 de 2 - mata 30x Grande Arahan Elite OU 35x Arqueiro Escorpiao | | cat=caca;op1=30:Grande Arahan Elite;op2=35:Arqueiro Escorpiao;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv41
+name_pt = Caca Lv41: Grande Arahan Elite (40x) ou Serpente Guerreiro (40x)
+level = 41
+type = caca
+steps:
+  kill | Grande Arahan Elite / Serpente Guerreiro | | 40 | | Caca Lv41: escolhe 1 de 2 - mata 40x Grande Arahan Elite OU 40x Serpente Guerreiro | | cat=caca;op1=40:Grande Arahan Elite;op2=40:Serpente Guerreiro;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv42
+name_pt = Caca Lv42: Executor Esoterico (40x) ou Aranha Vermelha (45x)
+level = 42
+type = caca
+steps:
+  kill | Executor Esoterico / Aranha Vermelha | | 40 | | Caca Lv42: escolhe 1 de 2 - mata 40x Executor Esoterico OU 45x Aranha Vermelha | | cat=caca;op1=40:Executor Esoterico;op2=45:Aranha Vermelha;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv43
+name_pt = Caca Lv43: Grande Atormentador (40x) ou Aranha Rubi (30x)
+level = 43
+type = caca
+steps:
+  kill | Grande Atormentador / Aranha Rubi | | 40 | | Caca Lv43: escolhe 1 de 2 - mata 40x Grande Atormentador OU 30x Aranha Rubi | | cat=caca;op1=40:Grande Atormentador;op2=30:Aranha Rubi;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv44
+name_pt = Caca Lv44: Grande Conjurador (40x) ou Aranha Soldado (30x)
+level = 44
+type = caca
+steps:
+  kill | Grande Conjurador / Aranha Soldado | | 40 | | Caca Lv44: escolhe 1 de 2 - mata 40x Grande Conjurador OU 30x Aranha Soldado | | cat=caca;op1=40:Grande Conjurador;op2=30:Aranha Soldado;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv45
+name_pt = Caca Lv45: Orc Preto Corajoso (50x) ou Bandido do Deserto Forte (35x)
+level = 45
+type = caca
+steps:
+  kill | Orc Preto Corajoso / Bandido do Deserto Forte | | 50 | | Caca Lv45: escolhe 1 de 2 - mata 50x Orc Preto Corajoso OU 35x Bandido do Deserto Forte | | cat=caca;op1=50:Orc Preto Corajoso;op2=35:Bandido do Deserto Forte;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv46
+name_pt = Caca Lv46: Arahan Veneno (30x) ou Soldado Macaco (40x)
+level = 46
+type = caca
+steps:
+  kill | Arahan Veneno / Soldado Macaco | | 30 | | Caca Lv46: escolhe 1 de 2 - mata 30x Arahan Veneno OU 40x Soldado Macaco | | cat=caca;op1=30:Arahan Veneno;op2=40:Soldado Macaco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv47
+name_pt = Caca Lv47: Lutador Arahan Veneno (35x) ou Lancador Macaco (40x)
+level = 47
+type = caca
+steps:
+  kill | Lutador Arahan Veneno / Lancador Macaco | | 35 | | Caca Lv47: escolhe 1 de 2 - mata 35x Lutador Arahan Veneno OU 40x Lancador Macaco | | cat=caca;op1=35:Lutador Arahan Veneno;op2=40:Lancador Macaco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv48
+name_pt = Caca Lv48: Chefe Arahan Veneno (40x) ou Lutador Macaco (40x)
+level = 48
+type = caca
+steps:
+  kill | Chefe Arahan Veneno / Lutador Macaco | | 40 | | Caca Lv48: escolhe 1 de 2 - mata 40x Chefe Arahan Veneno OU 40x Lutador Macaco | | cat=caca;op1=40:Chefe Arahan Veneno;op2=40:Lutador Macaco;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv49
+name_pt = Caca Lv49: Executor Veneno (40x) ou Lancador Macaco Forte (45x)
+level = 49
+type = caca
+steps:
+  kill | Executor Veneno / Lancador Macaco Forte | | 40 | | Caca Lv49: escolhe 1 de 2 - mata 40x Executor Veneno OU 45x Lancador Macaco Forte | | cat=caca;op1=40:Executor Veneno;op2=45:Lancador Macaco Forte;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv50
+name_pt = Caca Lv50: Atormentador Veneno (40x) ou Lutador Macaco Forte (45x)
+level = 50
+type = caca
+steps:
+  kill | Atormentador Veneno / Lutador Macaco Forte | | 40 | | Caca Lv50: escolhe 1 de 2 - mata 40x Atormentador Veneno OU 45x Lutador Macaco Forte | | cat=caca;op1=40:Atormentador Veneno;op2=45:Lutador Macaco Forte;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv51
+name_pt = Caca Lv51: Soldado Ra de Arvore (50x) ou Bebe Aranha Venenosa (30x)
+level = 51
+type = caca
+steps:
+  kill | Soldado Ra de Arvore / Bebe Aranha Venenosa | | 50 | | Caca Lv51: escolhe 1 de 2 - mata 50x Soldado Ra de Arvore OU 30x Bebe Aranha Venenosa | | cat=caca;op1=50:Soldado Ra de Arvore;op2=30:Bebe Aranha Venenosa;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv52
+name_pt = Caca Lv52: Lider Ra de Arvore (50x) ou Aranha Mortal (45x)
+level = 52
+type = caca
+steps:
+  kill | Lider Ra de Arvore / Aranha Mortal | | 50 | | Caca Lv52: escolhe 1 de 2 - mata 50x Lider Ra de Arvore OU 45x Aranha Mortal | | cat=caca;op1=50:Lider Ra de Arvore;op2=45:Aranha Mortal;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv53
+name_pt = Caca Lv53: Bogeyman (50x) ou Aranha Vermelha Venenosa (50x)
+level = 53
+type = caca
+steps:
+  kill | Bogeyman / Aranha Vermelha Venenosa | | 50 | | Caca Lv53: escolhe 1 de 2 - mata 50x Bogeyman OU 50x Aranha Vermelha Venenosa | | cat=caca;op1=50:Bogeyman;op2=50:Aranha Vermelha Venenosa;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv54
+name_pt = Caca Lv54: Lider Ra-Arvore Grande (50x) ou Aranha Rubi Venenosa (30x)
+level = 54
+type = caca
+steps:
+  kill | Lider Ra-Arvore Grande / Aranha Rubi Venenosa | | 50 | | Caca Lv54: escolhe 1 de 2 - mata 50x Lider Ra-Arvore Grande OU 30x Aranha Rubi Venenosa | | cat=caca;op1=50:Lider Ra-Arvore Grande;op2=30:Aranha Rubi Venenosa;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv55
+name_pt = Caca Lv55: General Ra-Touro (50x) ou Aranha Coronel Elite (35x)
+level = 55
+type = caca
+steps:
+  kill | General Ra-Touro / Aranha Coronel Elite | | 50 | | Caca Lv55: escolhe 1 de 2 - mata 50x General Ra-Touro OU 35x Aranha Coronel Elite | | cat=caca;op1=50:General Ra-Touro;op2=35:Aranha Coronel Elite;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv56
+name_pt = Caca Lv56: Soldado Demonio (80x) ou Cadaver Fantasma Bravo (30x)
+level = 56
+type = caca
+steps:
+  kill | Soldado Demonio / Cadaver Fantasma Bravo | | 80 | | Caca Lv56: escolhe 1 de 2 - mata 80x Soldado Demonio OU 30x Cadaver Fantasma Bravo | | cat=caca;op1=80:Soldado Demonio;op2=30:Cadaver Fantasma Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv57
+name_pt = Caca Lv57: Arqueiro Demonio (80x) ou Cao Infestado Bravo (40x)
+level = 57
+type = caca
+steps:
+  kill | Arqueiro Demonio / Cao Infestado Bravo | | 80 | | Caca Lv57: escolhe 1 de 2 - mata 80x Arqueiro Demonio OU 40x Cao Infestado Bravo | | cat=caca;op1=80:Arqueiro Demonio;op2=40:Cao Infestado Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv58
+name_pt = Caca Lv58: Demonio Lanceiro (80x) ou Homem Infestado Bravo (45x)
+level = 58
+type = caca
+steps:
+  kill | Demonio Lanceiro / Homem Infestado Bravo | | 80 | | Caca Lv58: escolhe 1 de 2 - mata 80x Demonio Lanceiro OU 45x Homem Infestado Bravo | | cat=caca;op1=80:Demonio Lanceiro;op2=45:Homem Infestado Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv59
+name_pt = Caca Lv59: Demonio Xama (80x) ou Lutador Infestado Bravo (45x)
+level = 59
+type = caca
+steps:
+  kill | Demonio Xama / Lutador Infestado Bravo | | 80 | | Caca Lv59: escolhe 1 de 2 - mata 80x Demonio Xama OU 45x Lutador Infestado Bravo | | cat=caca;op1=80:Demonio Xama;op2=45:Lutador Infestado Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv60
+name_pt = Caca Lv60: Soldado Demonio Bruto (80x) ou Lanceiro Infestado Bravo (40x)
+level = 60
+type = caca
+steps:
+  kill | Soldado Demonio Bruto / Lanceiro Infestado Bravo | | 80 | | Caca Lv60: escolhe 1 de 2 - mata 80x Soldado Demonio Bruto OU 40x Lanceiro Infestado Bravo | | cat=caca;op1=80:Soldado Demonio Bruto;op2=40:Lanceiro Infestado Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv61
+name_pt = Caca Lv61: Demonio Lanceiro Bruto (60x) ou Arqueiro Infestado Bravo (60x)
+level = 61
+type = caca
+steps:
+  kill | Demonio Lanceiro Bruto / Arqueiro Infestado Bravo | | 60 | | Caca Lv61: escolhe 1 de 2 - mata 60x Demonio Lanceiro Bruto OU 60x Arqueiro Infestado Bravo | | cat=caca;op1=60:Demonio Lanceiro Bruto;op2=60:Arqueiro Infestado Bravo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv62
+name_pt = Caca Lv62: Destruidor (60x) ou Gelo Encantado (55x)
+level = 62
+type = caca
+steps:
+  kill | Destruidor / Gelo Encantado | | 60 | | Caca Lv62: escolhe 1 de 2 - mata 60x Destruidor OU 55x Gelo Encantado | | cat=caca;op1=60:Destruidor;op2=55:Gelo Encantado;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv63
+name_pt = Caca Lv63: Golem de Pedra (60x) ou Orca do Gelo (45x)
+level = 63
+type = caca
+steps:
+  kill | Golem de Pedra / Orca do Gelo | | 60 | | Caca Lv63: escolhe 1 de 2 - mata 60x Golem de Pedra OU 45x Orca do Gelo | | cat=caca;op1=60:Golem de Pedra;op2=45:Orca do Gelo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv64
+name_pt = Caca Lv64: Triturador de Pedra (60x) ou Leao do Gelo (45x)
+level = 64
+type = caca
+steps:
+  kill | Triturador de Pedra / Leao do Gelo | | 60 | | Caca Lv64: escolhe 1 de 2 - mata 60x Triturador de Pedra OU 45x Leao do Gelo | | cat=caca;op1=60:Triturador de Pedra;op2=45:Leao do Gelo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv65
+name_pt = Caca Lv65: Guerreiro de Machado (60x) ou Yeti (40x)
+level = 65
+type = caca
+steps:
+  kill | Guerreiro de Machado / Yeti | | 60 | | Caca Lv65: escolhe 1 de 2 - mata 60x Guerreiro de Machado OU 40x Yeti | | cat=caca;op1=60:Guerreiro de Machado;op2=40:Yeti;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv66
+name_pt = Caca Lv66: Golem de Pedra Gigante (60x) ou Golem do Gelo (45x)
+level = 66
+type = caca
+steps:
+  kill | Golem de Pedra Gigante / Golem do Gelo | | 60 | | Caca Lv66: escolhe 1 de 2 - mata 60x Golem de Pedra Gigante OU 45x Golem do Gelo | | cat=caca;op1=60:Golem de Pedra Gigante;op2=45:Golem do Gelo;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv67
+name_pt = Caca Lv67: Guerreiro Milenar (60x) ou Tigre de Fogo Mau (50x)
+level = 67
+type = caca
+steps:
+  kill | Guerreiro Milenar / Tigre de Fogo Mau | | 60 | | Caca Lv67: escolhe 1 de 2 - mata 60x Guerreiro Milenar OU 50x Tigre de Fogo Mau | | cat=caca;op1=60:Guerreiro Milenar;op2=50:Tigre de Fogo Mau;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv68
+name_pt = Caca Lv68: Guerreiro Ogre (60x) ou Fantasma de Chamas (50x)
+level = 68
+type = caca
+steps:
+  kill | Guerreiro Ogre / Fantasma de Chamas | | 60 | | Caca Lv68: escolhe 1 de 2 - mata 60x Guerreiro Ogre OU 50x Fantasma de Chamas | | cat=caca;op1=60:Guerreiro Ogre;op2=50:Fantasma de Chamas;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv69
+name_pt = Caca Lv69: Ogre Carniceiro (60x) ou Chama (50x)
+level = 69
+type = caca
+steps:
+  kill | Ogre Carniceiro / Chama | | 60 | | Caca Lv69: escolhe 1 de 2 - mata 60x Ogre Carniceiro OU 50x Chama | | cat=caca;op1=60:Ogre Carniceiro;op2=50:Chama;sub=escolhe 1 das 2 opcoes no NPC
+
+[QUEST]
+name = Missao de Caca Lv70
+name_pt = Caca Lv70: Ogre Furioso (60x) ou Guerreiro Chama (55x)
+level = 70
+type = caca
+steps:
+  kill | Ogre Furioso / Guerreiro Chama | | 60 | | Caca Lv70: escolhe 1 de 2 - mata 60x Ogre Furioso OU 55x Guerreiro Chama | | cat=caca;op1=60:Ogre Furioso;op2=55:Guerreiro Chama;sub=escolhe 1 das 2 opcoes no NPC
+
+# ============================================================
+# Lv71 a Lv119: a wiki so' da' UMA opcao (missao sem escolha)
+# ============================================================
+
+[QUEST]
+name = Missao de Caca Lv71
+name_pt = Caca Lv71: mata 65x Tronco Fantasma
+level = 71
+type = caca
+steps:
+  kill | Tronco Fantasma | | 65 | | Caca Lv71: mata 65x Tronco Fantasma | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv72
+name_pt = Caca Lv72: mata 65x Tronco Fantasma
+level = 72
+type = caca
+steps:
+  kill | Tronco Fantasma | | 65 | | Caca Lv72: mata 65x Tronco Fantasma | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv73
+name_pt = Caca Lv73: mata 65x Driade
+level = 73
+type = caca
+steps:
+  kill | Driade | | 65 | | Caca Lv73: mata 65x Driade | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv74
+name_pt = Caca Lv74: mata 65x Salgueiro Fantasma
+level = 74
+type = caca
+steps:
+  kill | Salgueiro Fantasma | | 65 | | Caca Lv74: mata 65x Salgueiro Fantasma | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv75
+name_pt = Caca Lv75: mata 65x Arvore do Mal
+level = 75
+type = caca
+steps:
+  kill | Arvore do Mal | | 65 | | Caca Lv75: mata 65x Arvore do Mal | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv76
+name_pt = Caca Lv76: mata 65x Arvore Fantasma Rubra
+level = 76
+type = caca
+steps:
+  kill | Arvore Fantasma Rubra | | 65 | | Caca Lv76: mata 65x Arvore Fantasma Rubra | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv77
+name_pt = Caca Lv77: mata 65x Tronco Fantasma Rubro
+level = 77
+type = caca
+steps:
+  kill | Tronco Fantasma Rubro | | 65 | | Caca Lv77: mata 65x Tronco Fantasma Rubro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv78
+name_pt = Caca Lv78: mata 65x Driade Rubra
+level = 78
+type = caca
+steps:
+  kill | Driade Rubra | | 65 | | Caca Lv78: mata 65x Driade Rubra | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv79
+name_pt = Caca Lv79: mata 65x Salgueiro Fantasma Rubro
+level = 79
+type = caca
+steps:
+  kill | Salgueiro Fantasma Rubro | | 65 | | Caca Lv79: mata 65x Salgueiro Fantasma Rubro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv80
+name_pt = Caca Lv80: mata 65x Arvore do Mal Vermelha
+level = 80
+type = caca
+steps:
+  kill | Arvore do Mal Vermelha | | 65 | | Caca Lv80: mata 65x Arvore do Mal Vermelha | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv81
+name_pt = Caca Lv81: mata 70x Gelo Encantado Negro
+level = 81
+type = caca
+steps:
+  kill | Gelo Encantado Negro | | 70 | | Caca Lv81: mata 70x Gelo Encantado Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv82
+name_pt = Caca Lv82: mata 70x Orca de Gelo Negro
+level = 82
+type = caca
+steps:
+  kill | Orca de Gelo Negro | | 70 | | Caca Lv82: mata 70x Orca de Gelo Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv83
+name_pt = Caca Lv83: mata 70x Insecto de Gelo Negro
+level = 83
+type = caca
+steps:
+  kill | Insecto de Gelo Negro | | 70 | | Caca Lv83: mata 70x Insecto de Gelo Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv84
+name_pt = Caca Lv84: mata 70x Homem do Gelo Negro
+level = 84
+type = caca
+steps:
+  kill | Homem do Gelo Negro | | 70 | | Caca Lv84: mata 70x Homem do Gelo Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv85
+name_pt = Caca Lv85: mata 70x Yeti Negro
+level = 85
+type = caca
+steps:
+  kill | Yeti Negro | | 70 | | Caca Lv85: mata 70x Yeti Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv86
+name_pt = Caca Lv86: mata 75x Golem do Gelo Negro
+level = 86
+type = caca
+steps:
+  kill | Golem do Gelo Negro | | 75 | | Caca Lv86: mata 75x Golem do Gelo Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv87
+name_pt = Caca Lv87: mata 75x Lutador Setaou
+level = 87
+type = caca
+steps:
+  kill | Lutador Setaou | | 75 | | Caca Lv87: mata 75x Lutador Setaou | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv88
+name_pt = Caca Lv88: mata 75x Cacador Setaou
+level = 88
+type = caca
+steps:
+  kill | Cacador Setaou | | 75 | | Caca Lv88: mata 75x Cacador Setaou | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv89
+name_pt = Caca Lv89: mata 75x Mistica Setaou
+level = 89
+type = caca
+steps:
+  kill | Mistica Setaou | | 75 | | Caca Lv89: mata 75x Mistica Setaou | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv90
+name_pt = Caca Lv90: mata 75x Mistica Setaou
+level = 90
+type = caca
+steps:
+  kill | Mistica Setaou | | 75 | | Caca Lv90: mata 75x Mistica Setaou | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv91
+name_pt = Caca Lv91: mata 80x General Gnoll
+level = 91
+type = caca
+steps:
+  kill | General Gnoll | | 80 | | Caca Lv91: mata 80x General Gnoll | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv92
+name_pt = Caca Lv92: mata 80x General Outis
+level = 92
+type = caca
+steps:
+  kill | General Outis | | 80 | | Caca Lv92: mata 80x General Outis | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv93
+name_pt = Caca Lv93: mata 80x General Cor
+level = 93
+type = caca
+steps:
+  kill | General Cor | | 80 | | Caca Lv93: mata 80x General Cor | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv94
+name_pt = Caca Lv94: mata 80x Aterrorizador Tritao
+level = 94
+type = caca
+steps:
+  kill | Aterrorizador Tritao | | 80 | | Caca Lv94: mata 80x Aterrorizador Tritao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv95
+name_pt = Caca Lv95: mata 80x General Negro
+level = 95
+type = caca
+steps:
+  kill | General Negro | | 80 | | Caca Lv95: mata 80x General Negro | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv96
+name_pt = Caca Lv96: mata 80x General Branco
+level = 96
+type = caca
+steps:
+  kill | General Branco | | 80 | | Caca Lv96: mata 80x General Branco | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv97
+name_pt = Caca Lv97: mata 80x Caranguejo de Armadura
+level = 97
+type = caca
+steps:
+  kill | Caranguejo de Armadura | | 80 | | Caca Lv97: mata 80x Caranguejo de Armadura | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv98
+name_pt = Caca Lv98: mata 80x Capitao Ganchos
+level = 98
+type = caca
+steps:
+  kill | Capitao Ganchos | | 80 | | Caca Lv98: mata 80x Capitao Ganchos | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv99
+name_pt = Caca Lv99: mata 80x General Ogg
+level = 99
+type = caca
+steps:
+  kill | General Ogg | | 80 | | Caca Lv99: mata 80x General Ogg | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv100
+name_pt = Caca Lv100: mata 100x Guerreiro Ochao
+level = 100
+type = caca
+steps:
+  kill | Guerreiro Ochao | | 100 | | Caca Lv100: mata 100x Guerreiro Ochao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv101
+name_pt = Caca Lv101: mata 100x Soldado Ochao
+level = 101
+type = caca
+steps:
+  kill | Soldado Ochao | | 100 | | Caca Lv101: mata 100x Soldado Ochao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv102
+name_pt = Caca Lv102: mata 100x Mago Ochao
+level = 102
+type = caca
+steps:
+  kill | Mago Ochao | | 100 | | Caca Lv102: mata 100x Mago Ochao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv103
+name_pt = Caca Lv103: mata 100x Executor Ochao
+level = 103
+type = caca
+steps:
+  kill | Executor Ochao | | 100 | | Caca Lv103: mata 100x Executor Ochao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv104
+name_pt = Caca Lv104: mata 100x General Ochao
+level = 104
+type = caca
+steps:
+  kill | General Ochao | | 100 | | Caca Lv104: mata 100x General Ochao | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv105
+name_pt = Caca Lv105: mata 100x Guerreiro Ochao Rijo
+level = 105
+type = caca
+steps:
+  kill | Guerreiro Ochao Rijo | | 100 | | Caca Lv105: mata 100x Guerreiro Ochao Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv106
+name_pt = Caca Lv106: mata 100x Soldado Ochao Rijo
+level = 106
+type = caca
+steps:
+  kill | Soldado Ochao Rijo | | 100 | | Caca Lv106: mata 100x Soldado Ochao Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv107
+name_pt = Caca Lv107: mata 100x Mago Ochao Rijo
+level = 107
+type = caca
+steps:
+  kill | Mago Ochao Rijo | | 100 | | Caca Lv107: mata 100x Mago Ochao Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv108
+name_pt = Caca Lv108: mata 100x Executor Ochao Rijo
+level = 108
+type = caca
+steps:
+  kill | Executor Ochao Rijo | | 100 | | Caca Lv108: mata 100x Executor Ochao Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv109
+name_pt = Caca Lv109: mata 100x Executor Ochao Rijo
+level = 109
+type = caca
+steps:
+  kill | Executor Ochao Rijo | | 100 | | Caca Lv109: mata 100x Executor Ochao Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv110
+name_pt = Caca Lv110: mata 100x Soldado En-Tai
+level = 110
+type = caca
+steps:
+  kill | Soldado En-Tai | | 100 | | Caca Lv110: mata 100x Soldado En-Tai | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv111
+name_pt = Caca Lv111: mata 100x Guerreiro En-Tai
+level = 111
+type = caca
+steps:
+  kill | Guerreiro En-Tai | | 100 | | Caca Lv111: mata 100x Guerreiro En-Tai | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv112
+name_pt = Caca Lv112: mata 100x Druida En-Tai
+level = 112
+type = caca
+steps:
+  kill | Druida En-Tai | | 100 | | Caca Lv112: mata 100x Druida En-Tai | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv113
+name_pt = Caca Lv113: mata 100x Curandeiro En-Tai
+level = 113
+type = caca
+steps:
+  kill | Curandeiro En-Tai | | 100 | | Caca Lv113: mata 100x Curandeiro En-Tai | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv114
+name_pt = Caca Lv114: mata 100x Soldado En-Tai Rijo
+level = 114
+type = caca
+steps:
+  kill | Soldado En-Tai Rijo | | 100 | | Caca Lv114: mata 100x Soldado En-Tai Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv115
+name_pt = Caca Lv115: mata 100x Guerreiro En-Tai Rijo
+level = 115
+type = caca
+steps:
+  kill | Guerreiro En-Tai Rijo | | 100 | | Caca Lv115: mata 100x Guerreiro En-Tai Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv116
+name_pt = Caca Lv116: mata 100x Druida En-Tai Rijo
+level = 116
+type = caca
+steps:
+  kill | Druida En-Tai Rijo | | 100 | | Caca Lv116: mata 100x Druida En-Tai Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv117
+name_pt = Caca Lv117: mata 100x Curandeiro En-Tai Rijo
+level = 117
+type = caca
+steps:
+  kill | Curandeiro En-Tai Rijo | | 100 | | Caca Lv117: mata 100x Curandeiro En-Tai Rijo | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv118
+name_pt = Caca Lv118: mata 100x Destruidor En-Tai
+level = 118
+type = caca
+steps:
+  kill | Destruidor En-Tai | | 100 | | Caca Lv118: mata 100x Destruidor En-Tai | | cat=caca;sub=missao de caca com 1 so opcao
+
+[QUEST]
+name = Missao de Caca Lv119
+name_pt = Caca Lv119: mata 100x Destruidor En-Tai
+level = 119
+type = caca
+steps:
+  kill | Destruidor En-Tai | | 100 | | Caca Lv119: mata 100x Destruidor En-Tai | | cat=caca;sub=missao de caca com 1 so opcao

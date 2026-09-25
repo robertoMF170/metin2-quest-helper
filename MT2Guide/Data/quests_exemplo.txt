@@ -1,0 +1,54 @@
+# MT2Guide - base de dados de quests (exemplo/inicio)
+# ====================================================
+# FORMATO:
+#   [QUEST]
+#   name  = nome unico da missao (aparece no combo)
+#   map   = mapa interno (o que o .qpos grava; vazio = qualquer mapa)
+#   level = nivel recomendado (so' para mostrar "LvX")
+#   steps:
+#     talk    | Nome NPC | vnum |        | x,y | texto | N:EtiquetaDialogo
+#     kill    | Nome mob | vnum | count  | x,y | texto |
+#     collect | Nome it. | vnum | count  |     | texto |
+#     goto    |          |      |        | x,y | texto |
+#     turnin  | Nome NPC | vnum |        | x,y | texto | N:EtiquetaDialogo
+#
+# - pos em unidades de pixel do cliente (= ingame * 100). Usa .qpos no
+#   jogo para gravares posicoes exatas destas.
+# - REINOS: os NPCs/mobs das CIDADES 1 e 2 mudam de posicao conforme o
+#   reino (a1/a2=Shinsoo vermelho, b1/b2=Chunjo amarelo, c1/c2=Jinno
+#   azul). Nesses mapas da' uma posicao por reino no campo pos:
+#     s:62000,63000;c:64000,65000;j:66000,67000
+#   (s=Shinsoo, c=Chunjo, j=Jinno). Fora das cidades 1/2 (vale, torre,
+#   deserto...) a posicao e' COMUM: usa apenas "x,y". O gravador ja faz
+#   isto sozinho (carimba o teu reino nas cidades).
+# - dialog "N:Etiqueta" = quando o NPC abrir dialogo, o guia mostra
+#   "DIALOGO: escolhe o quadrado [N] Etiqueta".
+#   No cliente TR os botoes tipicos sao: 1:Devam  1:Kabul Et  1:Tamam...
+# - NAO INVENTES: grava com o botao "Gravar" e edita o quests_gravadas.txt
+#
+# NPCS/MOBS COMUNS DAS VILAS (vnums REAIS, nomes TR do cliente):
+#   9001 Silah Saticisi      9002 Zirh Saticisi     9003 Satici (loja geral)
+#   9005 Depocu              9006 Yasli Kadin       9009 Balikci
+#   9012 Isinlayici          20016 Demirci          20084 Biyolog Chaegirab
+#   20354 Sehir Bekcisi      20355 Yuzbasi          20349 Seyis
+# MOBS MAPA 1 (vnums reais): 101 Yabani Kopek  102 Kurt  103 Alfa Kurt...
+# A lista completa com vnums+posicoes por reino esta' em quests_wiki.txt.
+
+[QUEST]
+name = Exemplo: Primeiros passos na vila
+name_pt = Exemplo: primeiros passos na vila
+map =
+level = 1
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | EXEMPLO: fala com o guarda da vila (posicao REAL por reino) | 1:Devam
+  kill | Yabani Kopek | 101 | 9 | s:75100,31100;s:47500,50100;c:64200,44100;c:62000,47700;c:66700,48400;j:36000,42500;j:31700,45300 | EXEMPLO: mata 9 caes selvagens (a seta vai a zona mais proxima) |
+  turnin | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | EXEMPLO: entrega a missao ao guarda | 1:Kabul Et
+
+[QUEST]
+name = Exemplo: Aprender a gravar (tutorial do Gravar)
+name_pt = Exemplo: aprender a gravar
+map =
+level = 1
+steps:
+  talk | | | | | EXEMPLO: liga o botao "Gravar:ON" e clica num NPC da vila |
+  goto | | | | | EXEMPLO: anda um pouco; os cliques e posicoes ficam em quests_gravadas.txt |

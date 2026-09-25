@@ -1,0 +1,229 @@
+# Metin2 wiki "List of Quests" extraction: 228 quests (11 main M / 217 side S), levels 1-120
+1|M|Welcome to Metin2|AUTO|talk:City Guard;talk:Guardian;talk:General Store Saleswoman;talk:Guardian
+1|S|Look for the experienced soldier|Teacher|talk:Teacher;other:search map for seasoned soldier (player)
+1|S|Go on patrol|Teacher|talk:Teacher;other:Go to 5 patrol points
+2|M|Letter from the City Guard|AUTO|talk:City Guard;kill:9xWild Dog;talk:City Guard
+3|M|News from the City Guard|AUTO|talk:City Guard;talk:General Store Saleswoman;talk:Armour Shop Dealer
+4|S|The investigation of the biologist (Peach Blossom)|AUTO|talk:Biologist Chaegirab;collect:5xPeach Blossom<-Hungry Alpha Wolf;talk:Biologist Chaegirab
+4|S|A new fragrance|General Store Saleswoman|talk:General Store Saleswoman;talk:Weapon Shop Dealer;collect:2xLilacs<-Blue Wolf;talk:Weapon Shop Dealer;other:buy 1x musk oil in the item-shop;talk:Weapon Shop Dealer;talk:General Store Saleswoman
+5|S|The training|AUTO|talk:Teacher;other:select specialization
+6|M|The Blacksmith's mission|AUTO|talk:City Guard;talk:Blacksmith;collect:Pig Nose<-Storekeeper;talk:Blacksmith
+6|S|Get an Empty Bottle|General Store Saleswoman|talk:General Store Saleswoman;talk:Yonah;collect:1xPeach Seed<-Wild Boar;collect:Empty Bottle<-Yonah;talk:General Store Saleswoman
+7|M|Another favour|AUTO|talk:Blacksmith;talk:Fisherman;talk:Blacksmith
+7|S|The investigation of the biologist (Bellflower)|AUTO|talk:Biologist Chaegirab;collect:5xBellflowers<-Hungry Alpha Blue Wolf;talk:Biologist Chaegirab
+7|S|The dinner|General Store Saleswoman|talk:General Store Saleswoman;talk:Armour Shop Dealer;talk:General Store Saleswoman
+7|S|The daughter's wedding|Octavio|talk:Octavio;talk:Old Lady;collect:1xBlood Red Flower<-Hungry Alpha Wolf;collect:1xOrange Flower<-Hungry Blue Wolf;collect:1xFragrant Yellow Flower<-Hungry Alpha Blue Wolf;talk:Old Lady;talk:Octavio
+8|S|Ingredient for the medicine|Baek-Go|talk:Baek-Go;collect:1xWolf Liver<-Blue Wolf;talk:Baek-Go
+9|M|Talk to the City Guard|AUTO|talk:City Guard
+9|S|A Letter from the Blacksmith|Blacksmith|talk:Blacksmith;talk:Deokbae;talk:Blacksmith
+9|S|Lunches|AUTO|other:click scroll;other:click rotating coin
+10|M|Go to the Captain|AUTO|talk:Captain;talk:Yu-Hwan (Map2);talk:Captain
+10|S|Help for Soon|Soon|talk:Soon;talk:Uriel;talk:Soon ("Bird;talk:Triple;talk:Water;talk:Cranewing")
+10|S|The investigation of the biologist (Kaki Blossom)|AUTO|talk:Biologist Chaegirab;collect:5xKaki Blossoms<-Hungry Alpha Grey Wolf;talk:Biologist Chaegirab
+10|S|Find Soon|Aranyo|talk:Aranyo;talk:Soon;other:Cover or betray Soon;talk:Aranyo;other:If u covered for Soon return to him
+11|S|Ordering armour|Armour Shop Dealer|talk:Armour Shop Dealer;talk:Blacksmith;collect:Iron ore<-Uriel;collect:1xUriels Book<-Wild Dog;talk:Uriel;talk:Octavio;collect:1xGall<-Bear;talk:Octavio;talk:Yonah;collect:1xClay<-Red Wild Boar;talk:Yonah;talk:Blacksmith
+12|M|Kill 10 Alpha Grey Wolves|AUTO|talk:Captain;kill:10xAlpha Grey Wolf;talk:Captain
+12|S|The best cookbook|Octavio|talk:Octavio;talk:Soon;talk:Octavio;collect:1xWolf Intestine<-Grey Wolf;talk:Octavio
+13|S|Get a Wolf Pelt|Old Lady|talk:Old Lady;collect:1xWolf Fur<-Grey Wolf;talk:Old Lady
+14|M|Destroy the Metin of Battle|AUTO|talk:Captain;other:kill one Metin of Battle;talk:Captain
+15|S|The investigation of the biologist (Gango root)|AUTO|talk:Biologist Chaegirab;collect:5xGango Roots<-Hungry Grizzly;talk:Biologist Chaegirab
+15|M|Find Yu-Hwan the musician|AUTO|talk:Captain;talk:Yu-Hwan (Map2);talk:Captain
+15|S|Rice Cake|Ah-Yu|talk:Ah-Yu;talk:Weapon Shop Dealer;talk:Octavio;talk:Yu-Rang;talk:Taurean;talk:Yu-Rang colect the Rice Cake;talk:Ah-Yu
+16|S|Find the Golden Axe|AUTO|talk:Blacksmith;collect:1xGolden axe of BlackSmith<-White Oath Soldier;talk:Blacksmith
+16|M|Capture the spy|AUTO|talk:Captain;collect:1xLetter<-White Oath members;talk:Captain
+17|S|The gift for Chaegirab|Wonda-Rim|talk:Wonda-Rim;talk:Uriel;talk:Wonda-Rim;collect:5xMu-Rang Fur;talk:Wonda-Rim;talk:Biologist Chaegirab;talk:Wonda-Rim;other:If you answer *No,not at all* go to Yang-Shin
+18|S|Find the Hairpin|General Store Saleswoman|talk:General Store Saleswoman;talk:Blacksmith;talk:Weapon Shop Dealer;collect:1xstolen Ornamental Hairpin<-White Oath Archer;talk:General Store Saleswoman
+19|S|Find my brother|Mirine|talk:Mirine;talk:Yu-Hwan;talk:Yang-Shin;talk:Mirine
+20|S|Kill Mi-Jung from the White Oath|Guardian|talk:Guardian;kill:1xMi-Jung (not Dispirited Mi-Jung );talk:Guardian
+20|S|The investigation of the biologist (Lilac)|AUTO|talk:Biologist Chaegirab;collect:10xLilacs<-Hungry Black Bear;talk:Biologist Chaegirab
+20|S|Elemental Forces|Monk Milbon|talk:Monk Milbon;kill:10xMetin of Rat
+21|S|Look for materials|Weapon Shop Dealer|talk:Weapon Shop Dealer;talk:Uriel;collect:1xUriel's Package<-Tiger;talk:Uriel;talk:Ariyoung;other:Give the letter to Ah-Yu collect the Skein;talk:Weapon Shop Dealer
+22|S|The sick brother|City Guard|talk:City Guard;talk:Baek-Go;collect:1xdrop Medical Herb+ and Tiger Liver+<-Tiger/White Tiger;talk:Baek-Go;other:Guard in 20 minutes
+23|S|Eun-Jung from the White Oath|City Guard|talk:City Guard;kill:1xEun-Jung;talk:City Guard
+24|S|Get the Black Uniform|Mirine|talk:Mirine;collect:1xBlack Uniform<-Black Wind Maniac;talk:Mirine
+25|S|The investigation of the biologist (Tue-Mushrooms)|AUTO|talk:Biologist Chaegirab;collect:10xTue Fungus<-Hungry Brown Bear;talk:Biologist Chaegirab
+25|S|The armoured cavalry|Captain|talk:Captain;talk:Yu-Hwan;talk:Peddler;talk:Uriel;talk:Captain
+25|S|Revenge for the Ringtrader|Old Lady|talk:Old Lady (No Arrow;kill:1xJin-Hee;talk:Old Lady
+26|S|The Deserter|AUTO|talk:Yang-Shin;talk:Nakajima;talk:Ah-Yu;talk:Yang-Shin
+27|S|The story of Ariyoung's husband|Ariyoung|talk:Ariyoung;talk:General Store Saleswoman;talk:Ariyoung;collect:1xAriyo Wedding Ring<-Goo-Pae;talk:Ariyoung
+27|S|Destroy the Metin of Black|AUTO|talk:Captain;other:kill one Metin of Black;talk:Captain
+28|S|The blackmail|Yu-Hwan|talk:Yu-Hwan;talk:Ah-Yu;collect:1xBear Paw<-Bera;talk:Yang-Shin;talk:Ah-Yu
+29|S|The broken porcelain|AUTO|talk:Yonah;talk:Taurean;talk:Harang;talk:Stable Boy;other:Obtaing 6 Hay from Savage Infantryman or Strong Savage Infantry;talk:Yonah
+30|S|The secret of the Metin Stones|AUTO|talk:Uriel;other:read the hasun stone memorial at easy monkey dungeon;talk:Uriel;other:read the seul rong stone memorial;talk:Uriel
+30|S|The Spears|Ah-Yu|talk:Ah-Yu;collect:3xSpear of the husband<-Savage Archer/Savage Minion/Savage General/Savage Infantryman;talk:Ah-Yu
+30|S|Helping the Storekeeper|Storekeeper|talk:Storekeeper;kill:1xChief Orc;talk:Storekeeper;kill:5xIce Golem;talk:Storekeeper;kill:1xApe Lord;talk:Storekeeper
+30|S|The research of the biologist 1|AUTO|talk:Biologist Chaegirab;collect:10xOrc Tooth<-Orc/Black Orc/Bold Black Orc;talk:Biologist Chaegirab;kill:1xElite Orc/Elite Orc Scout/Elite Orc Sorcerer/Elite Orc Fighter;talk:Biologist Chaegirab;talk:Baek-Go
+31|S|Get the Flowers|Huahn-So|talk:Huahn-So;talk:Ariyoung;talk:Huahn-So;collect:Flowers<-Nameless Flowers (Map 1);talk:Huahn-So
+32|S|The secret book|Uriel|talk:Uriel;talk:Peddler;collect:20xSilver Swords (u can buy them at Weapon Shop Dealer );talk:Peddler;talk:Weol Monument;talk:Uriel
+32|S|The secret book|Uriel|talk:Uriel;talk:Yang-Shin;collect:1xsecret Diary Page<-Elite Orc Sorcerer;talk:Uriel
+33|S|Ore for the Blacksmith (new weapon)|Blacksmith|talk:Blacksmith;collect:100xGold Ore;collect:100xSilver Ore;collect:100xEbony Ore;talk:Blacksmith
+34|S|Ore for the Blacksmith (new armour)|Blacksmith|talk:Blacksmith;collect:100xEbony Ore;collect:100xCopper Ore;collect:100xPiece of Pearls;talk:Blacksmith
+35|S|Deokbae's Golden Axe|Deokbae|talk:Deokbae;collect:1xGolden axe of BlackSmith<-Savage General;talk:Deokbae
+36|S|The missing brother|Mirine|talk:Mirine;talk:Yu-Hwan;talk:Yang-Shin;talk:Ginseng Collector;talk:Mirine Trailer;talk:Mirine
+37|S|The Spider with the Bell|Yu-Rang|talk:Yu-Rang;other:Look for spider with the bell by killing Baby Spider;talk:Taurean;other:Attach the bell to a spider by killing Baby Spider;talk:Yu-Rang;talk:Taurean
+38|S|The Secret Temple Book|Soon|talk:Soon;talk:Aranyo;talk:General Store Saleswoman;talk:Soon;collect:1xTemple Book<-Dark Fanatic;talk:Soon
+39|S|The stolen Rice Cake|Yu-Rang|talk:Yu-Rang;collect:1xRice Cake (Quest Item)<-Baby Spider;talk:Yu-Rang
+40|S|The secret book|AUTO|talk:Uriel;collect:1xDiary Page<-Proud Dark Fanatic;talk:Uriel
+40|S|The secret book|Uriel|talk:Uriel;other:Desert, read the Wha Memorial and the Su Memorial;talk:Uriel
+40|S|The secret book|AUTO|talk:Uriel;talk:Captain;talk:Nakajima;collect:1xDiary Page<-Bestial Captain;talk:Uriel (only possible after level 47)
+40|S|The research of the biologist 2|AUTO|talk:Biologist Chaegirab;collect:15xCurse Books<-Dark Tormentor/High Tormentor;talk:Biologist Chaegirab;collect:1xTemple Soul Stone<-Proud Dark Fanatic/Proud Dark Fighter/Proud Dark Colonel;talk:Biologist Chaegirab;talk:Baek-Go
+40|S|Kill the Black Wind generals|Captain|talk:Captain;kill:1xBlack Wind Jak-To;talk:Captain
+40|S|A special cloth|Theowahdan|talk:Theowahdan;talk:Captain;other:wait 3 hours (online time);talk:Captain;talk:Captain again;other:Repeat until you have 40x Fine Cloth;talk:Theowahdan
+41|S|Peddler's request|Peddler|talk:Peddler;talk:Ariyoung to receive the Clothing;talk:Ah-Yu;talk:Ariyoung;talk:General Store Saleswoman;collect:100xLiver of a Tiger and 1 Medical Herb<-Tiger/White Tiger;talk:General Store Saleswoman;collect:100xOrc Molars<-Elite Orc Sorcerer;talk:Peddler
+42|S|Furious Sea Monsters|AUTO|talk:Octavio;talk:Fisherman;talk:Yonah;talk:Blacksmith;collect:20xDiamond Stone;talk:Blacksmith;other:wait 24 hours;talk:Fisherman
+43|S|The orphan|Wonda-Rim|talk:Wonda-Rim;talk:Biologist Chaegirab;collect:1xLetter with Wonda-Rim's rhymes<-Orc Fighter;talk:Wonda-Rim
+44|S|The bookworm's Treasure Map|Soon|talk:Soon;collect:4xTreasure Maps<-Bera/Lykos/Scrofa/Tigris;talk:Soon;talk:Old Man;talk:Soon
+45|S|The hunter's treasure|Yang-Shin|talk:Yang-Shin;collect:1xOrnamented Bow<-Monster;talk:Yang-Shin
+46|S|Let the dead rest|Dragon Force Teacher|talk:Dragon Force Teacher;collect:1xTemple Scarf and Temple Doctrine<-Proud Dark Colonel;talk:Dragon Force Teacher
+47|S|The stables are in trouble|Yonah|talk:Yonah;collect:10xHay;talk:Stable Boy;talk:Yonah
+47|S|The secret book|Uriel|talk:Uriel;talk:Mok Memorial at Spiders Dungeon;collect:Diary Page;talk:Uriel
+47|S|The secret book|Yu-Hwan|talk:Yu-Hwan;collect:1xDiary Page<-Desert Outlaw;talk:Yu-Hwan;talk:Uriel
+47|S|The secret book|Uriel|talk:Uriel;collect:1xDiary Page<-Snake Swordsman/Snake Archer;talk:Uriel
+48|S|A medicine for Balso|Traitor Balso|talk:Traitor Balso;collect:1xMedicine<-Plagued Man;talk:Traitor Balso
+49|S|Spider Eyes special|Octavio|talk:Octavio;collect:100xEye of a spider<-Monster;talk:Octavio
+50|S|About the secret code...|Captain|talk:Captain;other:Translate the text (Enemies seen at horizon)
+50|S|The research of the biologist 3|AUTO|talk:Biologist Chaegirab;collect:15xDemon's Keepsakes<-Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier;talk:Biologist Chaegirab;collect:1xSagyis Soul Stone<-Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier;talk:Biologist Chaegirab;talk:Baek-Go
+50|S|The secret book|Uriel|talk:Uriel;collect:1xDiary Page<-Proud Soldier Spider;talk:Uriel
+50|S|The secret book|AUTO|talk:Old Box with Papers on Mount Sohan;talk:Uriel
+50|S|The secret book|AUTO|collect:1xDiary Page<-Claw Poison Spider;talk:Uriel
+50|S|Access to the Breeding Lair|Captain|talk:Captain;talk:Spider Cave 3;talk:Captain;talk:Uriel;talk:Captain;talk:Uriel;collect:1 × Spider Poison Sack , Spider Egg Sack , Spider Web , Spid
+51|S|The secret of Celadon Porcelain|Yonah|talk:Yonah;talk:Uriel;talk:Soon;talk:Peddler;talk:Soon;talk:Yonah
+52|S|A good night's sleep|Captain|talk:Baek-Go;talk:Yu-Hwan;talk:Captain;other:Avange the 4 killed soligers by slaughtering High Evocator , Dark Summ;talk:Captain
+53|S|Pale green porcelain|Yonah|talk:Yonah;collect:1xDesert Sand<-Desert Outlaw;collect:Crystal Ore;collect:1xApe Blood<-Strong Stone Ape/Strong Gold Ape s in Hard Monkey Dungeon;talk:Yonah
+54|S|The fresh supply|Captain|talk:Captain;talk:General Store Saleswoman;talk:Captain;collect:20xShimmering Tigerskins<-Cursed White Tiger;talk:Yang-Shin
+55|S|Looking for the memorials|AUTO|talk:Weol Monument at Pyungmoo;talk:Weol Monument at Yongan;talk:Weol Monument at Joan;talk:Uriel
+55|S|The last page|AUTO|collect:1xQuest changes<-Leflet Bogeyman;talk:Gum Memorial;talk:Uriel
+55|S|Herb of the Ape Lord|Traitor Balso|talk:Traitor Balso;talk:Baek-Go;collect:1xHerb of Hard Monkeys<-Ape Lord;talk:Baek-Go;talk:Traitor Balso
+56|S|Supporting war device|Captain|talk:Captain;collect:5000xArrowheads<-Plagued Archer;talk:Captain
+57|S|Get Frog's Legs|Storekeeper|talk:Storekeeper;talk:Octavio;collect:1xFrog Legs (quest)<-Tree Frog Leader;talk:Octavio
+58|S|Meet the spy|Captain|talk:Captain;talk:Fisherman at Yongan;talk:Fisherman at Joan;talk:Fisherman at Pyungmoo;talk:Captain
+59|S|Bingsu?|Taurean|talk:Taurean;talk:Harang;talk:Octavio;collect:50xIce Chunk<-Enchanted Ice;talk:Octavio Ice With Syrup;talk:Taurean
+60|S|The Temple of Darkness|Soon|talk:Soon;collect:1xTemple Scarf<-Elite Esoteric Tormentor;talk:Soon
+60|S|The research of the biologist 4|AUTO|talk:Biologist Chaegirab;collect:20xIce Marbles<-Ice Golem/Frosty Ice Men;talk:Biologist Chaegirab;collect:1xAurtumryus Soul Stone<-Ice Golem/Ice Killer Whale/Ice Lion/Frosty Ice Men;talk:Biologist Chaegirab;talk:Baek-Go
+60|S|Dark Nation I|Uriel|talk:Uriel;other:find the old gravestone;talk:Uriel
+60|S|Dark Nation II|Uriel|talk:Uriel;collect:1xOld Document<-Evil Tree;talk:Uriel;collect:9xOld Document<-Evil Tree;talk:Uriel
+66|S|The Diary|Uriel|talk:Uriel;kill:1xDemon King(Demon Tower);talk:Uriel
+66|S|Anonymous Letter|City Guard|talk:City Guard;talk:Lee Chung;kill:200xRed Dryad;talk:Lee Chung;talk:Poisoned Soldier;talk:Lee Chung
+70|S|The research of the biologist 5|AUTO|talk:Biologist Chaegirab;collect:25xZelkova Branches<-Lungsam (Normal Wood)/Red Wood;talk:Biologist Chaegirab;collect:1xGyimoks Soul Stone<-Lungsam (Normal Wood)/Red Wood;talk:Biologist Chaegirab;talk:Baek-Go
+72|S|The Discovery|Lee Chung|talk:Lee Chung;other:find the worn stone tablet;talk:Lee Chung
+72|S|Icy Treasure|Lee Chung|talk:Lee Chung;collect:50xBlue Crystal Essence<-Frosty Ice Man/Yeti/Ice Golem;talk:Lee Chung
+75|S|In the Grotto|Seon-Hae|talk:Seon-Hae;other:search for 7 Fossilised Tear (ride on the target points);other:kill as many Flame as you can to get 4 Obsidian;talk:Seon-Hae;other:go to the target point.;other:Immediately after that reaching the point, click on the Quest Scroll a;talk:Seon-Hae
+75|S|Diary of a Legend|Heuk-Young|talk:Heuk-Young;talk:Sura Skeleton 1;collect:1xcollect 6 more pages<-Underworld Ice Golem
+78|S|Red Hell Quartz (Quest)|Lee Chung|talk:Lee Chung;collect:1xVolcanic Earth<-Fighting Tiger/Flame/Flame Warrior;other:Go it to Lee Chung;other:Create Red Hell Quartz . (Refinement can fail);other:Repeat, to produce total of 20 Red Hell Quartz
+78|S|Final Element|Lee Chung|talk:Lee Chung;collect:100xHallowed Tree Gum<-Red Evil Tree;talk:Lee Chung;talk:Baek-Go
+80|S|Fire and Ice|Soon|talk:Soon;other:kill Flame Ghost until the Sombre Wooden Mask turns into the Bewitched;other:kill Yeti to find 10 Ice Chunk .;other:After finding all the materials, go back to Soon and he will give you ;talk:Grotto of Exile and offer it to the Dark Shrine;talk:Soon
+80|S|Strange monsters|Soon|talk:Soon
+80|S|The research of the biologist 6|AUTO|talk:Biologist Chaegirab;collect:30xTugyi's Tablets<-Valley of Giants;talk:Biologist Chaegirab;collect:1xTugyis Soul Stone<-Giants in Snakefield/Valley of Giants;talk:Biologist Chaegirab;talk:Baek-Go
+84|S|The Fight Begins|Lee Chung|talk:Lee Chung;collect:Heaven's Teardrop<-Lee Chung , go to the 5th floor of Devil's Catacomb and kill Tartaros;talk:Lee Chung
+84|S|Prince Charon|Lee Chung|talk:Lee Chung
+85|S|The research of the biologist 7|AUTO|talk:Biologist Chaegirab;collect:40xRed Ghost Tree Branches<-Red Dryad/Red Ghost Willow/Red Evil Tree/Red Ghost Tree/Red Ghost Stump in the Red Wood;talk:Biologist Chaegirab;collect:1xForest Spirit Soul Stone<-Red Wood;talk:Biologist Chaegirab;talk:Baek-Go
+90|S|The research of the biologist 8|AUTO|talk:Biologist Chaegirab;collect:50xNotes of the Leader<-Boss Monsters;talk:Biologist Chaegirab;collect:1xSoul Stone of Leader<-Nine Tails/Yellow Tiger Ghost/Death Reaper;talk:Biologist Chaegirab;talk:Baek-Go
+90|S|Lee Chung's task|Lee Chung|talk:Lee Chung;talk:Teleporter;other:use teleporter in map cape dragon fire
+90|S|Dark Dragon Rock|Admiral Angmur|talk:Admiral Angmur;other:Explore the map by visiting the 3 Way Points that will show up;talk:Admiral Angmur
+90|S|Lee Chung's Letter|Admiral Angmur|talk:Admiral Angmur;collect:1xLee Chung's Letter<-Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard;talk:Admiral Angmur
+90|S|The Gnoll Letter I|Admiral Angmur|talk:Admiral Angmur;collect:1xGnoll Letter<-Gnoll General;talk:Admiral Angmur
+90|S|The Gnoll Letter II|Admiral Angmur|talk:Admiral Angmur;collect:1xsecond page of Gnoll Letter<-Gnoll Lord;talk:Admiral Angmur
+90|S|The Manticores|Admiral Angmur|talk:Admiral Angmur;kill:50xManticore Warrior;kill:40xManticore Soldier;kill:20xManticore Executioner;kill:10xGeneral Cor;talk:Admiral Angmur
+90|S|Strengthen the Rampart I|Admiral Angmur|talk:Admiral Angmur;collect:50xFine Sand<-Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard;talk:Admiral Angmur
+90|S|Strengthen the Rampart II|Admiral Angmur|talk:Admiral Angmur;collect:100xClay Bricks<-Manticore Warrior/Manticore Soldier/Manticore Magus/Manticore Executioner/General Cor/Rakshasa/Martyaxwar;talk:Admiral Angmur
+91|S|The Manticore Letter|Admiral Angmur|talk:Admiral Angmur;kill:1xGeneral Cor;talk:Admiral Angmur
+91|S|Martyaxwar's Hideout|Admiral Angmur|talk:Admiral Angmur;collect:1xBarb Necklace<-Martyaxwar;talk:Admiral Angmur
+91|S|Decoding|Yon-I-Walker|talk:Yon-I-Walker;collect:10xCarapax Scripts<-Crab Warrior/Scorpion Marksman/Shrimp Soldier/Diabolical Hermit/Armoured Crab/General Lobster/King Crab;talk:Yon-I-Walker
+91|S|Manticore letter decoded|Yon-I-Walker|talk:Yon-I-Walker;collect:3xCarapax Powder<-General Lobster/King Crab;talk:Yon-I-Walker
+91|S|Poisoned!|Admiral Angmur|talk:Admiral Angmur;talk:Rock Flower;collect:Rock Flower Root;talk:Yon-I-Walker
+92|S|The research of Seon-Pyeong|AUTO|talk:Seon-Pyeong;collect:10xJewels of Resentment<-Underworld Ice Golem/Underworld Ice Man;talk:Seon-Pyeong
+92|S|The Red Thief Letter (1)|Admiral Angmur|talk:Admiral Angmur;collect:3xRed Thief Letter<-Red Thief Executioner/Black General;talk:Admiral Angmur
+92|S|The Red Thief Letter (2)|Admiral Angmur|talk:Admiral Angmur;other:find injuried soldier;talk:Admiral Angmur
+92|S|Decrypt the Red Thief Letter|Yon-I-Walker|talk:Yon-I-Walker;collect:10xOin Scales<-General Kappa/Triton;talk:Yon-I-Walker
+92|S|Dark Plans|Admiral Angmur|talk:Admiral Angmur
+93|S|Stocking Up On Power I|Admiral Angmur|talk:Admiral Angmur;talk:Yon-I-Walker;collect:1xInner Light(Polyphemos)<-Polyphemos;talk:Yon-I-Walker
+93|S|Stocking Up On Power II|Yon-I-Walker|talk:Yon-I-Walker;kill:1xKing Wubba to collect Inner\_Light(King Wubba);talk:Yon-I-Walker
+93|S|Stocking Up On Power III|Yon-I-Walker|talk:Yon-I-Walker;talk:Octavio;other:wait 24 hours
+93|S|Stocking Up On Power III - The Millennium Recipe|Octavio|talk:Octavio;collect:200xTue Fungus and;collect:200xAlpine Rose;talk:Octavio;other:wait 24 hours
+93|S|Millennium Essence (quest)|Octavio|talk:Octavio;collect:Millennium Essence;talk:Yon-I-Walker
+94|S|The research of Seon-Pyeong 2|AUTO|talk:Seon-Pyeong;collect:20xJewel of Wisdoms<-Setaou Archer/Setaou Commander;collect:1xBeran-Setaou Soulstone<-General Huashin/Beran-Setaou
+94|S|Leviathan Pearls (quest)|Yon-I-Walker|talk:Yon-I-Walker;other:use leviathan pearls and go to admiral angmur
+94|S|Call of the Thunder Mountains|Admiral Angmur|talk:Admiral Angmur;other:Explore Thunder Mountains by checking the Way Points that show up on m;talk:Admiral Angmur
+94|S|Weaken the Red Thieves|Admiral Angmur|talk:Admiral Angmur;collect:1xChief's Cape<-Red Chief;talk:Admiral Angmur
+94|S|Weaken the Cyclops|Admiral Angmur|talk:Admiral Angmur;kill:30xGeneral Outis;talk:Admiral Angmur
+94|S|Weaken the Giants|Admiral Angmur|talk:Admiral Angmur;collect:1xall the 9 Giants' Totem pieces<-King Wubba;talk:Admiral Angmur
+94|S|To the Thunder Mountains|Admiral Angmur|talk:Admiral Angmur;collect:1xBlack Stone and Slip of Paper<-One-eyed Slugger/Cyclops Soldier/Cyclops Magician/Cyclops Executioner/General Outis/Arges/Polyphemos;talk:Admiral Angmur
+94|S|Black Gold|Admiral Angmur|talk:Admiral Angmur;talk:Alchemist (Energy System);other:kill One-eyed Slugger , Cyclops Soldier , Cyclops Magician , Cyclops E;collect:30x Black Gold , you can deliver 10x to Alchemist (Energy Sy;talk:Admiral Angmur
+95|S|Preliminary Investigations|Guardian of the Forest|talk:Guardian of the Forest;kill:50xEn-Tai Warrior;talk:Guardian of the Forest
+95|S|Find the Aid Kit|Guardian of the Forest|talk:Guardian of the Forest;collect:1xAid Kit<-En-Tai Druid;talk:Guardian of the Forest
+95|S|Deliver the Aid Kit|Guardian of the Forest|talk:Guardian of the Forest;talk:Scout of the Forest
+95|S|Secondary Investigations|Scout of the Forest|talk:Scout of the Forest;kill:5xMetin of the Tree Beings;talk:Scout of the Forest
+95|S|En-Tai Daw|Scout of the Forest|talk:Scout of the Forest;collect:5xEn-Tai Dew<-En-Tai Destroyer;talk:Scout of the Forest
+95|S|Kill the En-Tai Sovereign|Outrider of the Forest|talk:Outrider of the Forest;collect:1xFine Timber<-En-Tai Sovereign;talk:Outrider of the Forest
+95|S|Obtain a Tree Emerald|Outrider of the Forest|talk:Outrider of the Forest;collect:1xTree Emerald<-En-Tai Sovereign;talk:Outrider of the Forest
+95|S|Gold Fever|Admiral Angmur|talk:Admiral Angmur;collect:1xCaptain Hooks' Letter<-Captain Hooks;talk:Admiral Angmur
+95|S|Head off the Delivery|Admiral Angmur|talk:Admiral Angmur;collect:1xLeather Bag<-Captain Shruk;talk:Admiral Angmur
+95|S|Stop the Processing|Admiral Angmur|talk:Admiral Angmur;kill:1xGreat Ogre;talk:Admiral Angmur
+95|S|Curse of Life|Admiral Angmur|talk:Admiral Angmur;collect:1xLemures Tablet<-Lemures Magician;talk:Admiral Angmur
+95|S|The Inscription|Admiral Angmur|talk:Admiral Angmur;collect:1xmissing 2 pieces of Lemures Tablet<-Lemures Magician;talk:Admiral Angmur
+96|S|Prevent the Curse - Holy Ground|Admiral Angmur|talk:Admiral Angmur;collect:100xHoly Ground<-Gigantic Biter/Gigantic Slaughterer/Gigantic Magus/Twiant/Captain Hooks/Gargoyle/King Wubba;talk:Admiral Angmur
+96|S|Prevent the Curse - The Ogre's Medium|Admiral Angmur|talk:Admiral Angmur;collect:1xCoin Bag and Golden Medal<-Hangork/Archie Ogre/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre;talk:Admiral Angmur;talk:Yon-I-Walker;talk:Admiral Angmur take the Gold Hunter's Band
+96|S|Prevent the Curse - Hunt for Gold|Admiral Angmur|talk:Admiral Angmur;other:use the gold hunter's band;collect:100xCoin Bags<-Hangork/Archie Ogre/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre;other:Have the Coin Bags checked by Yon-I-Walker \- Deliver 1 by 1, deliver 
+96|S|Prevent the Curse - Pruning the Tree Demons|Admiral Angmur|talk:Admiral Angmur;kill:1xAku-Boku/Arboretum/Sycomore;talk:Admiral Angmur
+97|S|Stop the Banshee|Admiral Angmur|talk:Admiral Angmur;collect:1xRiveted Necklace<-Mu-Shu;talk:Admiral Angmur
+97|S|Decrypt document|Yak-Hwan|talk:Yak-Hwan;talk:Alchemist (Energy System);talk:Yak-Hwan
+97|S|Through the back door|Admiral Angmur|talk:Admiral Angmur;kill:2xRed Thief Magician;talk:Admiral Angmur
+97|S|The Temple Servant|Admiral Angmur|talk:Admiral Angmur;kill:1xBone Face;collect:1xSealed Letter<-Yah-Ki;talk:Admiral Angmur
+98|S|Reconstructing the Fort|Admiral Angmur|talk:Admiral Angmur;kill:1xCrab Warrior/Scorpion Marksman/Shrimp Soldier/Diabolical Hermit/Armoured Crab/General Lobster/King Crab to colect 100x Crustacean Armour;talk:Admiral Angmur
+98|S|Reconstruction of the Fort|Admiral Angmur|talk:Admiral Angmur;kill:1xTritonic Moray/Shark Soldier/Tritonic Magician/Tritonic Hunter/Tritonic Slasher/General Kappa/Triton to colect 100x Triton Spears;talk:Admiral Angmur
+98|S|Emergency|AUTO|talk:Yak-Hwan;kill:1xCaptain Shruk;talk:Yak-Hwan
+98|S|Acknowledgement|Yak-Hwan|talk:Yak-Hwan;talk:Confucius;talk:Armour Shop Dealer;talk:General Store Saleswoman;talk:Weapon Shop Dealer;talk:Yak-Hwan
+98|S|The Admiral's Thanks|Admiral Angmur|talk:Admiral Angmur
+99|S|Run into the Fire|Yak-Hwan|talk:Yak-Hwan
+99|S|Investigate the Fortress|Yak-Hwan|talk:Yak-Hwan;talk:Yon-I-Walker;collect:1xmessage says that weapon has turned black<-Flame Ghost/Fighting Tiger/Flame/Flame Warrior in Fireland;talk:Yon-I-Walker
+99|S|Enlighten the Mind|Yon-I-Walker|talk:Yon-I-Walker;other:collect to Sun Herb collect Sun Herbs;talk:Yon-I-Walker
+100|S|Black Matter (Level 100)|Yak-Hwan|talk:Yak-Hwan;kill:300xMonster(map);talk:Yak-Hwan
+100|S|Nimbus Tincture|Alchemist (Energy System)|talk:Alchemist (Energy System);collect:200xEnergy Fragment;talk:Alchemist (Energy System)
+100|S|Stop the Black Matter|Alchemist (Energy System)|talk:Alchemist (Energy System);talk:Blacksmith;talk:Alchemist (Energy System)
+101|S|Mysterious Fortress|Yak-Hwan|talk:Yak-Hwan;other:find wounded soldier;collect:1xRiveted Necklace<-Monster;talk:Yak-Hwan
+101|S|Decipher the Engraving|Yon-I-Walker|talk:Yon-I-Walker;collect:1xFlame King Blood<-Flame King;talk:Yon-I-Walker;other:24 Hours Waiting period
+101|S|The Engraving|Yon-I-Walker|talk:Yon-I-Walker;talk:Yak-Hwan
+102|S|Storm the Fortress|Yak-Hwan|talk:Yak-Hwan;other:kill 30x Ember Flame King , 30x Ember Flame Troll , 30x Ember Flame Be;talk:Yak-Hwan
+102|S|Black Matter (Level 102)|Yon-I-Walker|talk:Yon-I-Walker;other:kill monsters to collect 10x Black Matter;talk:Yon-I-Walker
+102|S|Black Matter Neutralisation|Yon-I-Walker|talk:Yon-I-Walker;collect:50xMong Water and;collect:100xEnergy Fragment;talk:Yu-Hwan
+102|S|Deliver the Pure Lumen|Yu-Hwan|talk:Yu-Hwan;talk:Yak-Hwan
+103|S|Storm the Red Dragon Fortress|Yak-Hwan|talk:Yak-Hwan;other:click Wounded Soldier;talk:Yak-Hwan
+103|S|Step by Step|Yak-Hwan|talk:Yak-Hwan;other:kill 1.000 monsters inside the fortress;talk:Yak-Hwan
+103|S|Step 2|Yak-Hwan|talk:Yak-Hwan;other:kill 50x Ember Flame King , 50x Ember Flame Beard ,;talk:Yak-Hwan
+103|S|Step 3|Yak-Hwan|talk:Yak-Hwan;talk:Yon-I-Walker;other:destroy Purgatory Fire Metin;talk:Yak-Hwan
+104|S|The Fight Against Razador|Yak-Hwan|talk:Yak-Hwan;other:kill Razador;talk:Yak-Hwan
+104|S|Thwarting Plans I|Yak-Hwan|talk:Yak-Hwan;talk:Yon-I-Walker;other:kill 50x Ember Flame King , 50x Ember Flame Troll , 50x Ember Flame Be;talk:Yon-I-Walker (deliver can fail)
+104|S|Thwarting Plans II|Yon-I-Walker|talk:Yon-I-Walker;collect:100xDok Water;talk:Yon-I-Walker
+104|S|Thwarting Plans III|Yon-I-Walker|talk:Yon-I-Walker;kill:1xMartyaxwar Collect 5x Manticore Leather;talk:Yon-I-Walker
+105|S|Battle Begins|Yak-Hwan|talk:Yak-Hwan;other:kill 10 Ember Flame King , 10 Ember Flame Beard , 10 Ember Flame Troll;talk:Yak-Hwan
+105|S|Old Grudge, New Battle|Yak-Hwan|talk:Yak-Hwan;other:kill Razador;talk:Yak-Hwan
+105|S|The Red Dragon|Yak-Hwan|talk:Yak-Hwan;other:use ring of samael on the taramor gravestone
+120|S|A New Continent|AUTO|talk:Warrior Statue
+120|S|Risking Your Neck|Yohara Warden|talk:Yohara Warden;talk:Yohara Guard
+120|S|With the Devil on Your Back|Yohara Guard|talk:Yohara Guard;kill:300xMonster(Abandoned Fortress);talk:Yohara Guard
+120|S|Devils' Leader|Yohara Guard|talk:Yohara Guard;talk:Admiral Angmur;kill:1xKing Bao (Quest);talk:Yohara Guard
+120|S|A Strange Feeling|Admiral Angmur|talk:Admiral Angmur;kill:100xMonster(Abandoned Fortress);talk:Admiral Angmur
+120|S|Preparations for the Disruption Ritual|Admiral Angmur|talk:Admiral Angmur;talk:Shrine;talk:Admiral Angmur;collect:10xTainted Flowers<-Abandoned Fortress;talk:Admiral Angmur
+120|S|Disruption Ritual|Admiral Angmur|talk:Admiral Angmur;talk:Shrine;talk:Admiral Angmur
+120|S|Disastrous Powers|Theowahdan|talk:Theowahdan;collect:1xd<-Dong Gwang Plain;other:Tainted Cores 30x;other:Tainted Horns 30x;other:Tainted Skin 30x;talk:Theowahdan
+120|S|New Powers|Theowahdan|talk:Theowahdan;collect:10xTainted Soul Stones<-Dong Gwang Plain;talk:Theowahdan
+120|S|Use Dark Powers|Theowahdan|talk:Theowahdan
+120|S|Suspicious Occurrences|Theowahdan|talk:Theowahdan;talk:Uriel;talk:Old Lady;talk:Storekeeper;talk:Theowahdan
+120|S|Hunting Down the Trickster|Theowahdan|talk:Theowahdan;goto:Mount Sohan;talk:Theowahdan;other:talk with Stable Boy;other:find trickster;talk:Theowahdan
+120|S|Successfully captured|Theowahdan|talk:Theowahdan
+120|S|Where the Northwind Howls|Serpent Guardian|talk:Serpent Guardian;talk:Northwind Guardian
+120|S|Frenzied Beasts|Northwind Guardian|talk:Northwind Guardian;kill:300xMonster(Northwind Canyon);talk:Northwind Guardian
+120|S|Lost Souls|Northwind Guardian|talk:Northwind Guardian;talk:Confucius;talk:Northwind Guardian
+120|S|In the Canyon Depths|Northwind Guardian|talk:Northwind Guardian;other:Guardian
+120|S|Top Secret|Soul Gorge Guardian|other:Guardian;kill:300xMonster(Soul Gorge);other:Guardian
+120|S|Northwind Shelter|Soul Gorge Guardian|other:Guardian;talk:General Kohan
+120|S|Icy Resting Place|General Kohan|talk:General Kohan;other:find the lost scout in northwind shelter;talk:General Kohan
+120|S|Into the Cold Heart of the Mountain|General Kohan|talk:General Kohan;goto:Northwind Hermit(Northwind Descent);talk:Northwind Hermit
+120|S|Into the Icy Depths|Confucius|talk:Confucius;talk:General Kohan;collect:1xd<-Northwind Descent;other:White Dragon Scales 20x;other:Frost-Covered Fur 20x;talk:General Kohan
+120|S|Alastor's Binding|Confucius|talk:Confucius;collect:1xArgos's Heart<-Argos;goto:Shrine(Abandoned Fortress);talk:Confucius
+120|S|The Power of Confucius|Confucius|talk:Confucius;collect:1xIce Blade Scale<-Northwind Sh. War Chief (Ice);talk:Confucius;talk:Alchemnist;talk:Confucius
+120|S|???|General Kohan|talk:General Kohan;kill:1xAlastor (Easy);talk:General Kohan;goto:Shrine(Abandoned Fortress);talk:Confucius
+4|S|A Strange Discovery|Dragon Watcher Jaharr|talk:Dragon Watcher Jaharr;goto:Ghostly Guardian(Northwind Descent);talk:Cursed Stone Tablet
+4|S|Breaking the Curse|Ghostly Guardian|talk:Ghostly Guardian;kill:1xAlastor in Northwind Deeps;talk:Ghostly Guardian
+4|S|???|Cursed Stone Tablet|talk:Cursed Stone Tablet;talk:Dragon Watcher Jaharr
+4|S|???|Dragon Watcher Jaharr|talk:Dragon Watcher Jaharr;goto:Dragon Watcher Dolnarr(Mount Sohan);other:*To be continued*

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+MT2Guide/Data/quest_state.txt
+MT2Guide/Data/quests_gravadas.txt
+MT2Guide/Data/api_dump_quest.txt
+MT2Guide/Data/api_dump.txt
+MT2Guide/Data/mobs_vnum.txt
+MT2Guide/Data/posicoes.txt
+MT2Guide/Data/dead_zones.txt
+MT2Guide/Data/zonas_*.json
+syserr_guide.txt
+*.log

@@ -1,0 +1,246 @@
+?# MT2Guide - quests YOHARA (Lv120+) da wiki TR que FALTAVAM na wiki EN
+# Fonte: tr-wiki.metin2.gameforge.com "Yohara Gorev Listesi" (Dongan Ovasi)
+# Nomes em TR (sem acentos para compatibilidade) - iguais aos do cliente.
+# As quests 120 basicas (Terkedilmis Kale, Eldiven Lisansi, Kuzey Ruzgari,
+# Ruh Bogazi, Alastor) ja estao em quests_wiki.txt em EN.
+
+[QUEST]
+name = Yarali (Yohara)
+name_pt = O ferido (Yohara)
+map =
+level = 120
+# giver: AUTO - Dongan Ovasi
+steps:
+  goto | | | | | Dongan Ovasi: encontra o Yarali (ferido) |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) ate dropar a medicina |
+  turnin | Yarali | | | | Entrega a medicina ao Yarali |
+
+[QUEST]
+name = Silah Saticisini Kurtar (Yohara)
+name_pt = Salvar o armeiro (Yohara)
+map =
+level = 120
+# giver: Silah Saticisi (resgate com medicina)
+steps:
+  talk | Silah Saticisi | | | | Fala com o Silah Saticisi |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) / monstros ate a medicina |
+  turnin | Silah Saticisi | | | | Entrega a medicina ao Silah Saticisi |
+
+[QUEST]
+name = Zirh Saticisini Kurtar (Yohara)
+name_pt = Salvar o vendedor de armaduras (Yohara)
+map =
+level = 120
+# giver: Zirh Saticisi (resgate com medicina)
+steps:
+  talk | Zirh Saticisi | | | | Fala com o Zirh Saticisi |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) / monstros ate a medicina |
+  turnin | Zirh Saticisi | | | | Entrega a medicina ao Zirh Saticisi |
+
+[QUEST]
+name = Simyaciyi Kurtar (Yohara)
+name_pt = Salvar o alquimista (Yohara)
+map =
+level = 120
+# giver: Simyaci - recompensa: Isik Ruhu (Light Soul)
+steps:
+  talk | Simyaci | | | | Fala com o Simyaci |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) / monstros ate a medicina |
+  turnin | Simyaci | | | | Entrega a medicina ao Simyaci |
+
+[QUEST]
+name = Urieli Kurtar (Yohara)
+name_pt = Salvar o Uriel (Yohara)
+map =
+level = 120
+# giver: Uriel - recompensa: Taki Ruhu (Jewellery Soul)
+steps:
+  talk | Uriel | | | | Fala com o Uriel |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) / monstros ate a medicina |
+  turnin | Uriel | | | | Entrega a medicina ao Uriel |
+
+[QUEST]
+name = Chaegirabi Kurtar (Yohara)
+name_pt = Salvar o Chaegirab (Yohara)
+map =
+level = 120
+# giver: Chaegirab - recompensa: Ruh Kalintisi (Relic Shard da classe)
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab |
+  kill | Farkindalik Metini (G) | | 1 | | Mata Farkindalik Metini (G) / monstros ate a medicina |
+  turnin | Chaegirab | | | | Entrega a medicina ao Chaegirab |
+  kill | monstros (Dongan Ovasi) | | 10 | | Mata monstros ate obter 10x Kul (cinza) |
+  turnin | Chaegirab | | | | Entrega as 10x Kul ao Chaegirab |
+
+[QUEST]
+name = Yeniden Insan (Kampi Kur - Yohara)
+name_pt = Reconstruir o acampamento (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: Buyulu Metal + kamp fica utilizavel
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  talk | Depocu | | | | Fala com o Depocu (renovar o stock) |
+  kill | monstros (Dongan Ovasi) | | 10 | | Apanha 10x Ham Metal Plaka (mata monstros) |
+  goto | | | | | Mina Sis Jeditlisi (Gorev): extrai 4x Sis Jediti Cevheri (G) com a picareta |
+  turnin | Depocu | | | | Entrega os materiais ao Depocu |
+
+[QUEST]
+name = Koy icin Iksirler (Yohara)
+name_pt = Pocoes para a aldeia (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: 10x Yasam Kutsamasi + Satici utilizavel
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  talk | Satici | | | | Fala com o Satici |
+  kill | monstros (Dongan Ovasi) | | 50 | | Apanha 50x Bos Sise + 50x Inci Cicegi (mata monstros) |
+  turnin | Satici | | | | Entrega os materiais ao Satici |
+
+[QUEST]
+name = Koy icin Silahlar (Yohara)
+name_pt = Armas para a aldeia (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: Buyulu Demir Maden
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  talk | Demirci | | | | Fala com o Demirci |
+  kill | monstros (Dongan Ovasi) | | 30 | | Apanha 30x taki celik plakasi + 30x trol kornosu |
+  turnin | Demirci | | | | Entrega os materiais ao Demirci |
+
+[QUEST]
+name = Koy icin Zirhlar (Yohara)
+name_pt = Armaduras para a aldeia (Yohara)
+map =
+level = 120
+# giver: Demirci - recompensa: Rituel Tasi
+steps:
+  talk | Demirci | | | | Fala com o Demirci |
+  kill | monstros (Dongan Ovasi) | | 30 | | Apanha 30x taki celik plakasi + 30x demirhane celik plakasi |
+  turnin | Demirci | | | | Entrega os materiais ao Demirci |
+
+[QUEST]
+name = Gizemli Hastalik (Yohara)
+name_pt = Doenca misteriosa (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: Arttirma Kagidi (B) + Efsun Nesnesi (B)
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus (Dongan Ovasi) |
+  talk | Silah Saticisi | | | | Fala com o Silah Saticisi |
+  talk | Zirh Saticisi | | | | Fala com o Zirh Saticisi |
+  talk | Demirci | | | | Fala com o Demirci |
+  talk | Depocu | | | | Fala com o Depocu |
+  turnin | Konfucyus | | | | Volta ao Konfucyus |
+
+[QUEST]
+name = Kirlenmis Su (Yohara)
+name_pt = Agua poluida (Yohara)
+map =
+level = 120
+# giver: Chaegirab
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab (Dongan Ovasi) |
+  goto | | | | | Vai as Bozulmus Cicekler (flores corrompidas) |
+  turnin | Chaegirab | | | | Volta ao Chaegirab |
+
+[QUEST]
+name = Bagli Hayaletler (Yohara)
+name_pt = Fantasmas presos (Yohara)
+map =
+level = 120
+# giver: Chaegirab - recompensa: Salgin Pusulasi
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab (Dongan Ovasi) |
+  kill | Bagli Ruh | | 10 | | Mata 10x Bagli Ruh (apanha 10x Ruh Ozu) |
+  turnin | Chaegirab | | | | Volta ao Chaegirab |
+
+[QUEST]
+name = Bulasin Kaynagi (Yohara)
+name_pt = A origem da infeccao (Yohara)
+map =
+level = 120
+# giver: Chaegirab
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab (Dongan Ovasi) |
+  goto | | | | | Usa a Salgin Pusulasi e vai ao local marcado |
+  turnin | Chaegirab | | | | Volta ao Chaegirab |
+
+[QUEST]
+name = Bulasin Raporu (Yohara)
+name_pt = Relatorio da infeccao (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: Gecit Bileti (B)
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  turnin | Ulak Komutani | | | | Fala com o Ulak Komutani (mensageiro-chefe) |
+
+[QUEST]
+name = Ruh Raslari (Yohara)
+name_pt = Xaropes de alma (Yohara)
+map =
+level = 120
+# giver: Ulak Komutani - recompensa: 5x Seftali Cicegi Sarabi (B)
+steps:
+  talk | Ulak Komutani | | | | Fala com o Ulak Komutani |
+  kill | monstros (Dongan Ovasi) | | 10 | | Apanha 10x temizlenmis cekirdek (mata monstros) |
+  turnin | Ulak Komutani | | | | Volta ao Ulak Komutani |
+
+[QUEST]
+name = Temizlik (Yohara)
+name_pt = Limpeza (Yohara)
+map =
+level = 120
+# giver: Chaegirab
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab |
+  kill | Gnoll Usta | | 1 | | Gnoll Magaralari: mata o Gnoll Usta (apanha o Egreln Otu) |
+  turnin | Chaegirab | | | | Volta ao Chaegirab |
+
+[QUEST]
+name = Koydeki Gnoller (Yohara)
+name_pt = Gnolls na aldeia (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: Hirsizin Eldivenleri (3h)
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  kill | Gnoll | | 200 | | Gnoll Magaralari: mata 200x Gnoll |
+  turnin | Konfucyus | | | | Volta ao Konfucyus |
+
+[QUEST]
+name = Su Aritma (Yohara)
+name_pt = Tratamento de agua (Yohara)
+map =
+level = 120
+# giver: Chaegirab - recompensa: Kutsama Nesnesi
+steps:
+  talk | Chaegirab | | | | Fala com o Chaegirab |
+  talk | Kim-Rim | | | | Fala com o Kim-Rim |
+  goto | | | | | Vai a zona marcada |
+  turnin | Chaegirab | | | | Volta ao Chaegirab |
+
+[QUEST]
+name = Toren (Yohara)
+name_pt = Cerimonia (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: +5 SungMa iradesi STR (permanente)
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  talk | Silah Saticisi | | | | Fala com o Silah Saticisi |
+  talk | Satici | | | | Fala com o Satici |
+  talk | Zirh Saticisi | | | | Fala com o Zirh Saticisi |
+  turnin | Chaegirab | | | | Fala com o Chaegirab |
+
+[QUEST]
+name = Gizli bir Vadi (Yohara)
+name_pt = Um vale secreto (Yohara)
+map =
+level = 120
+# giver: Konfucyus - recompensa: 160k Champ EXP + Tamligin Kitabi
+steps:
+  talk | Konfucyus | | | | Fala com o Konfucyus |
+  turnin | Yilan Bekcisi | | | | Fala com o Yilan Bekcisi (guardiao da serpente) |

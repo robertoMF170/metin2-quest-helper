@@ -1,0 +1,94 @@
+# MT2Guide - QUESTS/PREMIUM dos servidores TR PAGOS
+# Pesquisa 2026-09: anuncios oficiais Gameforge TR + wiki TR.
+#
+# [RUBY] Lucifer / [RUBY] Charon  -> servidores premium Ruby (TR)
+# [DIA] Nite -> servidor DIAMOND da Turquia (aberto 07/08/2026, acesso pago)
+#              (irm?os: [DIA] Blos Europa-Ocidental, [DIA] Dem Europa-Oriental)
+# [ONYX] Bazalt e [EMERALD] Alesta -> servidores com subscricao DRAGON
+#
+# NAO ha "quests exclusivas" publicamente documentadas nestes servidores:
+# o que muda sao VANTAGENS + GORES DIARIAS/SEMANAIS/MENSAIS do site oficial
+# (AP / A-EXP / Alan Kontrol). Abaixo esta' o fluxo documentado.
+# Prefixo [P] = premium (aparece no filtro "Prem" do seletor, tecla N).
+
+[QUEST]
+name = [P] DIA Nite: Alan Kontrolu (DIAMOND)
+name_pt = Controlo de areas (DIA Nite)
+map =
+level = 120
+# Servidor DIAMOND turco (acesso pago unica vez). 7 areas, dominio semanal.
+steps:
+  goto | | | | | Compra o acesso DIA Nite (pacote Nite: 1 acesso + 3 top-ups) |
+  goto | | | | | Entra numa guilda: cada guilda e' atribuida a 1 de 7 areas |
+  goto | | | | | Area 0: desbloqueia as quests diarias/semanais/mensais do site |
+  goto | | | | | Area 1: buffs da area permanentes para a guilda (EXP/drop/Yang) |
+  goto | | | | | Area 2: quest extra de guilda disponivel |
+  goto | | | | | Area 3: buffs da area ficam mais fortes |
+  goto | | | | | Area MAX: titulo de veterano da area (Alacakaranlik/Macera/Issizlik/Uc Noktalar/Gizemler/Ucurum/Tehlike Gazi) + Area Jetonu |
+  goto | | | | | Faz as quests do site para ganhar AP (dominio semanal, reseta segunda-feira 10h) + A-EXP (permanente) |
+  goto | | | | | Premios: KP Kuponlari, Cor Draconis (bruto), Yagma Kartlari, loja premium pessoal |
+  goto | | | | | Area Hukumdari (guilda top da semana) escolhe: buffs extra (+5% a +35%), bosses diarios da area e itens premium semanais por GM mail |
+  goto | | | | | Os 7 hukumdaris formam o Dunya Konseyi: votam bosses neutrais (Razador/Bagjanamu/Nemere), buffs globais (+ate 150% drop total) e evento de fim de semana |
+  goto | | | | | Bencoes AP/A-EXP (7 dias, loja do site) dobram os pontos ganhos |
+
+[QUEST]
+name = [P] DIA Nite: Server First (DIAMOND)
+name_pt = Primeiros do servidor (DIA Nite)
+map =
+level = 120
+# Desafios "primeiro do servidor" com premios exclusivos.
+steps:
+  goto | | | | | Vence um desafio Server First (lista no popup do site in-game) |
+  goto | | | | | Premios: ganimet petleri, rituel taslari, Nazar tilsimlari... |
+  goto | | | | | NOVIDADE DIAMOND: Hirs Kalbi (Coracao da Ganancia) - a primeira guilda ganha 50x sanduim bordada de Aamon |
+  goto | | | | | Base do servidor: +50% drop, Uriel EXP ate +125% (Lv40+), Kuvvet Yankilari, eventos Diunya Patronu/Cicek Cocuklari |
+  goto | | | | | Eventos diarios rotativos (ex.: segunda: Munzevi Tavsiyesi/Yesil Ejderha Fasulyesi/Kutsama Kagidi/Nugget; sexta: Ay Isigi 20h; sabado: Cor Draconis 20h) |
+
+[QUEST]
+name = [P] DIA Nite: Lonca Gorevleri (DIAMOND)
+name_pt = Missoes de guilda (DIA Nite)
+map =
+level = 120
+# Quests mensais de guilda (contribuem A-EXP para a area).
+steps:
+  goto | | | | | Quest mensal de guilda no site (ex.: completar a dungeon de guilda 30x) |
+  goto | | | | | TODOS os membros ganham a recompensa (mesmo quem nao jogou) |
+  goto | | | | | Versao Metin+: so membros Metin+ contribuem/pedem o premio |
+  goto | | | | | Ranking AP pessoal por reino: top 25/jogador ganha premios mensais |
+
+[QUEST]
+name = [P] RUBY Lucifer: vantagens do servidor
+name_pt = Vantagens do servidor RUBY Lucifer
+map =
+level = 0
+# [RUBY]Lucifer (12/2023) e [RUBY]Charon (08/2022) - premium Ruby.
+steps:
+  goto | | | | | As quests sao as MESMAS da lista livre (quests_wiki.txt) |
+  goto | | | | | -25% de vida em TODOS os monstros (inclui NPCs de dungeon) |
+  goto | | | | | Uriel EXP ate +100% ( permanente) |
+  goto | | | | | Drop por bandeira ate +75% |
+  goto | | | | | Eventos fixos: Diunya Patronu + Cicek Cocuklari |
+  goto | | | | | Premium Gorev Kitabi: quests aleatorias com premios (ver [P] Gorev Kitabi) |
+
+[QUEST]
+name = [P] Gorev Kitabi (Kolay/Orta/Zor)
+name_pt = Livro de missoes (facil/medio/dificil)
+map =
+level = 0
+# Missoes aleatorias de livros de missao (drop/comercio/item shop).
+steps:
+  goto | | | | | Usa um Gorev Kitabi (Facil/Medio/Dificil) para iniciar uma quest aleatoria |
+  goto | | | | | So 1 quest de livro NORMAL ativa de cada vez (+1 de Yohara em paralelo) |
+  goto | | | | | Completa o objetivo (matar/coletar) e recebe EXP/Yang/itens |
+  goto | | | | | A quest de caca (avlanma gorevi) aparece ao subir de nivel: faz-la dentro da faixa da mais EXP |
+
+[QUEST]
+name = [P] Metin+ (membresia)
+name_pt = Metin+ (subscricao)
+map =
+level = 0
+# Membresia opcional (tambem em DIA/RUBY): buffs de conta + premios extra.
+steps:
+  goto | | | | | Ativa o Metin+ (item shop) |
+  goto | | | | | Ganhos: ganimet pet, Ejderha Alevi, premios extra nas quests do site |
+  goto | | | | | Apenas membros Metin+ contribuem nas quests Metin+ de guilda (DIA) |

@@ -1,0 +1,2743 @@
+# MT2Guide - quests LIVRES (F2P) extraidas da wiki oficial
+# Fonte: en-wiki.metin2.gameforge.com List of Quests (228 quests)
+# Corrigido com a wiki TR (passos em falta) 2026-09
+#
+# VNUMS + POSICOES dos ficheiros oficiais do servidor (2026-09):
+#   - name do passo = nome TURCO do jogo (mob_names_tr)
+#   - vnum = codigo real do NPC/mob (encontra-o ao vivo no mapa)
+#   - pos = spawn oficial por REINO nas vilas (s:;c:;j:) ou
+#     comum nos outros mapas. Coordenadas em px (jogo*100).
+#   Fonte: share/locale/.../npc.txt + conf/mob_names*.txt
+#   (reinos: s=Shinsoo a1/a3, c=Chunjo b1/b3, j=Jinno c1/c3)
+# - name_pt = titulo em PORTUGUES (a pesquisa da quest line
+#   aceita escrever em PT ou em EN)
+
+[QUEST]
+name = Welcome to Metin2
+name_pt = Bem-vindo a Metin2
+map = 
+level = 1
+# giver: AUTO (main)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  talk | Koy Gardiyani |  | | s:64700,58200;c:63300,64000;j:38300,64000 | Fala com Guardian | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  turnin | Koy Gardiyani |  | | s:64700,58200;c:63300,64000;j:38300,64000 | Entrega a missao: fala com Guardian | 
+
+[QUEST]
+name = Look for the experienced soldier
+name_pt = Procura o soldado experiente
+map = 
+level = 1
+# giver: Teacher (side)
+steps:
+  talk | Ogretmen |  | | s:62200,55600;c:62300,59400;j:44400,62300 | Fala com Teacher | 
+  goto | | | | | search map for seasoned soldier (player) | 
+
+[QUEST]
+name = Go on patrol
+name_pt = Em patrulha
+map = 
+level = 1
+# giver: Teacher (side)
+steps:
+  talk | Ogretmen |  | | s:62200,55600;c:62300,59400;j:44400,62300 | Fala com Teacher | 
+  goto | | | | | Go to 5 patrol points | 
+
+[QUEST]
+name = Letter from the City Guard
+name_pt = Carta do guarda da cidade
+map = 
+level = 2
+# giver: AUTO (main)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  kill | Yabani Kopek | 101 | 9 | s:75100,31100;s:73300,32100;s:47500,50100;c:64200,44100;c:62000,47700;c:66700,48400;j:36000,42500;j:33700,43900;j:31700,45300 | Mata 9x Wild Dog | 
+  turnin | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Entrega a missao: fala com City Guard | 
+
+[QUEST]
+name = News from the City Guard
+name_pt = Novidades do guarda da cidade
+map = 
+level = 3
+# giver: AUTO (main)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  turnin | Zirh Saticisi | 9002 | | s:59600,60500;c:67600,61700;j:40300,58600 | Entrega a missao: fala com Armour Shop Dealer | 
+
+[QUEST]
+name = The investigation of the biologist (Peach Blossom)
+name_pt = A investigacao do biologo (flor de pessegueiro)
+map = 
+level = 4
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Peach Blossom (Hungry Alpha Wolf) | 173 | 5 |  | Apanha 5x Peach Blossom (mata Hungry Alpha Wolf) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = A new fragrance
+name_pt = Uma nova fragrancia
+map = 
+level = 4
+# giver: General Store Saleswoman (side)
+steps:
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  collect | Lilacs (Blue Wolf) | 104 | 2 | s:53200,16700;s:54700,17700;s:53500,19000;c:80900,28900;c:76400,30000;c:78900,30500;j:30100,26900;j:36400,28200;j:31200,28700 | Apanha 2x Lilacs (mata Blue Wolf) | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  goto | | | | | buy 1x musk oil in the item-shop | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  turnin | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Entrega a missao: fala com General Store Saleswoman | 
+
+[QUEST]
+name = The training
+name_pt = O treino
+map = 
+level = 5
+# giver: AUTO (side)
+steps:
+  talk | Ogretmen |  | | s:62200,55600;c:62300,59400;j:44400,62300 | Fala com Teacher | 
+  goto | | | | | select specialization | 
+
+[QUEST]
+name = The Blacksmith's mission
+name_pt = A missao do ferreiro
+map = 
+level = 6
+# giver: AUTO (main)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Pig Nose (Storekeeper) | 9005 | 1 |  | Apanha 1x Pig Nose (mata Storekeeper) | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Get an Empty Bottle
+name_pt = Arranja uma garrafa vazia
+map = 
+level = 6
+# giver: General Store Saleswoman (side)
+steps:
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  collect | Peach Seed (Wild Boar) | 108 | 1 | s:27500,18500;s:22700,20500;s:24000,22100;c:72000,18200;c:64900,19200;c:54100,20900;j:61700,17200;j:59300,17400;j:64800,17600 | Apanha 1x Peach Seed (mata Wild Boar) | 
+  collect | Empty Bottle (Yonah) | 20005 | 1 |  | Apanha 1x Empty Bottle (mata Yonah) | 
+  turnin | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Entrega a missao: fala com General Store Saleswoman | 
+
+[QUEST]
+name = Another favour
+name_pt = Outro favor
+map = 
+level = 7
+# giver: AUTO (main)
+steps:
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  talk | Balikci | 9009 | | s:35400,32700;c:67500,53900;j:71100,23400 | Fala com Fisherman | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = The investigation of the biologist (Bellflower)
+name_pt = A investigacao do biologo (campainha)
+map = 
+level = 7
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Bellflowers (Hungry Alpha Blue Wolf) | 175 | 5 |  | Apanha 5x Bellflowers (mata Hungry Alpha Blue Wolf) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = The dinner
+name_pt = O jantar
+map = 
+level = 7
+# giver: General Store Saleswoman (side)
+steps:
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Zirh Saticisi | 9002 | | s:59600,60500;c:67600,61700;j:40300,58600 | Fala com Armour Shop Dealer | 
+  turnin | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Entrega a missao: fala com General Store Saleswoman | 
+
+[QUEST]
+name = The daughter's wedding
+name_pt = O casamento da filha
+map = 
+level = 7
+# giver: Octavio (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  talk | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Fala com Old Lady | 
+  collect | Blood Red Flower (Hungry Alpha Wolf) | 173 | 1 |  | Apanha 1x Blood Red Flower (mata Hungry Alpha Wolf) | 
+  collect | Orange Flower (Hungry Blue Wolf) | 174 | 1 |  | Apanha 1x Orange Flower (mata Hungry Blue Wolf) | 
+  collect | Fragrant Yellow Flower (Hungry Alpha Blue Wolf) | 175 | 1 |  | Apanha 1x Fragrant Yellow Flower (mata Hungry Alpha Blue Wolf) | 
+  talk | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Fala com Old Lady | 
+  turnin | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Entrega a missao: fala com Octavio | 
+
+[QUEST]
+name = Ingredient for the medicine
+name_pt = Ingrediente para o medicamento
+map = 
+level = 8
+# giver: Baek-Go (side)
+steps:
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  collect | Wolf Liver (Blue Wolf) | 104 | 1 | s:53200,16700;s:54700,17700;s:53500,19000;c:80900,28900;c:76400,30000;c:78900,30500;j:30100,26900;j:36400,28200;j:31200,28700 | Apanha 1x Wolf Liver (mata Blue Wolf) | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Talk to the City Guard
+name_pt = Fala com o guarda da cidade
+map = 
+level = 9
+# giver: AUTO (main)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+
+[QUEST]
+name = A Letter from the Blacksmith
+name_pt = Uma carta do ferreiro
+map = 
+level = 9
+# giver: Blacksmith (side)
+steps:
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  talk | Deokbae | 20015 | | s:58200,56100;c:46600,32100;j:51500,32200 | Fala com Deokbae | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Lunches
+name_pt = Almocos
+map = 
+level = 9
+# giver: AUTO (side)
+steps:
+  goto | | | | | click scroll | 
+  goto | | | | | click rotating coin | 
+
+[QUEST]
+name = Go to the Captain
+name_pt = Vai ao Capitao
+map = 
+level = 10
+# giver: AUTO (main)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan (Map2) | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Help for Soon
+name_pt = Ajuda para Soon
+map = 
+level = 10
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  goto | | | | | responde ao teste de Soon: Bird / Triple / Water / Cranewing | 
+  turnin | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Entrega a missao: fala com Soon | 
+
+[QUEST]
+name = The investigation of the biologist (Kaki Blossom)
+name_pt = A investigacao do biologo (flor de kaki)
+map = 
+level = 10
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Kaki Blossoms (Hungry Alpha Grey Wolf) | 177 | 5 |  | Apanha 5x Kaki Blossoms (mata Hungry Alpha Grey Wolf) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = Find Soon
+name_pt = Encontra Soon
+map = 
+level = 10
+# giver: Aranyo (side)
+steps:
+  talk | Aranyo | 20002 | | s:68700,47500;c:55400,59700;j:34300,56000 | Fala com Aranyo | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  goto | | | | | Cover or betray Soon | 
+  talk | Aranyo | 20002 | | s:68700,47500;c:55400,59700;j:34300,56000 | Fala com Aranyo | 
+  goto | | | | | If u covered for Soon return to him | 
+
+[QUEST]
+name = Ordering armour
+name_pt = Encomendar armadura
+map = 
+level = 11
+# giver: Armour Shop Dealer (side)
+steps:
+  talk | Zirh Saticisi | 9002 | | s:59600,60500;c:67600,61700;j:40300,58600 | Fala com Armour Shop Dealer | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Iron ore (Uriel) | 20011 | 1 |  | Apanha 1x Iron ore (mata Uriel) | 
+  collect | Uriels Book (Wild Dog) | 101 | 1 | s:75100,31100;s:73300,32100;s:47500,50100;c:64200,44100;c:62000,47700;c:66700,48400;j:36000,42500;j:33700,43900;j:31700,45300 | Apanha 1x Uriels Book (mata Wild Dog) | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Gall (Bear) | 110 | 1 | s:11300,6700;s:9300,7200;s:21900,7800;c:29200,11200;c:32700,11700;c:34600,12400;j:65900,11100;j:57100,11500;j:69900,11500 | Apanha 1x Gall (mata Bear) | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  collect | Clay (Red Wild Boar) | 109 | 1 | s:29000,8900;s:32900,11000;s:25800,15500;c:79700,9500;c:78400,10900;c:74900,14000;j:35300,11500;j:70000,13200;j:41500,13300 | Apanha 1x Clay (mata Red Wild Boar) | 
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Kill 10 Alpha Grey Wolves
+name_pt = Mata 10 lobos alfa cinzentos
+map = 
+level = 12
+# giver: AUTO (main)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  kill | Alfa Gri Kurt | 107 | 10 | s:68100,7500;s:78100,7700;s:73100,8400;c:77300,13000;c:83700,13000;c:82700,14600;j:70200,24700;j:68500,25600;j:60600,26700 | Mata 10x Alpha Grey Wolf | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = The best cookbook
+name_pt = O melhor livro de receitas
+map = 
+level = 12
+# giver: Octavio (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Wolf Intestine (Grey Wolf) | 106 | 1 | s:61400,6500;s:65200,7900;s:63300,9300;c:86300,15500;c:81700,17800;c:75200,20600;j:31000,11400;j:23200,11700;j:32700,12900 | Apanha 1x Wolf Intestine (mata Grey Wolf) | 
+  turnin | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Entrega a missao: fala com Octavio | 
+
+[QUEST]
+name = Get a Wolf Pelt
+name_pt = Arranja uma pele de lobo
+map = 
+level = 13
+# giver: Old Lady (side)
+steps:
+  talk | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Fala com Old Lady | 
+  collect | Wolf Fur (Grey Wolf) | 106 | 1 | s:61400,6500;s:65200,7900;s:63300,9300;c:86300,15500;c:81700,17800;c:75200,20600;j:31000,11400;j:23200,11700;j:32700,12900 | Apanha 1x Wolf Fur (mata Grey Wolf) | 
+  turnin | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Entrega a missao: fala com Old Lady | 
+
+[QUEST]
+name = Destroy the Metin of Battle
+name_pt = Destroi a Metin da Batalha
+map = 
+level = 14
+# giver: AUTO (main)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  kill | Savas Metini | 8003 | 1 | s:90000,87300;s:86500,80900;s:87000,83500;c:32900,59200;c:94000,61900;c:63500,31100;j:70800,84800;j:69100,37900;j:44300,94000 | Mata 1x Metin of Battle | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = The investigation of the biologist (Gango root)
+name_pt = A investigacao do biologo (raiz gango)
+map = 
+level = 15
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Gango Roots (Hungry Grizzly) | 181 | 5 |  | Apanha 5x Gango Roots (mata Hungry Grizzly) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = Find Yu-Hwan the musician
+name_pt = Encontra Yu-Hwan, o musico
+map = 
+level = 15
+# giver: AUTO (main)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan (Map2) | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Rice Cake
+name_pt = Bolo de arroz
+map = 
+level = 15
+# giver: Ah-Yu (side)
+steps:
+  talk | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Fala com Ah-Yu | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  talk | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Fala com Yu-Rang | 
+  talk | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Fala com Taurean | 
+  talk | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Fala com Yu-Rang colect the Rice Cake | 
+  turnin | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Entrega a missao: fala com Ah-Yu | 
+
+[QUEST]
+name = Find the Golden Axe
+name_pt = Encontra o machado dourado
+map = 
+level = 16
+# giver: AUTO (side)
+steps:
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Golden axe of BlackSmith (White Oath Soldier) | 301 | 1 | 136500,11200;140400,11800;132600,14500 | Apanha 1x Golden axe of BlackSmith (mata White Oath Soldier) | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Capture the spy
+name_pt = Captura o espiao
+map = 
+level = 16
+# giver: AUTO (main)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  collect | Letter (White Oath members) |  | 1 |  | Apanha 1x Letter (mata White Oath members) | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = The gift for Chaegirab
+name_pt = O presente para Chaegirab
+map = 
+level = 17
+# giver: Wonda-Rim (side)
+steps:
+  talk | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Fala com Wonda-Rim | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Fala com Wonda-Rim | 
+  collect | Mu-Rang Fur |  | 5 |  | Apanha 5x Mu-Rang Fur | 
+  talk | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Fala com Wonda-Rim | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  talk | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Fala com Wonda-Rim | 
+  goto | | | | | If you answer *No,not at all* go to Yang-Shin | 
+
+[QUEST]
+name = Find the Hairpin
+name_pt = Encontra o alfinete
+map = 
+level = 18
+# giver: General Store Saleswoman (side)
+steps:
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  collect | stolen Ornamental Hairpin (White Oath Archer) | 302 | 1 | s:91600,102300;s:12100,92200;s:28400,13700;c:88800,107800;c:30100,113500;c:62800,17500;j:37400,111100;j:65500,110400;j:66100,22500 | Apanha 1x stolen Ornamental Hairpin (mata White Oath Archer) | 
+  turnin | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Entrega a missao: fala com General Store Saleswoman | 
+
+[QUEST]
+name = Find my brother
+name_pt = Encontra o meu irmao
+map = 
+level = 19
+# giver: Mirine (side)
+steps:
+  talk | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Fala com Mirine | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  turnin | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Entrega a missao: fala com Mirine | 
+
+[QUEST]
+name = Kill Mi-Jung from the White Oath
+name_pt = Mata a Mi-Jung do Juramento Branco
+map = 
+level = 20
+# giver: Guardian (side)
+steps:
+  talk | Koy Gardiyani |  | | s:64700,58200;c:63300,64000;j:38300,64000 | Fala com Guardian | 
+  kill | Mi-Jung | 391 | 1 |  | Mata 1x Mi-Jung (not Dispirited Mi-Jung ) | 
+  turnin | Koy Gardiyani |  | | s:64700,58200;c:63300,64000;j:38300,64000 | Entrega a missao: fala com Guardian | 
+
+[QUEST]
+name = The investigation of the biologist (Lilac)
+name_pt = A investigacao do biologo (lilas)
+map = 
+level = 20
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Lilacs (Hungry Black Bear) | 182 | 10 |  | Apanha 10x Lilacs (mata Hungry Black Bear) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = Elemental Forces
+name_pt = Forcas elementais
+map = 
+level = 20
+# giver: Monk Milbon (side)
+steps:
+  talk | Monk Milbon |  | |  | Fala com Monk Milbon | 
+  kill | Metin of Rat |  | 10 |  | Mata 10x Metin of Rat | 
+
+[QUEST]
+name = Look for materials
+name_pt = Procura materiais
+map = 
+level = 21
+# giver: Weapon Shop Dealer (side)
+steps:
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Uriel's Package (Tiger) | 114 | 1 |  | Apanha 1x Uriel's Package (mata Tiger) | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung | 
+  goto | | | | | Give the letter to Ah-Yu collect the Skein | 
+  turnin | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Entrega a missao: fala com Weapon Shop Dealer | 
+
+[QUEST]
+name = The sick brother
+name_pt = O irmao doente
+map = 
+level = 22
+# giver: City Guard (side)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  collect | drop Medical Herb+ and Tiger Liver+ (Tiger/White Tiger) | 114 | 1 |  | Apanha 1x drop Medical Herb+ and Tiger Liver+ (mata Tiger/White Tiger) | 
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  goto | | | | | Guard in 20 minutes | 
+
+[QUEST]
+name = Eun-Jung from the White Oath
+name_pt = Eun-Jung do Juramento Branco
+map = 
+level = 23
+# giver: City Guard (side)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  kill | Eun-Jung | 392 | 1 |  | Mata 1x Eun-Jung | 
+  turnin | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Entrega a missao: fala com City Guard | 
+
+[QUEST]
+name = Get the Black Uniform
+name_pt = Arranja o uniforme preto
+map = 
+level = 24
+# giver: Mirine (side)
+steps:
+  talk | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Fala com Mirine | 
+  collect | Black Uniform (Black Wind Maniac) | 402 | 1 | 103400,23900;96000,24000;104400,25500 | Apanha 1x Black Uniform (mata Black Wind Maniac) | 
+  turnin | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Entrega a missao: fala com Mirine | 
+
+[QUEST]
+name = The investigation of the biologist (Tue-Mushrooms)
+name_pt = A investigacao do biologo (cogumelos tue)
+map = 
+level = 25
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Tue Fungus (Hungry Brown Bear) | 183 | 10 |  | Apanha 10x Tue Fungus (mata Hungry Brown Bear) | 
+  turnin | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Entrega a missao: fala com Biologist Chaegirab | 
+
+[QUEST]
+name = The armoured cavalry
+name_pt = A cavalaria blindada
+map = 
+level = 25
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  talk | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Fala com Peddler | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Revenge for the Ringtrader
+name_pt = Vinganca pelo mercador
+map = 
+level = 25
+# giver: Old Lady (side)
+steps:
+  talk | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Fala com Old Lady | 
+  kill | Jin-Hee | 394 | 1 | s:12100,92200;s:9800,9800;c:30100,113500;c:32700,15100;j:37400,111100;j:100200,18400 | Mata 1x Jin-Hee | 
+  turnin | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Entrega a missao: fala com Old Lady | 
+
+[QUEST]
+name = The Deserter
+name_pt = O desertor
+map = 
+level = 26
+# giver: AUTO (side)
+steps:
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  talk | Nakajima | 20364 | | s:48100,29800;c:80500,86500;j:53500,89200 | Fala com Nakajima | 
+  talk | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Fala com Ah-Yu | 
+  turnin | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Entrega a missao: fala com Yang-Shin | 
+
+[QUEST]
+name = The story of Ariyoung's husband
+name_pt = A historia do marido de Ariyoung
+map = 
+level = 27
+# giver: Ariyoung (side)
+steps:
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung | 
+  collect | Ariyo Wedding Ring (Goo-Pae) | 493 | 1 | s:37600,36800;s:88100,45800;c:19700,40800;c:17800,48500;j:22200,28900;j:64100,37100 | Apanha 1x Ariyo Wedding Ring (mata Goo-Pae) | 
+  turnin | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Entrega a missao: fala com Ariyoung | 
+
+[QUEST]
+name = Destroy the Metin of Black
+name_pt = Destroi a Metin Negra
+map = 
+level = 27
+# giver: AUTO (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  kill | Siyah Metin | 8005 | 1 | s:22400,15300;c:67600,15300;j:66800,15600 | Mata 1x Metin of Black | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = The blackmail
+name_pt = A chantagem
+map = 
+level = 28
+# giver: Yu-Hwan (side)
+steps:
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  talk | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Fala com Ah-Yu | 
+  collect | Bear Paw (Bera) | 193 | 1 | s:31500,32200;c:91500,47700;j:33200,14400 | Apanha 1x Bear Paw (mata Bera) | 
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  turnin | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Entrega a missao: fala com Ah-Yu | 
+
+[QUEST]
+name = The broken porcelain
+name_pt = A porcelana partida
+map = 
+level = 29
+# giver: AUTO (side)
+steps:
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  talk | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Fala com Taurean | 
+  talk | Harang | 20024 | | s:58300,58500;c:48900,35500;j:37200,36200 | Fala com Harang | 
+  talk | Seyis | 20349 | | s:71800,57700;c:54900,61000;j:39600,73500 | Fala com Stable Boy | 
+  goto | | | | | Obtaing 6 Hay from Savage Infantryman or Strong Savage Infantry | 
+  turnin | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Entrega a missao: fala com Yonah | 
+
+[QUEST]
+name = The secret of the Metin Stones
+name_pt = O segredo das pedras Metin
+map = 
+level = 30
+# giver: AUTO (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  goto | | | | | read the hasun stone memorial at easy monkey dungeon | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  goto | | | | | read the seul rong stone memorial | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The Spears
+name_pt = As lancas
+map = 
+level = 30
+# giver: Ah-Yu (side)
+steps:
+  talk | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Fala com Ah-Yu | 
+  collect | Spear of the husband (Savage Archer/Savage Minion/Savage General/Savage Infantryman) | 503 | 3 | s:35000,15200;s:24900,19700;c:89200,73300;c:86500,77800;j:87900,81200;j:66600,83400 | Apanha 3x Spear of the husband (mata Savage Archer/Savage Minion/Savage General/Savage Infantryman) | 
+  turnin | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Entrega a missao: fala com Ah-Yu | 
+
+[QUEST]
+name = Helping the Storekeeper
+name_pt = Ajudar o depositario
+map = 
+level = 30
+# giver: Storekeeper (side)
+steps:
+  talk | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Fala com Storekeeper | 
+  kill | Ork Reisi | 691 | 1 | 77000,75700 | Mata 1x Chief Orc | 
+  talk | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Fala com Storekeeper | 
+  kill | Buz Golemi | 1107 | 5 | 74900,62900 | Mata 5x Ice Golem | 
+  talk | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Fala com Storekeeper | 
+  kill | Maymun Lordu | 5163 | 1 |  | Mata 1x Ape Lord | 
+  turnin | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Entrega a missao: fala com Storekeeper | 
+
+[QUEST]
+name = The research of the biologist 1
+name_pt = A pesquisa do biologo 1
+map = 
+level = 30
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Orc Tooth (Orc/Black Orc/Bold Black Orc) | 601 | 10 | 12900,38500;17300,38600;22400,38800 | Apanha 10x Orc Tooth (mata Orc/Black Orc/Bold Black Orc) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  kill | Elit Ork | 631 | 1 |  | Mata 1x Elite Orc/Elite Orc Scout/Elite Orc Sorcerer/Elite Orc Fighter | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Get the Flowers
+name_pt = Arranja as flores
+map = 
+level = 31
+# giver: Huahn-So (side)
+steps:
+  talk | Huahn-So | 20022 | | s:41900,56300;c:44900,30300;j:37000,47500 | Fala com Huahn-So | 
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung | 
+  talk | Huahn-So | 20022 | | s:41900,56300;c:44900,30300;j:37000,47500 | Fala com Huahn-So | 
+  collect | Flowers (Nameless Flowers (Map 1)) | 20358 | 1 |  | Apanha 1x Flowers (mata Nameless Flowers (Map 1)) | 
+  turnin | Huahn-So | 20022 | | s:41900,56300;c:44900,30300;j:37000,47500 | Entrega a missao: fala com Huahn-So | 
+
+[QUEST]
+name = The secret book (Page 1)
+name_pt = O livro secreto (Pagina 1)
+map = 
+level = 32
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Fala com Peddler | 
+  collect | Silver Swords (u can buy them at Weapon Shop Dealer ) |  | 20 |  | Apanha 20x Silver Swords (u can buy them at Weapon Shop Dealer ) | 
+  talk | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Fala com Peddler | 
+  talk | Weol Aniti | 20357 | | s:58200,34700;c:61400,116700;j:11400,96000 | Fala com Weol Monument | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 2)
+name_pt = O livro secreto (Pagina 2)
+map = 
+level = 32
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  collect | secret Diary Page (Elite Orc Sorcerer) | 634 | 1 | 77000,75700 | Apanha 1x secret Diary Page (mata Elite Orc Sorcerer) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = Ore for the Blacksmith (new weapon)
+name_pt = Minerio para o ferreiro (arma nova)
+map = 
+level = 33
+# giver: Blacksmith (side)
+steps:
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Gold Ore |  | 100 |  | Apanha 100x Gold Ore | 
+  collect | Silver Ore |  | 100 |  | Apanha 100x Silver Ore | 
+  collect | Ebony Ore |  | 100 |  | Apanha 100x Ebony Ore | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Ore for the Blacksmith (new armour)
+name_pt = Minerio para o ferreiro (armadura nova)
+map = 
+level = 34
+# giver: Blacksmith (side)
+steps:
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Ebony Ore |  | 100 |  | Apanha 100x Ebony Ore | 
+  collect | Copper Ore |  | 100 |  | Apanha 100x Copper Ore | 
+  collect | Piece of Pearls |  | 100 |  | Apanha 100x Piece of Pearls | 
+  turnin | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Entrega a missao: fala com Blacksmith | 
+
+[QUEST]
+name = Deokbae's Golden Axe
+name_pt = O machado dourado de Deokbae
+map = 
+level = 35
+# giver: Deokbae (side)
+steps:
+  talk | Deokbae | 20015 | | s:58200,56100;c:46600,32100;j:51500,32200 | Fala com Deokbae | 
+  collect | Golden axe of BlackSmith (Savage General) | 504 | 1 | s:35000,15200;s:24900,19700;c:89200,73300;c:86500,77800;j:87900,81200;j:66600,83400 | Apanha 1x Golden axe of BlackSmith (mata Savage General) | 
+  turnin | Deokbae | 20015 | | s:58200,56100;c:46600,32100;j:51500,32200 | Entrega a missao: fala com Deokbae | 
+
+[QUEST]
+name = The missing brother
+name_pt = O irmao desaparecido
+map = 
+level = 36
+# giver: Mirine (side)
+steps:
+  talk | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Fala com Mirine | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  talk | Ginseng Toplayicisi | 20356 | | 94500,76000 | Fala com Ginseng Collector | 
+  goto | | | | | recebe o Jade Necklace (Mirine Trailer) | 
+  turnin | Mirine | 20006 | | s:58200,57800;c:71700,63300;j:33600,77000 | Entrega a missao: fala com Mirine | 
+
+[QUEST]
+name = The Spider with the Bell
+name_pt = A aranha com o sino
+map = 
+level = 37
+# giver: Yu-Rang (side)
+steps:
+  talk | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Fala com Yu-Rang | 
+  goto | | | | | Look for spider with the bell by killing Baby Spider | 
+  talk | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Fala com Taurean | 
+  goto | | | | | Attach the bell to a spider by killing Baby Spider | 
+  talk | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Fala com Yu-Rang | 
+  turnin | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Entrega a missao: fala com Taurean | 
+
+[QUEST]
+name = The Secret Temple Book
+name_pt = O livro do templo secreto
+map = 
+level = 38
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  talk | Aranyo | 20002 | | s:68700,47500;c:55400,59700;j:34300,56000 | Fala com Aranyo | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  collect | Temple Book (Dark Fanatic) | 701 | 1 | 9300,12000;8100,14400;17700,17000 | Apanha 1x Temple Book (mata Dark Fanatic) | 
+  turnin | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Entrega a missao: fala com Soon | 
+
+[QUEST]
+name = The stolen Rice Cake
+name_pt = O bolo de arroz roubado
+map = 
+level = 39
+# giver: Yu-Rang (side)
+steps:
+  talk | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Fala com Yu-Rang | 
+  collect | Rice Cake (Quest Item) (Baby Spider) | 2001 | 1 | s:7600,7000;s:58300,7100;s:20300,9000;c:76900,12000;c:74400,13100;c:68400,15900;j:23700,12600;j:60200,13800;j:71300,19300 | Apanha 1x Rice Cake (Quest Item) (mata Baby Spider) | 
+  turnin | Yu-Rang | 20012 | | s:54900,56200;c:40600,41900;j:49300,33500 | Entrega a missao: fala com Yu-Rang | 
+
+[QUEST]
+name = The secret book (Page 3)
+name_pt = O livro secreto (Pagina 3)
+map = 
+level = 40
+# giver: AUTO (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Diary Page (Proud Dark Fanatic) | 731 | 1 |  | Apanha 1x Diary Page (mata Proud Dark Fanatic) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 4)
+name_pt = O livro secreto (Pagina 4)
+map = 
+level = 40
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  goto | | | | | Desert, read the Wha Memorial and the Su Memorial | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 5)
+name_pt = O livro secreto (Pagina 5)
+map = 
+level = 40
+# giver: AUTO (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Nakajima | 20364 | | s:48100,29800;c:80500,86500;j:53500,89200 | Fala com Nakajima | 
+  collect | Diary Page (Bestial Captain) | 591 | 1 | s:35000,15200;s:24900,19700;s:62500,87000;c:89200,73300;c:86500,77800;c:78700,68800;j:87900,81200;j:66600,83400;j:80400,83000 | Apanha 1x Diary Page (mata Bestial Captain) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel (only possible after level 47) | 
+
+[QUEST]
+name = The research of the biologist 2
+name_pt = A pesquisa do biologo 2
+map = 
+level = 40
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Curse Books (Dark Tormentor/High Tormentor) | 706 | 15 |  | Apanha 15x Curse Books (mata Dark Tormentor/High Tormentor) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Temple Soul Stone (Proud Dark Fanatic/Proud Dark Fighter/Proud Dark Colonel) | 731 | 1 |  | Apanha 1x Temple Soul Stone (mata Proud Dark Fanatic/Proud Dark Fighter/Proud Dark Colonel) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Kill the Black Wind generals
+name_pt = Mata os generais do Vento Negro
+map = 
+level = 40
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  kill | Siyah Ruzgar Gu-Ryung | 406 | 1 | s:53700,35700;s:46500,36700;s:37600,36800;c:49600,18800;c:67800,19100;c:19700,40800;j:44100,13500;j:56000,19600;j:22200,28900 | Mata 1x Black Wind Gu-Ryung | 
+  kill | Siyah Ruzgar Jak-To | 404 | 1 | s:53700,35700;s:46500,36700;c:49600,18800;c:67800,19100;j:62400,76100;j:66500,25600 | Mata 1x Black Wind Jak-To | 
+  kill | Siyah Ruzgar To-Su | 405 | 1 | s:53700,35700;s:46500,36700;c:49600,18800;c:67800,19100;j:62400,76100;j:66500,25600 | Mata 1x Black Wind To-Su | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = A special cloth
+name_pt = Um pano especial
+map = 
+level = 40
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  goto | | | | | wait 3 hours (online time) | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain again | 
+  goto | | | | | Repeat until you have 40x Fine Cloth | 
+  turnin | Theowahdan |  | |  | Entrega a missao: fala com Theowahdan | 
+
+[QUEST]
+name = Peddler's request
+name_pt = O pedido do ambulante
+map = 
+level = 41
+# giver: Peddler (side)
+steps:
+  talk | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Fala com Peddler | 
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung to receive the Clothing | 
+  talk | Ah-Yu | 20003 | | s:69800,51300;c:55300,66300;j:37800,57700 | Fala com Ah-Yu | 
+  talk | Ariyoung | 20021 | | s:40800,58100;c:37600,37800;j:40300,48200 | Fala com Ariyoung | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  collect | Liver of a Tiger and 1 Medical Herb (Tiger/White Tiger) | 114 | 100 |  | Apanha 100x Liver of a Tiger and 1 Medical Herb (mata Tiger/White Tiger) | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  collect | Orc Molars (Elite Orc Sorcerer) | 634 | 100 | 77000,75700 | Apanha 100x Orc Molars (mata Elite Orc Sorcerer) | 
+  turnin | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Entrega a missao: fala com Peddler | 
+
+[QUEST]
+name = Furious Sea Monsters
+name_pt = Monstros marinhos furiosos
+map = 
+level = 42
+# giver: AUTO (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  talk | Balikci | 9009 | | s:35400,32700;c:67500,53900;j:71100,23400 | Fala com Fisherman | 
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  collect | Diamond Stone |  | 20 |  | Apanha 20x Diamond Stone | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  goto | | | | | espera 24 horas | 
+  turnin | Balikci | 9009 | | s:35400,32700;c:67500,53900;j:71100,23400 | Entrega a missao: fala com Fisherman | 
+
+[QUEST]
+name = The orphan
+name_pt = O orfao
+map = 
+level = 43
+# giver: Wonda-Rim (side)
+steps:
+  talk | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Fala com Wonda-Rim | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Letter with Wonda-Rim's rhymes (Orc Fighter) | 603 | 1 | 67600,6100;92400,6600;70600,7300 | Apanha 1x Letter with Wonda-Rim's rhymes (mata Orc Fighter) | 
+  turnin | Wonda-Rim | 20087 | | s:54500,41200;c:85400,82700;j:45600,93600 | Entrega a missao: fala com Wonda-Rim | 
+
+[QUEST]
+name = The bookworm's Treasure Map
+name_pt = O mapa do tesouro do rato de biblioteca
+map = 
+level = 44
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  collect | Treasure Maps (Bera/Lykos/Scrofa/Tigris) | 193 | 4 | s:31500,32200;c:91500,47700;j:33200,14400 | Apanha 4x Treasure Maps (mata Bera/Lykos/Scrofa/Tigris) | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  talk | Yasli Adam | 20009 | | s:7600,60100;c:90800,8700;j:12500,111800 | Fala com Old Man | 
+  turnin | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Entrega a missao: fala com Soon | 
+
+[QUEST]
+name = The hunter's treasure
+name_pt = O tesouro do cacador
+map = 
+level = 45
+# giver: Yang-Shin (side)
+steps:
+  talk | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Fala com Yang-Shin | 
+  collect | Ornamented Bow (Monster) |  | 1 |  | Apanha 1x Ornamented Bow (mata Monster) | 
+  turnin | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Entrega a missao: fala com Yang-Shin | 
+
+[QUEST]
+name = Let the dead rest
+name_pt = Deixa os mortos descansar
+map = 
+level = 46
+# giver: Dragon Force Teacher (side)
+steps:
+  talk | Ejderha Gucu Ogretmeni |  | | s:65100,54900;c:65300,59500;j:44300,65200 | Fala com Dragon Force Teacher | 
+  collect | Temple Scarf and Temple Doctrine (Proud Dark Colonel) | 734 | 1 |  | Apanha 1x Temple Scarf and Temple Doctrine (mata Proud Dark Colonel) | 
+  turnin | Ejderha Gucu Ogretmeni |  | | s:65100,54900;c:65300,59500;j:44300,65200 | Entrega a missao: fala com Dragon Force Teacher | 
+
+[QUEST]
+name = The stables are in trouble
+name_pt = Os establos em apuros
+map = 
+level = 47
+# giver: Yonah (side)
+steps:
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  collect | Hay |  | 10 |  | Apanha 10x Hay | 
+  talk | Seyis | 20349 | | s:71800,57700;c:54900,61000;j:39600,73500 | Fala com Stable Boy | 
+  turnin | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Entrega a missao: fala com Yonah | 
+
+[QUEST]
+name = The secret book (Page 6)
+name_pt = O livro secreto (Pagina 6)
+map = 
+level = 47
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Mok Aniti | 20362 | | 31500,16100 | Fala com Mok Memorial at Spiders Dungeon | 
+  collect | Diary Page |  | 1 |  | Apanha 1x Diary Page | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 7)
+name_pt = O livro secreto (Pagina 7)
+map = 
+level = 47
+# giver: Yu-Hwan (side)
+steps:
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  collect | Diary Page (Desert Outlaw) | 2108 | 1 | 86900,65800 | Apanha 1x Diary Page (mata Desert Outlaw) | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 8)
+name_pt = O livro secreto (Pagina 8)
+map = 
+level = 47
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Diary Page (Snake Swordsman/Snake Archer) | 2106 | 1 |  | Apanha 1x Diary Page (mata Snake Swordsman/Snake Archer) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = A medicine for Balso
+name_pt = Um medicamento para Balso
+map = 
+level = 48
+# giver: Traitor Balso (side)
+steps:
+  talk | Hain Balso | 20020 | | s:54100,62000;c:40900,26800;j:45100,33000 | Fala com Traitor Balso | 
+  collect | Medicine (Plagued Man) | 903 | 1 |  | Apanha 1x Medicine (mata Plagued Man) | 
+  turnin | Hain Balso | 20020 | | s:54100,62000;c:40900,26800;j:45100,33000 | Entrega a missao: fala com Traitor Balso | 
+
+[QUEST]
+name = Spider Eyes special
+name_pt = Olhos de aranha especiais
+map = 
+level = 49
+# giver: Octavio (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Eye of a spider (Monster) |  | 100 |  | Apanha 100x Eye of a spider (mata Monster) | 
+  turnin | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Entrega a missao: fala com Octavio | 
+
+[QUEST]
+name = About the secret code...
+name_pt = Sobre o codigo secreto...
+map = 
+level = 50
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  goto | | | | | Translate the text (Enemies seen at horizon) | 
+
+[QUEST]
+name = The research of the biologist 3
+name_pt = A pesquisa do biologo 3
+map = 
+level = 50
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Demon's Keepsakes (Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier) | 1002 | 15 |  | Apanha 15x Demon's Keepsakes (mata Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Sagyis Soul Stone (Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier) | 1002 | 1 |  | Apanha 1x Sagyis Soul Stone (mata Demon Archer/Demon Spearman/Demon Shaman/Demon Soldier) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = The secret book (Page 9)
+name_pt = O livro secreto (Pagina 9)
+map = 
+level = 50
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Diary Page (Proud Soldier Spider) | 2036 | 1 | 8800,18800;18700,18800;8600,28700 | Apanha 1x Diary Page (mata Proud Soldier Spider) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 10)
+name_pt = O livro secreto (Pagina 10)
+map = 
+level = 50
+# giver: AUTO (side)
+steps:
+  talk | Eski Kutu ile Kagitlar | 20359 | | 37400,141100 | Fala com Old Box with Papers on Mount Sohan | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret book (Page 11)
+name_pt = O livro secreto (Pagina 11)
+map = 
+level = 50
+# giver: AUTO (side)
+steps:
+  collect | Diary Page (Claw Poison Spider) | 2034 | 1 | 8800,18800;18700,18800;8600,28700 | Apanha 1x Diary Page (mata Claw Poison Spider) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = Access to the Breeding Lair
+name_pt = Acesso ao Criadouro
+map = 
+level = 50
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  goto | | | | | Vai ate Spider Cave 3 (copia a inscricao) | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Spider Poison Sack (spiders) |  | 1 |  | Apanha 1x Spider Poison Sack (mata spiders) | 
+  collect | Spider Egg Sack (spiders) |  | 1 |  | Apanha 1x Spider Egg Sack (mata spiders) | 
+  collect | Spider Web (spiders) |  | 1 |  | Apanha 1x Spider Web (mata spiders) | 
+  collect | Spider Eyes (spiders) |  | 1 |  | Apanha 1x Spider Eyes (mata spiders) | 
+  collect | Spider Legs (spiders) |  | 1 |  | Apanha 1x Spider Legs (mata spiders) | 
+  collect | Queen Spider Poison (spiders) |  | 1 |  | Apanha 1x Queen Spider Poison (mata spiders) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The secret of Celadon Porcelain
+name_pt = O segredo da porcelana celadon
+map = 
+level = 51
+# giver: Yonah (side)
+steps:
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  talk | Seyyar satici | 20010 | | s:51600,57900;c:39700,30200;j:53700,42000 | Fala com Peddler | 
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  turnin | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Entrega a missao: fala com Yonah | 
+
+[QUEST]
+name = A good night's sleep
+name_pt = Uma boa noite de sono
+map = 
+level = 52
+# giver: Captain (side)
+steps:
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  goto | | | | | Avange the 4 killed soligers by slaughtering High Evocator , Dark Summ | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Pale green porcelain
+name_pt = Porcelana verde palida
+map = 
+level = 53
+# giver: Yonah (side)
+steps:
+  talk | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Fala com Yonah | 
+  collect | Desert Sand (Desert Outlaw) | 2108 | 1 | 86900,65800 | Apanha 1x Desert Sand (mata Desert Outlaw) | 
+  collect | Crystal Ore |  | 1 |  | Apanha 1x Crystal Ore | 
+  collect | Ape Blood (Strong Stone Ape/Strong Gold Ape s in Hard Monkey Dungeon) | 5125 | 1 |  | Apanha 1x Ape Blood (mata Strong Stone Ape/Strong Gold Ape s in Hard Monkey Dungeon) | 
+  turnin | Yonah | 20005 | | s:59700,51100;c:70200,68600;j:29200,71800 | Entrega a missao: fala com Yonah | 
+
+[QUEST]
+name = The fresh supply
+name_pt = O fornecimento fresco
+map = 
+level = 54
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  collect | Shimmering Tigerskins (Cursed White Tiger) | 144 | 20 | s:28600,110000;c:25800,67800;j:10200,32600 | Apanha 20x Shimmering Tigerskins (mata Cursed White Tiger) | 
+  turnin | Yang-Shin | 20019 | | s:56400,60300;c:48200,33000;j:36600,38900 | Entrega a missao: fala com Yang-Shin | 
+
+[QUEST]
+name = Looking for the memorials
+name_pt = A procura dos memoriais
+map = 
+level = 55
+# giver: AUTO (side)
+steps:
+  talk | Weol Aniti | 20357 | | 11400,96000 | Fala com Weol Monument at Pyungmoo | 
+  talk | Weol Aniti | 20357 | | 58200,34700 | Fala com Weol Monument at Yongan | 
+  talk | Weol Aniti | 20357 | | 61400,116700 | Fala com Weol Monument at Joan | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The last page
+name_pt = A ultima pagina
+map = 
+level = 55
+# giver: AUTO (side)
+steps:
+  goto | | | | | mata Leflet Bogeyman ate a missao mudar | 
+  talk | Gum Aniti | 20363 | | 55400,52600 | Fala com Gum Memorial | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = Herb of the Ape Lord
+name_pt = Erva do Senhor dos Macacos
+map = 
+level = 55
+# giver: Traitor Balso (side)
+steps:
+  talk | Hain Balso | 20020 | | s:54100,62000;c:40900,26800;j:45100,33000 | Fala com Traitor Balso | 
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  collect | Herb of Hard Monkeys (Ape Lord) | 5163 | 1 |  | Apanha 1x Herb of Hard Monkeys (mata Ape Lord) | 
+  talk | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Fala com Baek-Go | 
+  turnin | Hain Balso | 20020 | | s:54100,62000;c:40900,26800;j:45100,33000 | Entrega a missao: fala com Traitor Balso | 
+
+[QUEST]
+name = Supporting war device
+name_pt = Aparelhagem de guerra
+map = 
+level = 56
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  collect | Arrowheads (Plagued Archer) | 906 | 5000 |  | Apanha 5000x Arrowheads (mata Plagued Archer) | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Get Frog's Legs
+name_pt = Arranja pernas de ra
+map = 
+level = 57
+# giver: Storekeeper (side)
+steps:
+  talk | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Fala com Storekeeper | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Frog Legs (quest) (Tree Frog Leader) | 1302 | 1 | 37400,42000 | Apanha 1x Frog Legs (quest) (mata Tree Frog Leader) | 
+  turnin | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Entrega a missao: fala com Octavio | 
+
+[QUEST]
+name = Meet the spy
+name_pt = Encontra o espiao
+map = 
+level = 58
+# giver: Captain (side)
+steps:
+  talk | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Fala com Captain | 
+  talk | Balikci | 9009 | | 35400,32700 | Fala com Fisherman at Yongan | 
+  talk | Balikci | 9009 | | 67500,53900 | Fala com Fisherman at Joan | 
+  talk | Balikci | 9009 | | 71100,23400 | Fala com Fisherman at Pyungmoo | 
+  turnin | Yuzbasi | 20355 | | s:57300,53100;c:77200,68200;j:28600,63900 | Entrega a missao: fala com Captain | 
+
+[QUEST]
+name = Bingsu?
+name_pt = Bingsu?
+map = 
+level = 59
+# giver: Taurean (side)
+steps:
+  talk | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Fala com Taurean | 
+  talk | Harang | 20024 | | s:58300,58500;c:48900,35500;j:37200,36200 | Fala com Harang | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  kill | Buyulu Buz | 1101 | 50 | 52100,7000;61000,9400;45000,10900 | Mata 50x Enchanted Ice | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  turnin | Taurean | 20014 | | s:47500,68400;c:38300,40000;j:41100,33300 | Entrega a missao: fala com Taurean | 
+
+[QUEST]
+name = The Temple of Darkness
+name_pt = O templo da escuridao
+map = 
+level = 60
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  collect | Temple Scarf (Elite Esoteric Tormentor) | 736 | 1 |  | Apanha 1x Temple Scarf (mata Elite Esoteric Tormentor) | 
+  turnin | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Entrega a missao: fala com Soon | 
+
+[QUEST]
+name = The research of the biologist 4
+name_pt = A pesquisa do biologo 4
+map = 
+level = 60
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Ice Marbles (Ice Golem/Frosty Ice Men) | 1107 | 20 | 74900,62900 | Apanha 20x Ice Marbles (mata Ice Golem/Frosty Ice Men) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Aurtumryus Soul Stone (Ice Golem/Ice Killer Whale/Ice Lion/Frosty Ice Men) | 1107 | 1 | 74900,62900 | Apanha 1x Aurtumryus Soul Stone (mata Ice Golem/Ice Killer Whale/Ice Lion/Frosty Ice Men) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Dark Nation I
+name_pt = Nacao Sombria I
+map = 
+level = 60
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  goto | | | | | find the old gravestone | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = Dark Nation II
+name_pt = Nacao Sombria II
+map = 
+level = 60
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Old Document (Evil Tree) | 2305 | 1 | 35900,33400;33000,34200;34500,35300 | Apanha 1x Old Document (mata Evil Tree) | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  collect | Old Document (Evil Tree) | 2305 | 9 | 35900,33400;33000,34200;34500,35300 | Apanha 9x Old Document (mata Evil Tree) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = The Diary
+name_pt = O diario
+map = 
+level = 66
+# giver: Uriel (side)
+steps:
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  kill | Seytan Krali | 1091 | 1 |  | Mata 1x Demon King(Demon Tower) | 
+  turnin | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Entrega a missao: fala com Uriel | 
+
+[QUEST]
+name = Anonymous Letter
+name_pt = Carta anonima
+map = 
+level = 66
+# giver: City Guard (side)
+steps:
+  talk | Sehir Bekcisi | 20354 | | s:60500,66300;c:57100,55800;j:46800,71400 | Fala com City Guard | 
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  kill | Kirmizi Orman Perisi | 2313 | 200 |  | Mata 200x Red Dryad | 
+  goto | | | | | LIMITES 30 minutos! (apanha o Antidote) | 
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  talk | Zehirlenen Asker | 20370 | | 50500,44600 | Fala com Poisoned Soldier | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = The research of the biologist 5
+name_pt = A pesquisa do biologo 5
+map = 
+level = 70
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Zelkova Branches (Lungsam (Normal Wood)/Red Wood) |  | 25 |  | Apanha 25x Zelkova Branches (mata Lungsam (Normal Wood)/Red Wood) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Gyimoks Soul Stone (Lungsam (Normal Wood)/Red Wood) |  | 1 |  | Apanha 1x Gyimoks Soul Stone (mata Lungsam (Normal Wood)/Red Wood) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = The Discovery
+name_pt = A descoberta
+map = 
+level = 72
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  goto | | | | | find the worn stone tablet | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = Icy Treasure
+name_pt = Tesouro gelado
+map = 
+level = 72
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  collect | Blue Crystal Essence (Frosty Ice Man/Yeti/Ice Golem) | 1105 | 50 |  | Apanha 50x Blue Crystal Essence (mata Frosty Ice Man/Yeti/Ice Golem) | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = In the Grotto
+name_pt = Na gruta
+map = 
+level = 75
+# giver: Seon-Hae (side)
+steps:
+  talk | Seon-Hae | 20095 | | j:47100,57600 | Fala com Seon-Hae | 
+  goto | | | | | search for 7 Fossilised Tear (ride on the target points) | 
+  goto | | | | | kill as many Flame as you can to get 4 Obsidian | 
+  talk | Seon-Hae | 20095 | | j:47100,57600 | Fala com Seon-Hae | 
+  goto | | | | | go to the target point. | 
+  goto | | | | | Immediately after that reaching the point, click on the Quest Scroll a | 
+  turnin | Seon-Hae | 20095 | | j:47100,57600 | Entrega a missao: fala com Seon-Hae | 
+
+[QUEST]
+name = Diary of a Legend
+name_pt = Diario de uma lenda
+map = 
+level = 75
+# giver: Heuk-Young (side)
+steps:
+  talk | Heuk-Yong | 20090 | | s:57800,47000;c:53800,78400;j:30000,86700 | Fala com Heuk-Young | 
+  goto | | | | | Vai ate Sura Skeleton 1-4 | 
+  collect | Page (Sura Skeleton) |  | 9 |  | Apanha 9x Page (mata Sura Skeleton) | 
+  collect | Page (Underworld Ice Golem) | 1137 | 6 |  | Apanha 6x Page (mata Underworld Ice Golem) | 
+  turnin | Heuk-Yong | 20090 | | s:57800,47000;c:53800,78400;j:30000,86700 | Entrega a missao: fala com Heuk-Young | 
+
+[QUEST]
+name = Red Hell Quartz (Quest)
+name_pt = Quartzo do inferno vermelho
+map = 
+level = 78
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  collect | Volcanic Earth (Fighting Tiger/Flame/Flame Warrior) | 2203 | 20 |  | Apanha 20x Volcanic Earth (mata Fighting Tiger/Flame/Flame Warrior) | 
+  collect | Flaming Mane (Fighting Tiger/Flame/Flame Warrior) | 2203 | 20 |  | Apanha 20x Flaming Mane (mata Fighting Tiger/Flame/Flame Warrior) | 
+  collect | Foundation Stone (Fighting Tiger/Flame/Flame Warrior) | 2203 | 20 |  | Apanha 20x Foundation Stone (mata Fighting Tiger/Flame/Flame Warrior) | 
+  goto | | | | | refina em Red Hell Quartz (pode falhar) ate ter 20x | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = Final Element
+name_pt = Elemento final
+map = 
+level = 78
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  collect | Hallowed Tree Gum (Red Evil Tree) | 2315 | 100 |  | Apanha 100x Hallowed Tree Gum (mata Red Evil Tree) | 
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Fire and Ice
+name_pt = Fogo e gelo
+map = 
+level = 80
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+  goto | | | | | kill Flame Ghost until the Sombre Wooden Mask turns into the Bewitched | 
+  goto | | | | | kill Yeti to find 10 Ice Chunk . | 
+  goto | | | | | After finding all the materials, go back to Soon and he will give you | 
+  talk | Grotto of Exile and offer it to the Dark Shrine |  | |  | Fala com Grotto of Exile and offer it to the Dark Shrine | 
+  turnin | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Entrega a missao: fala com Soon | 
+
+[QUEST]
+name = Strange monsters
+name_pt = Monstros estranhos
+map = 
+level = 80
+# giver: Soon (side)
+steps:
+  talk | Soon | 20023 | | s:62900,47100;c:69200,57700;j:45400,53000 | Fala com Soon | 
+
+[QUEST]
+name = The research of the biologist 6
+name_pt = A pesquisa do biologo 6
+map = 
+level = 80
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Tugyi's Tablets (Valley of Giants) |  | 30 |  | Apanha 30x Tugyi's Tablets (mata Valley of Giants) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Tugyis Soul Stone (Giants in Snakefield/Valley of Giants) |  | 1 |  | Apanha 1x Tugyis Soul Stone (mata Giants in Snakefield/Valley of Giants) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = The Fight Begins
+name_pt = A luta comeca
+map = 
+level = 84
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  collect | Heaven's Teardrop (Lee Chung , go to the 5th floor of Devil's Catacomb and kill Tartaros) | 20369 | 1 |  | Apanha 1x Heaven's Teardrop (mata Lee Chung , go to the 5th floor of Devil's Catacomb and kill Tartaros) | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = Prince Charon
+name_pt = Principe Charon
+map = 
+level = 84
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  goto | | | | | Vai ate 6o andar da Devil's Catacomb | 
+  kill | Kharoon | 2597 | 1 |  | Mata 1x Charon | 
+  turnin | Lee Chung | 20369 | | 50200,44600 | Entrega a missao: fala com Lee Chung | 
+
+[QUEST]
+name = The research of the biologist 7
+name_pt = A pesquisa do biologo 7
+map = 
+level = 85
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Red Ghost Tree Branches (Red Dryad/Red Ghost Willow/Red Evil Tree/Red Ghost Tree/Red Ghost Stump in the Red Wood) | 2313 | 40 |  | Apanha 40x Red Ghost Tree Branches (mata Red Dryad/Red Ghost Willow/Red Evil Tree/Red Ghost Tree/Red Ghost Stump in the Red Wood) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Forest Spirit Soul Stone (Red Wood) |  | 1 |  | Apanha 1x Forest Spirit Soul Stone (mata Red Wood) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = The research of the biologist 8
+name_pt = A pesquisa do biologo 8
+map = 
+level = 90
+# giver: AUTO (side)
+steps:
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Notes of the Leader (Boss Monsters) |  | 50 |  | Apanha 50x Notes of the Leader (mata Boss Monsters) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  collect | Soul Stone of Leader (Nine Tails/Yellow Tiger Ghost/Death Reaper) | 1901 | 1 | 74900,62900 | Apanha 1x Soul Stone of Leader (mata Nine Tails/Yellow Tiger Ghost/Death Reaper) | 
+  talk | Biyolog Chaegirab | 20084 | | s:89600,61000;c:89800,79700;j:28500,28500 | Fala com Biologist Chaegirab | 
+  turnin | Baek-Go | 20018 | | s:69500,65700;c:67400,59000;j:46500,61200 | Entrega a missao: fala com Baek-Go | 
+
+[QUEST]
+name = Lee Chung's task
+name_pt = A tarefa de Lee Chung
+map = 
+level = 90
+# giver: Lee Chung (side)
+steps:
+  talk | Lee Chung | 20369 | | 50200,44600 | Fala com Lee Chung | 
+  talk | Isinlayici | 9012 | | s:55500,62500;c:51900,51200;j:43200,68500 | Fala com Teleporter | 
+  goto | | | | | use teleporter in map cape dragon fire | 
+
+[QUEST]
+name = Dark Dragon Rock
+name_pt = Rocha do dragao negro
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  goto | | | | | Explore the map by visiting the 3 Way Points that will show up | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Lee Chung's Letter
+name_pt = A carta de Lee Chung
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Lee Chung's Letter (Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard) | 3001 | 1 | 103500,57100;100500,57900;107700,59900 | Apanha 1x Lee Chung's Letter (mata Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Gnoll Letter I
+name_pt = A carta dos gnolls I
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Gnoll Letter (Gnoll General) | 3005 | 1 | 24200,16100;24000,18500;30700,19700 | Apanha 1x Gnoll Letter (mata Gnoll General) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Gnoll Letter II
+name_pt = A carta dos gnolls II
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | second page of Gnoll Letter (Gnoll Lord) | 3090 | 1 | 88100,61400 | Apanha 1x second page of Gnoll Letter (mata Gnoll Lord) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Manticores
+name_pt = As manticores
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Mantikor Savasci | 3201 | 50 |  | Mata 50x Manticore Warrior | 
+  kill | Mantikor Asker | 3202 | 40 | 110600,31900;83900,38000 | Mata 40x Manticore Soldier | 
+  kill | Mantikor Cellat | 3204 | 20 | 110600,31900;83900,38000 | Mata 20x Manticore Executioner | 
+  kill | General Kor | 3205 | 10 | 110600,31900;83900,38000 | Mata 10x General Cor | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Strengthen the Rampart I
+name_pt = Reforca a muralha I
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Fine Sand (Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard) | 3001 | 50 | 103500,57100;100500,57900;107700,59900 | Apanha 50x Fine Sand (mata Gnoll Warrior/Gnoll Archer/Gnoll Defender/Gnoll Magician/Gnoll General/Gnoll Lord/Supreme Gnoll Guard) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Strengthen the Rampart II
+name_pt = Reforca a muralha II
+map = 
+level = 90
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Clay Bricks (Manticore Warrior/Manticore Soldier/Manticore Magus/Manticore Executioner/General Cor/Rakshasa/Martyaxwar) | 3201 | 100 |  | Apanha 100x Clay Bricks (mata Manticore Warrior/Manticore Soldier/Manticore Magus/Manticore Executioner/General Cor/Rakshasa/Martyaxwar) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Manticore Letter
+name_pt = A carta da manticora
+map = 
+level = 91
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | General Kor | 3205 | 1 | 110600,31900;83900,38000 | Mata 1x General Cor | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Martyaxwar's Hideout
+name_pt = O esconderijo de Martyaxwar
+map = 
+level = 91
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Barb Necklace (Martyaxwar) | 3291 | 1 | 83900,38000 | Apanha 1x Barb Necklace (mata Martyaxwar) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Decoding
+name_pt = Descodificacao
+map = 
+level = 91
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Carapax Scripts (Crab Warrior/Scorpion Marksman/Shrimp Soldier/Diabolical Hermit/Armoured Crab/General Lobster/King Crab) | 3601 | 10 |  | Apanha 10x Carapax Scripts (mata Crab Warrior/Scorpion Marksman/Shrimp Soldier/Diabolical Hermit/Armoured Crab/General Lobster/King Crab) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Manticore letter decoded
+name_pt = Carta da manticora descodificada
+map = 
+level = 91
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Carapax Powder (General Lobster/King Crab) | 3690 | 3 | 28800,45700 | Apanha 3x Carapax Powder (mata General Lobster/King Crab) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Poisoned!
+name_pt = Envenenado!
+map = 
+level = 91
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Kaya Cicegi | 20382 | | 143000,114000 | Fala com Rock Flower | 
+  collect | Rock Flower Root |  | 1 |  | Apanha 1x Rock Flower Root | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = The research of Seon-Pyeong
+name_pt = A pesquisa de Seon-Pyeong
+map = 
+level = 92
+# giver: AUTO (side)
+steps:
+  talk | Seon-Pyeong | 20091 | | s:66900,55000;c:58700,68500 | Fala com Seon-Pyeong | 
+  collect | Jewels of Resentment (Underworld Ice Golem/Underworld Ice Man) | 1137 | 10 |  | Apanha 10x Jewels of Resentment (mata Underworld Ice Golem/Underworld Ice Man) | 
+  turnin | Seon-Pyeong | 20091 | | s:66900,55000;c:58700,68500 | Entrega a missao: fala com Seon-Pyeong | 
+
+[QUEST]
+name = The Red Thief Letter (1)
+name_pt = A carta do ladrcao vermelho (1)
+map = 
+level = 92
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Red Thief Letter (Red Thief Executioner/Black General) | 3504 | 3 | 62600,111000;65900,42400 | Apanha 3x Red Thief Letter (mata Red Thief Executioner/Black General) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Red Thief Letter (2)
+name_pt = A carta do ladrcao vermelho (2)
+map = 
+level = 92
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  goto | | | | | Vai ate Nephrite Bay (procura o Injured Soldier) | 
+  collect | Red Thief Letter (5a parte) (Injured Soldier) | 20379 | 1 |  | Apanha 1x Red Thief Letter (5a parte) (mata Injured Soldier) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Decrypt the Red Thief Letter
+name_pt = Descodifica a carta do ladrcao vermelho
+map = 
+level = 92
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Oin Scales (General Kappa/Triton) | 3490 | 10 | 23800,86400 | Apanha 10x Oin Scales (mata General Kappa/Triton) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Dark Plans
+name_pt = Planos sombrios
+map = 
+level = 92
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+
+[QUEST]
+name = Stocking Up On Power I
+name_pt = A acumular poder I
+map = 
+level = 93
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Inner Light(Polyphemos) (Polyphemos) | 3191 | 1 | 91000,8800 | Apanha 1x Inner Light(Polyphemos) (mata Polyphemos) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Stocking Up On Power II
+name_pt = A acumular poder II
+map = 
+level = 93
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  kill | Kral Voba | 3791 | 1 | 61100,113900 | Mata 1x King Wubba to collect Inner_Light(King Wubba) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Stocking Up On Power III
+name_pt = A acumular poder III
+map = 
+level = 93
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  goto | | | | | wait 24 hours | 
+
+[QUEST]
+name = Stocking Up On Power III - The Millennium Recipe
+name_pt = A acumular poder III - a receita do milenio
+map = 
+level = 93
+# giver: Octavio (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Gango Root |  | 200 |  | Apanha 200x Gango Root | 
+  collect | Tue Fungus |  | 200 |  | Apanha 200x Tue Fungus | 
+  collect | Alpine Rose |  | 200 |  | Apanha 200x Alpine Rose | 
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  goto | | | | | espera 24 horas | 
+
+[QUEST]
+name = Millennium Essence (quest)
+name_pt = Essencia do milenio
+map = 
+level = 93
+# giver: Octavio (side)
+steps:
+  talk | Octavio | 20008 | | s:62300,63000;c:58100,62000;j:34000,74700 | Fala com Octavio | 
+  collect | Millennium Essence |  | 1 |  | Apanha 1x Millennium Essence | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = The research of Seon-Pyeong 2
+name_pt = A pesquisa de Seon-Pyeong 2
+map = 
+level = 94
+# giver: AUTO (side)
+steps:
+  talk | Seon-Pyeong | 20091 | | s:66900,55000;c:58700,68500 | Fala com Seon-Pyeong | 
+  collect | Jewel of Wisdoms (Setaou Archer/Setaou Commander) | 2412 | 20 |  | Apanha 20x Jewel of Wisdoms (mata Setaou Archer/Setaou Commander) | 
+  collect | Beran-Setaou Soulstone (General Huashin/Beran-Setaou) | 2495 | 1 |  | Apanha 1x Beran-Setaou Soulstone (mata General Huashin/Beran-Setaou) | 
+
+[QUEST]
+name = Leviathan Pearls (quest)
+name_pt = Perolas do Leviata
+map = 
+level = 94
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  goto | | | | | recebe as Leviathan Pearls | 
+  goto | | | | | usa as Leviathan Pearls | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Call of the Thunder Mountains
+name_pt = O chamado das Montanhas Trovejantes
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  goto | | | | | Explore Thunder Mountains by checking the Way Points that show up on m | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Weaken the Red Thieves
+name_pt = Enfraquece os ladroes vermelhos
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Chief's Cape (Red Chief) | 3591 | 1 | 65900,42400 | Apanha 1x Chief's Cape (mata Red Chief) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Weaken the Cyclops
+name_pt = Enfraquece os ciclopes
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | General Outis | 3105 | 30 | 53300,80100;91000,8800 | Mata 30x General Outis | 
+  kill | Arges | 3190 | 3 | 53300,80100 | Mata 3x Arges | 
+  kill | Polyphemos | 3191 | 1 | 91000,8800 | Mata 1x Polyphemos | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Weaken the Giants
+name_pt = Enfraquece os gigantes
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | all the 9 Giants' Totem pieces (King Wubba) | 3791 | 1 | 61100,113900 | Apanha 1x all the 9 Giants' Totem pieces (mata King Wubba) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = To the Thunder Mountains
+name_pt = Para as Montanhas Trovejantes
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Black Stone and Slip of Paper (One-eyed Slugger/Cyclops Soldier/Cyclops Magician/Cyclops Executioner/General Outis/Arges/Polyphemos) | 3101 | 1 |  | Apanha 1x Black Stone and Slip of Paper (mata One-eyed Slugger/Cyclops Soldier/Cyclops Magician/Cyclops Executioner/General Outis/Arges/Polyphemos) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Black Gold
+name_pt = Ouro negro
+map = 
+level = 94
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Fala com Alchemist (Energy System) | 
+  goto | | | | | mata One-eyed Slugger / Cyclops Soldier / Cyclops Magician / Cyclops Executioner / General Outis / Arges / Polyphemos | 
+  collect | Black Gold (Cyclops) |  | 30 |  | Apanha 30x Black Gold (mata Cyclops) | 
+  goto | | | | | entrega max 10x por dia ao Alchemist (pode falhar) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Preliminary Investigations
+name_pt = Investigacoes preliminares
+map = 
+level = 95
+# giver: Guardian of the Forest (side)
+steps:
+  talk | Guardian of the Forest |  | |  | Fala com Guardian of the Forest | 
+  kill | En-Tai Warrior |  | 50 |  | Mata 50x En-Tai Warrior | 
+  turnin | Guardian of the Forest |  | |  | Entrega a missao: fala com Guardian of the Forest | 
+
+[QUEST]
+name = Find the Aid Kit
+name_pt = Encontra o kit de socorro
+map = 
+level = 95
+# giver: Guardian of the Forest (side)
+steps:
+  talk | Guardian of the Forest |  | |  | Fala com Guardian of the Forest | 
+  collect | Aid Kit (En-Tai Druid) |  | 1 |  | Apanha 1x Aid Kit (mata En-Tai Druid) | 
+  turnin | Guardian of the Forest |  | |  | Entrega a missao: fala com Guardian of the Forest | 
+
+[QUEST]
+name = Deliver the Aid Kit
+name_pt = Entrega o kit de socorro
+map = 
+level = 95
+# giver: Guardian of the Forest (side)
+steps:
+  talk | Guardian of the Forest |  | |  | Fala com Guardian of the Forest | 
+  turnin | Scout of the Forest |  | |  | Entrega a missao: fala com Scout of the Forest | 
+
+[QUEST]
+name = Secondary Investigations
+name_pt = Investigacoes secundarias
+map = 
+level = 95
+# giver: Scout of the Forest (side)
+steps:
+  talk | Scout of the Forest |  | |  | Fala com Scout of the Forest | 
+  kill | Metin of the Tree Beings |  | 5 |  | Mata 5x Metin of the Tree Beings | 
+  turnin | Scout of the Forest |  | |  | Entrega a missao: fala com Scout of the Forest | 
+
+[QUEST]
+name = En-Tai Daw
+name_pt = Orvalho En-Tai
+map = 
+level = 95
+# giver: Scout of the Forest (side)
+steps:
+  talk | Scout of the Forest |  | |  | Fala com Scout of the Forest | 
+  collect | En-Tai Dew (En-Tai Destroyer) |  | 5 |  | Apanha 5x En-Tai Dew (mata En-Tai Destroyer) | 
+  turnin | Scout of the Forest |  | |  | Entrega a missao: fala com Scout of the Forest | 
+
+[QUEST]
+name = Kill the En-Tai Sovereign
+name_pt = Mata o soberano En-Tai
+map = 
+level = 95
+# giver: Outrider of the Forest (side)
+steps:
+  talk | Outrider of the Forest |  | |  | Fala com Outrider of the Forest | 
+  collect | Fine Timber (En-Tai Sovereign) |  | 1 |  | Apanha 1x Fine Timber (mata En-Tai Sovereign) | 
+  turnin | Outrider of the Forest |  | |  | Entrega a missao: fala com Outrider of the Forest | 
+
+[QUEST]
+name = Obtain a Tree Emerald
+name_pt = Obtem uma esmeralda de arvore
+map = 
+level = 95
+# giver: Outrider of the Forest (side)
+steps:
+  talk | Outrider of the Forest |  | |  | Fala com Outrider of the Forest | 
+  collect | Tree Emerald (En-Tai Sovereign) |  | 1 |  | Apanha 1x Tree Emerald (mata En-Tai Sovereign) | 
+  turnin | Outrider of the Forest |  | |  | Entrega a missao: fala com Outrider of the Forest | 
+
+[QUEST]
+name = Gold Fever
+name_pt = Febre do ouro
+map = 
+level = 95
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Captain Hooks' Letter (Captain Hooks) | 3705 | 1 | 11300,10900;61100,113900 | Apanha 1x Captain Hooks' Letter (mata Captain Hooks) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Head off the Delivery
+name_pt = Intercepta a entrega
+map = 
+level = 95
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Leather Bag (Captain Shruk) | 3890 | 1 | 141100,35700 | Apanha 1x Leather Bag (mata Captain Shruk) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Stop the Processing
+name_pt = Bloqueia a producao
+map = 
+level = 95
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Great Ogre |  | 1 |  | Mata 1x Great Ogre | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Curse of Life
+name_pt = Maldicao da vida
+map = 
+level = 95
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Lemures Tablet (Lemures Magician) | 3303 | 1 | 102300,69200;77600,35100 | Apanha 1x Lemures Tablet (mata Lemures Magician) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Inscription
+name_pt = A inscricao
+map = 
+level = 95
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | missing 2 pieces of Lemures Tablet (Lemures Magician) | 3303 | 1 | 102300,69200;77600,35100 | Apanha 1x missing 2 pieces of Lemures Tablet (mata Lemures Magician) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Prevent the Curse - Holy Ground
+name_pt = Evita a maldicao - terra sagrada
+map = 
+level = 96
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Holy Ground (Gigantic Biter/Gigantic Slaughterer/Gigantic Magus/Twiant/Captain Hooks/Gargoyle/King Wubba) | 3701 | 100 |  | Apanha 100x Holy Ground (mata Gigantic Biter/Gigantic Slaughterer/Gigantic Magus/Twiant/Captain Hooks/Gargoyle/King Wubba) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Prevent the Curse - The Ogre's Medium
+name_pt = Evita a maldicao - o medium do ogre
+map = 
+level = 96
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Coin Bag and Golden Medal (Hangork/Archie Ogre/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre) | 3801 | 1 |  | Apanha 1x Coin Bag and Golden Medal (mata Hangork/Archie Ogre/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre) | 
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur take the Gold Hunter's Band | 
+
+[QUEST]
+name = Prevent the Curse - Hunt for Gold
+name_pt = Evita a maldicao - caca ao ouro
+map = 
+level = 96
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  goto | | | | | usa o Gold Hunter's Band | 
+  collect | Coin Bags (ogres (Hangork/Archie/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre)) |  | 100 |  | Apanha 100x Coin Bags (mata ogres (Hangork/Archie/Brawl Ogre/Ogre Magus/General Ogg/Captain Shruk/Great Ogre)) | 
+  goto | | | | | entrega 1 a 1 ao Yon-I-Walker (pode falhar) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Prevent the Curse - Pruning the Tree Demons
+name_pt = Evita a maldicao - poda dos demonios
+map = 
+level = 96
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Aku Beku | 3911 | 1 | 89900,14300 | Mata 1x Aku-Boku/Arboretum/Sycomore | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Stop the Banshee
+name_pt = Detem a banshee
+map = 
+level = 97
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Riveted Necklace (Mu-Shu) | 3905 | 1 | 18600,19900 | Apanha 1x Riveted Necklace (mata Mu-Shu) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Decrypt document
+name_pt = Descodifica o documento
+map = 
+level = 97
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  talk | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Fala com Alchemist (Energy System) | 
+  collect | Fossil Earth (Alchemist) | 20001 | 1 |  | Apanha 1x Fossil Earth (mata Alchemist) | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Through the back door
+name_pt = Pela porta dos fundos
+map = 
+level = 97
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Kizilhirsiz Buyucu | 3503 | 2 | 62600,111000;65900,42400 | Mata 2x Red Thief Magician | 
+  kill | Brutal Red Thief Executioner |  | 1 |  | Mata 1x Brutal Red Thief Executioner | 
+  kill | Beyaz General | 3555 | 1 | 37600,109400;34600,84100 | Mata 1x White General | 
+  kill | Kemiksurat | 3590 | 1 | 62600,111000 | Mata 1x Bone Face | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = The Temple Servant
+name_pt = O servo do templo
+map = 
+level = 97
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Kemiksurat | 3590 | 1 | 62600,111000 | Mata 1x Bone Face | 
+  collect | Sealed Letter (Yah-Ki) | 3906 | 1 | 81000,28100 | Apanha 1x Sealed Letter (mata Yah-Ki) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Reconstructing the Fort
+name_pt = Reconstrucao do forte
+map = 
+level = 98
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Yengec Savasci | 3601 | 1 |  | Mata 1x Crab Warrior/Scorpion Marksman/Shrimp Soldier/Diabolical Hermit/Armoured Crab/General Lobster/King Crab to colect 100x Crustacean Armour | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Reconstruction of the Fort
+name_pt = Reconstrucao do forte
+map = 
+level = 98
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Triton Murana | 3401 | 1 |  | Mata 1x Tritonic Moray/Shark Soldier/Tritonic Magician/Tritonic Hunter/Tritonic Slasher/General Kappa/Triton to colect 100x Triton Spears | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Emergency
+name_pt = Emergencia
+map = 
+level = 98
+# giver: AUTO (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  kill | Kaptan Srak | 3890 | 1 | 141100,35700 | Mata 1x Captain Shruk | 
+  kill | General Ocu | 3805 | 50 | 141100,35700;149800,22600 | Mata 50x General Ogg | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Acknowledgement
+name_pt = Reconhecimento
+map = 
+level = 98
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  talk | Zirh Saticisi | 9002 | | s:59600,60500;c:67600,61700;j:40300,58600 | Fala com Armour Shop Dealer | 
+  talk | Satici | 9003 | | s:67800,56500;c:59000,68900;j:38300,69300 | Fala com General Store Saleswoman | 
+  talk | Silah Saticisi | 9001 | | s:59600,55700;c:67600,66200;j:43000,60700 | Fala com Weapon Shop Dealer | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = The Admiral's Thanks
+name_pt = Os agradecimentos do almirante
+map = 
+level = 98
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+
+[QUEST]
+name = Run into the Fire
+name_pt = Para dentro do fogo
+map = 
+level = 99
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | Vai ate checkpoint no Fireland (Doyyumhwan) | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Investigate the Fortress
+name_pt = Investiga a fortaleza
+map = 
+level = 99
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | message says that weapon has turned black (Flame Ghost/Fighting Tiger/Flame/Flame Warrior in Fireland) | 2202 | 1 | 14400,77800 | Apanha 1x message says that weapon has turned black (mata Flame Ghost/Fighting Tiger/Flame/Flame Warrior in Fireland) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Enlighten the Mind
+name_pt = Ilumina a mente
+map = 
+level = 99
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  goto | | | | | collect to Sun Herb collect Sun Herbs | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Black Matter (Level 100)
+name_pt = Materia negra (nivel 100)
+map = 
+level = 100
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | mata 300 monstros no Fireland (Flame Ghost / Fighting Tiger / Flame / Flame Warrior) | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Nimbus Tincture
+name_pt = Tintura de nimbo
+map = 
+level = 100
+# giver: Alchemist (Energy System) (side)
+steps:
+  talk | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Fala com Alchemist (Energy System) | 
+  collect | Foundation Stone |  | 10 |  | Apanha 10x Foundation Stone | 
+  collect | Bear Gall |  | 50 |  | Apanha 50x Bear Gall | 
+  collect | Spider Poison Sack |  | 10 |  | Apanha 10x Spider Poison Sack | 
+  collect | Energy Fragment |  | 200 |  | Apanha 200x Energy Fragment | 
+  turnin | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Entrega a missao: fala com Alchemist (Energy System) | 
+
+[QUEST]
+name = Stop the Black Matter
+name_pt = Detem a materia negra
+map = 
+level = 100
+# giver: Alchemist (Energy System) (side)
+steps:
+  talk | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Fala com Alchemist (Energy System) | 
+  talk | Demirci | 20016 | | s:67200,55600;c:59400,69200;j:39300,69200 | Fala com Blacksmith | 
+  goto | | | | | apanha o Foundation Stone Powder | 
+  turnin | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Entrega a missao: fala com Alchemist (Energy System) | 
+
+[QUEST]
+name = Mysterious Fortress
+name_pt = Fortaleza misteriosa
+map = 
+level = 101
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | Vai ate Red Dragon Fortress (procura o Wounded Soldier) | 
+  collect | Letter to Yak-Hwan (Wounded Soldier) | 20393 | 1 |  | Apanha 1x Letter to Yak-Hwan (mata Wounded Soldier) | 
+  collect | Riveted Necklace (Mu-Shu) | 3905 | 1 | 18600,19900 | Apanha 1x Riveted Necklace (mata Mu-Shu) | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Decipher the Engraving
+name_pt = Decifra a gravura
+map = 
+level = 101
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Flame King Blood (Flame King) | 2206 | 1 | 14400,77800 | Apanha 1x Flame King Blood (mata Flame King) | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  goto | | | | | 24 Hours Waiting period | 
+
+[QUEST]
+name = The Engraving
+name_pt = A gravura
+map = 
+level = 101
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Storm the Fortress
+name_pt = Assalta a fortaleza
+map = 
+level = 102
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  kill | Kor Alev Krali | 6005 | 30 |  | Mata 30x Ember Flame King | 
+  kill | Kor Alev | 6003 | 30 | 40000,40000;40000,110000;120000,30000 | Mata 30x Ember Flame Troll | 
+  kill | Kor Alev Golemi | 6006 | 30 |  | Mata 30x Ember Flame Golem | 
+  kill | Kor Alev Sakallisi | 6007 | 30 |  | Mata 30x Ember Flame Beard | 
+  kill | Kor Alev Generali | 6008 | 30 |  | Mata 30x Ember Flame General | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Black Matter (Level 102)
+name_pt = Materia negra (nivel 102)
+map = 
+level = 102
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  goto | | | | | kill monsters to collect 10x Black Matter | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Black Matter Neutralisation
+name_pt = Neutralizacao da materia negra
+map = 
+level = 102
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Mong Water and |  | 50 |  | Apanha 50x Mong Water and | 
+  collect | Energy Fragment |  | 100 |  | Apanha 100x Energy Fragment | 
+  turnin | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Entrega a missao: fala com Yu-Hwan | 
+
+[QUEST]
+name = Deliver the Pure Lumen
+name_pt = Entrega do lumen puro
+map = 
+level = 102
+# giver: Yu-Hwan (side)
+steps:
+  talk | Yu-Hwan | 20017 | | s:41500,63800;c:37600,31800;j:38400,45400 | Fala com Yu-Hwan | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Storm the Red Dragon Fortress
+name_pt = Assalta a fortaleza do dragao vermelho
+map = 
+level = 103
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | click Wounded Soldier | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Step by Step
+name_pt = Passo a passo
+map = 
+level = 103
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | kill 1.000 monsters inside the fortress | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Step 2
+name_pt = Passo 2
+map = 
+level = 103
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  kill | Kor Alev Krali | 6005 | 50 |  | Mata 50x Ember Flame King | 
+  kill | Kor Alev Sakallisi | 6007 | 50 |  | Mata 50x Ember Flame Beard | 
+  kill | Kor Alev | 6003 | 50 | 40000,40000;40000,110000;120000,30000 | Mata 50x Ember Flame Troll | 
+  kill | Kor Alev Golemi | 6006 | 50 |  | Mata 50x Ember Flame Golem | 
+  kill | Kor Alev Generali | 6008 | 50 |  | Mata 50x Ember Flame General | 
+  kill | Kor Alev | 6003 | 50 | 40000,40000;40000,110000;120000,30000 | Mata 50x Ember Flame Lord | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Step 3
+name_pt = Passo 3
+map = 
+level = 103
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  goto | | | | | destroy Purgatory Fire Metin | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = The Fight Against Razador
+name_pt = A luta contra Razador
+map = 
+level = 104
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | kill Razador | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Thwarting Plans I
+name_pt = Desbaratar planos I
+map = 
+level = 104
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  kill | Kor Alev Krali | 6005 | 50 |  | Mata 50x Ember Flame King | 
+  kill | Kor Alev | 6003 | 50 | 40000,40000;40000,110000;120000,30000 | Mata 50x Ember Flame Troll | 
+  kill | Kor Alev Sakallisi | 6007 | 50 |  | Mata 50x Ember Flame Beard | 
+  kill | Kor Alev Generali | 6008 | 50 |  | Mata 50x Ember Flame General | 
+  kill | Kor Alev | 6003 | 50 | 40000,40000;40000,110000;120000,30000 | Mata 50x Ember Flame Lord | 
+  collect | Magma Ring (Ember Flames) |  | 5 |  | Apanha 5x Magma Ring (mata Ember Flames) | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker (entrega pode falhar) | 
+
+[QUEST]
+name = Thwarting Plans II
+name_pt = Desbaratar planos II
+map = 
+level = 104
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  collect | Dok Water |  | 100 |  | Apanha 100x Dok Water | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Thwarting Plans III
+name_pt = Desbaratar planos III
+map = 
+level = 104
+# giver: Yon-I-Walker (side)
+steps:
+  talk | Yon-I Gezgini | 20380 | | 55000,127800 | Fala com Yon-I-Walker | 
+  kill | Martyaxwar | 3291 | 1 | 83900,38000 | Mata 1x Martyaxwar Collect 5x Manticore Leather | 
+  turnin | Yon-I Gezgini | 20380 | | 55000,127800 | Entrega a missao: fala com Yon-I-Walker | 
+
+[QUEST]
+name = Battle Begins
+name_pt = Comeca a batalha
+map = 
+level = 105
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  kill | Kor Alev Krali | 6005 | 10 |  | Mata 10x Ember Flame King | 
+  kill | Kor Alev Sakallisi | 6007 | 10 |  | Mata 10x Ember Flame Beard | 
+  kill | Kor Alev | 6003 | 10 | 40000,40000;40000,110000;120000,30000 | Mata 10x Ember Flame Troll | 
+  kill | Kor Alev Golemi | 6006 | 10 |  | Mata 10x Ember Flame Golem | 
+  kill | Kor Alev Generali | 6008 | 10 |  | Mata 10x Ember Flame General | 
+  kill | Kor Alev | 6003 | 10 | 40000,40000;40000,110000;120000,30000 | Mata 10x Ember Flame Lord | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = Old Grudge, New Battle
+name_pt = Velha rixa, nova batalha
+map = 
+level = 105
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | kill Razador | 
+  turnin | Saray Bekcisi | 20377 | | 58700,131400 | Entrega a missao: fala com Yak-Hwan | 
+
+[QUEST]
+name = The Red Dragon
+name_pt = O dragao vermelho
+map = 
+level = 105
+# giver: Yak-Hwan (side)
+steps:
+  talk | Saray Bekcisi | 20377 | | 58700,131400 | Fala com Yak-Hwan | 
+  goto | | | | | recebe o Ring of Samael | 
+  goto | | | | | Vai ate Taramor Gravestone (Red Dragon Fortress) | 
+  goto | | | | | usa o Ring of Samael no gravestone | 
+
+[QUEST]
+name = A New Continent
+name_pt = Um novo continente
+map = 
+level = 120
+# giver: AUTO (side)
+steps:
+  talk | Warrior Statue |  | |  | Fala com Warrior Statue | 
+
+[QUEST]
+name = Risking Your Neck
+name_pt = Com o pescoco a pr?mio
+map = 
+level = 120
+# giver: Yohara Warden (side)
+steps:
+  talk | Yohara Warden |  | |  | Fala com Yohara Warden | 
+  turnin | Yohara Guard |  | |  | Entrega a missao: fala com Yohara Guard | 
+
+[QUEST]
+name = With the Devil on Your Back
+name_pt = Com o diabo as costas
+map = 
+level = 120
+# giver: Yohara Guard (side)
+steps:
+  talk | Yohara Guard |  | |  | Fala com Yohara Guard | 
+  kill | Monster(Abandoned Fortress) |  | 300 |  | Mata 300x Monster(Abandoned Fortress) | 
+  turnin | Yohara Guard |  | |  | Entrega a missao: fala com Yohara Guard | 
+
+[QUEST]
+name = Devils' Leader
+name_pt = O lider dos demonios
+map = 
+level = 120
+# giver: Yohara Guard (side)
+steps:
+  talk | Yohara Guard |  | |  | Fala com Yohara Guard | 
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | King Bao (Quest) |  | 1 |  | Mata 1x King Bao (Quest) | 
+  turnin | Yohara Guard |  | |  | Entrega a missao: fala com Yohara Guard | 
+
+[QUEST]
+name = A Strange Feeling
+name_pt = Um estranho pressentimento
+map = 
+level = 120
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  kill | Monster(Abandoned Fortress) |  | 100 |  | Mata 100x Monster(Abandoned Fortress) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Preparations for the Disruption Ritual
+name_pt = Preparativos do ritual de ruptura
+map = 
+level = 120
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Shrine |  | |  | Fala com Shrine | 
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  collect | Tainted Flowers (Abandoned Fortress) |  | 10 |  | Apanha 10x Tainted Flowers (mata Abandoned Fortress) | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Disruption Ritual
+name_pt = Ritual de ruptura
+map = 
+level = 120
+# giver: Admiral Angmur (side)
+steps:
+  talk | Amiral Angmur | 20378 | | 66500,124200 | Fala com Admiral Angmur | 
+  talk | Shrine |  | |  | Fala com Shrine | 
+  turnin | Amiral Angmur | 20378 | | 66500,124200 | Entrega a missao: fala com Admiral Angmur | 
+
+[QUEST]
+name = Disastrous Powers
+name_pt = Poderes desastrosos
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  collect | Tainted Cores (Dong Gwang Plain) |  | 30 |  | Apanha 30x Tainted Cores (mata Dong Gwang Plain) | 
+  collect | Tainted Horns (Dong Gwang Plain) |  | 30 |  | Apanha 30x Tainted Horns (mata Dong Gwang Plain) | 
+  collect | Tainted Skin (Dong Gwang Plain) |  | 30 |  | Apanha 30x Tainted Skin (mata Dong Gwang Plain) | 
+  turnin | Theowahdan |  | |  | Entrega a missao: fala com Theowahdan | 
+
+[QUEST]
+name = New Powers
+name_pt = Novos poderes
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  collect | Tainted Soul Stones (Dong Gwang Plain) |  | 10 |  | Apanha 10x Tainted Soul Stones (mata Dong Gwang Plain) | 
+  turnin | Theowahdan |  | |  | Entrega a missao: fala com Theowahdan | 
+
+[QUEST]
+name = Use Dark Powers
+name_pt = Usa os poderes sombrios
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+
+[QUEST]
+name = Suspicious Occurrences
+name_pt = Acontecimentos suspeitos
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  talk | Uriel | 20011 | | s:71300,60500;c:65500,55300;j:42500,71600 | Fala com Uriel | 
+  talk | Yasli Kadin | 9006 | | s:63300,62200;c:58800,63300;j:41700,67100 | Fala com Old Lady | 
+  talk | Depocu | 9005 | | s:67400,60700;c:60900,59600;j:31500,56000 | Fala com Storekeeper | 
+  turnin | Theowahdan |  | |  | Entrega a missao: fala com Theowahdan | 
+
+[QUEST]
+name = Hunting Down the Trickster
+name_pt = A caca ao vigarista
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  goto | | | | | Vai ate Mount Sohan | 
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+  goto | | | | | fala com o Stable Boy (Cape Dragon Fire) | 
+  goto | | | | | Vai ate Gautama Cliff (apanha o trickster) | 
+  turnin | Theowahdan |  | |  | Entrega a missao: fala com Theowahdan | 
+
+[QUEST]
+name = Successfully captured
+name_pt = Capturado com sucesso
+map = 
+level = 120
+# giver: Theowahdan (side)
+steps:
+  talk | Theowahdan |  | |  | Fala com Theowahdan | 
+
+[QUEST]
+name = Where the Northwind Howls
+name_pt = Onde uiva o vento norte
+map = 
+level = 120
+# giver: Serpent Guardian (side)
+steps:
+  talk | Serpent Guardian |  | |  | Fala com Serpent Guardian | 
+  turnin | Northwind Guardian |  | |  | Entrega a missao: fala com Northwind Guardian | 
+
+[QUEST]
+name = Frenzied Beasts
+name_pt = Feras enfurecidas
+map = 
+level = 120
+# giver: Northwind Guardian (side)
+steps:
+  talk | Northwind Guardian |  | |  | Fala com Northwind Guardian | 
+  kill | Monster(Northwind Canyon) |  | 300 |  | Mata 300x Monster(Northwind Canyon) | 
+  turnin | Northwind Guardian |  | |  | Entrega a missao: fala com Northwind Guardian | 
+
+[QUEST]
+name = Lost Souls
+name_pt = Almas perdidas
+map = 
+level = 120
+# giver: Northwind Guardian (side)
+steps:
+  talk | Northwind Guardian |  | |  | Fala com Northwind Guardian | 
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  turnin | Northwind Guardian |  | |  | Entrega a missao: fala com Northwind Guardian | 
+
+[QUEST]
+name = In the Canyon Depths
+name_pt = Nas profundezas do canhao
+map = 
+level = 120
+# giver: Northwind Guardian (side)
+steps:
+  talk | Northwind Guardian |  | |  | Fala com Northwind Guardian | 
+  goto | | | | | Guardian | 
+
+[QUEST]
+name = Top Secret
+name_pt = Altamente secreto
+map = 
+level = 120
+# giver: Soul Gorge Guardian (side)
+steps:
+  goto | | | | | Guardian | 
+  kill | Monster(Soul Gorge) |  | 300 |  | Mata 300x Monster(Soul Gorge) | 
+  goto | | | | | Guardian | 
+
+[QUEST]
+name = Northwind Shelter
+name_pt = Abrigo do vento norte
+map = 
+level = 120
+# giver: Soul Gorge Guardian (side)
+steps:
+  goto | | | | | Guardian | 
+  turnin | General Kohan |  | |  | Entrega a missao: fala com General Kohan | 
+
+[QUEST]
+name = Icy Resting Place
+name_pt = Descanso gelado
+map = 
+level = 120
+# giver: General Kohan (side)
+steps:
+  talk | General Kohan |  | |  | Fala com General Kohan | 
+  goto | | | | | find the lost scout in northwind shelter | 
+  turnin | General Kohan |  | |  | Entrega a missao: fala com General Kohan | 
+
+[QUEST]
+name = Into the Cold Heart of the Mountain
+name_pt = No coracao frio da montanha
+map = 
+level = 120
+# giver: General Kohan (side)
+steps:
+  talk | General Kohan |  | |  | Fala com General Kohan | 
+  goto | | | | | Vai ate Northwind Hermit(Northwind Descent) | 
+  turnin | Northwind Hermit |  | |  | Entrega a missao: fala com Northwind Hermit | 
+
+[QUEST]
+name = Into the Icy Depths
+name_pt = Nas profundezas geladas
+map = 
+level = 120
+# giver: Confucius (side)
+steps:
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  talk | General Kohan |  | |  | Fala com General Kohan | 
+  collect | White Dragon Scales (Northwind Descent) |  | 20 |  | Apanha 20x White Dragon Scales (mata Northwind Descent) | 
+  collect | Frost-Covered Fur (Northwind Descent) |  | 20 |  | Apanha 20x Frost-Covered Fur (mata Northwind Descent) | 
+  turnin | General Kohan |  | |  | Entrega a missao: fala com General Kohan | 
+
+[QUEST]
+name = Alastor's Binding
+name_pt = O vinculo de Alastor
+map = 
+level = 120
+# giver: Confucius (side)
+steps:
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  collect | Argos's Heart (Argos) |  | 1 |  | Apanha 1x Argos's Heart (mata Argos) | 
+  goto | | | | | Vai ate Shrine(Abandoned Fortress) | 
+  turnin | Konfucyus | 20381 | | 61400,130400 | Entrega a missao: fala com Confucius | 
+
+[QUEST]
+name = The Power of Confucius
+name_pt = O poder de Confucio
+map = 
+level = 120
+# giver: Confucius (side)
+steps:
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  collect | Ice Blade Scale (Northwind Sh. War Chief (Ice)) |  | 1 |  | Apanha 1x Ice Blade Scale (mata Northwind Sh. War Chief (Ice)) | 
+  talk | Konfucyus | 20381 | | 61400,130400 | Fala com Confucius | 
+  talk | Simyaci | 20001 | | s:62200,51100;c:66000,73400;j:29200,81200 | Fala com Alchemnist | 
+  turnin | Konfucyus | 20381 | | 61400,130400 | Entrega a missao: fala com Confucius | 
+
+[QUEST]
+name = Alastor Report (Champ)
+name_pt = Relatorio de Alastor (Champ)
+map = 
+level = 120
+# giver: General Kohan (side)
+steps:
+  talk | General Kohan |  | |  | Fala com General Kohan | 
+  kill | Alastor (Easy) |  | 1 |  | Mata 1x Alastor (Easy) | 
+  goto | | | | | Vai ate Shrine (Abandoned Fortress) | 
+  turnin | Konfucyus | 20381 | | 61400,130400 | Entrega a missao: fala com Confucius | 
+
+[QUEST]
+name = A Strange Discovery (Champ)
+name_pt = Uma descoberta estranha (Champ)
+map = 
+level = 120
+# giver: Dragon Watcher Jaharr (side)
+steps:
+  talk | Dragon Watcher Jaharr |  | |  | Fala com Dragon Watcher Jaharr | 
+  goto | | | | | Vai ate Ghostly Guardian(Northwind Descent) | 
+  turnin | Cursed Stone Tablet |  | |  | Entrega a missao: fala com Cursed Stone Tablet | 
+
+[QUEST]
+name = Breaking the Curse (Champ)
+name_pt = Quebrando a maldicao (Champ)
+map = 
+level = 120
+# giver: Ghostly Guardian (side)
+steps:
+  talk | Ghostly Guardian |  | |  | Fala com Ghostly Guardian | 
+  kill | Alastor in Northwind Deeps |  | 1 |  | Mata 1x Alastor in Northwind Deeps | 
+  turnin | Ghostly Guardian |  | |  | Entrega a missao: fala com Ghostly Guardian | 
+
+[QUEST]
+name = Cursed Tablet Report (Champ)
+name_pt = Relatorio da tabuleta maldita (Champ)
+map = 
+level = 120
+# giver: Cursed Stone Tablet (side)
+steps:
+  talk | Cursed Stone Tablet |  | |  | Fala com Cursed Stone Tablet | 
+  turnin | Dragon Watcher Jaharr |  | |  | Entrega a missao: fala com Dragon Watcher Jaharr | 
+
+[QUEST]
+name = To Mount Sohan (Champ)
+name_pt = A caminho do Sohan (Champ)
+map = 
+level = 120
+# giver: Dragon Watcher Jaharr (side)
+steps:
+  talk | Dragon Watcher Jaharr |  | |  | Fala com Dragon Watcher Jaharr | 
+  goto | | | | | Vai ate Dragon Watcher Dolnarr (Mount Sohan) | 
+  goto | | | | | to be continued... | 
+
